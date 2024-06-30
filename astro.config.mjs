@@ -17,7 +17,7 @@ export default defineConfig({
       locales: {
         root: {
           label: "Português (brasileiro)",
-          lang: "pt-br",
+          lang: "pt-BR",
         },
       },
 
