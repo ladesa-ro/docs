@@ -19,15 +19,10 @@ env:
   CI_BRANCH: ${{ vars.CI_BRANCH }}
   IMAGE_TAG: ${{ vars.IMAGE_TAG }}
 
-  REGISTRY_URL: ghcr.io
-  REGISTRY_USERNAME: ${{ github.actor }}
-  REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  IMAGE_NAME: ${{ github.repository }}
-
-  # REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
-  # REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
-  # REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-  # IMAGE_NAME: ${{ vars.IMAGE_NAME }}
+  REGISTRY_URL: ${{ secrets.USE_GH_REGISTRY == 'true' && 'ghcr.io' || secrets.REGISTRY_URL }}
+  REGISTRY_USERNAME: ${{ secrets.USE_GH_REGISTRY == 'true' && github.actor || secrets.REGISTRY_USERNAME }}
+  REGISTRY_TOKEN: ${{ secrets.USE_GH_REGISTRY == 'true' && secrets.GITHUB_TOKEN || secrets.REGISTRY_TOKEN }}
+  IMAGE_NAME: ${{ secrets.USE_GH_REGISTRY == 'true' && github.repository || vars.IMAGE_NAME  }}
 
   DEPLOY_DISPATCH_TOKEN: ${{ secrets.DEPLOY_DISPATCH_TOKEN }}
 
