@@ -5,8 +5,8 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
 
-  site: 'https://docs.ladesa.com.br',
-  base: 'dev',
+  // site: 'https://docs.ladesa.com.br',
+  // base: 'dev',
   
   output: "server",
 
