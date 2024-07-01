@@ -1,4 +1,4 @@
-# Ladesa DEV Docs
+# Ladesa Docs
 
 [![Continuos Integration][action-ci-src]][action-ci-href] [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
@@ -7,8 +7,8 @@
 ### Obter o código-fonte do projeto
 
 ```sh
-git clone https://github.com/ladesa-ro/dev-docs.git
-cd dev-docs
+git clone https://github.com/ladesa-ro/docs.git
+cd docs
 ```
 
 ### Instalar as dependências do projeto
@@ -62,5 +62,5 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 <!-- Badges / Actions  -->
 
-[action-ci-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/dev-docs/ci.yml?style=flat&logo=github&logoColor=white&label=Continuos+Integration&labelColor=18181B
-[action-ci-href]: https://github.com/ladesa-ro/dev-docs/actions/workflows/ci.yml
+[action-ci-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/docs/ci.yml?style=flat&logo=github&logoColor=white&label=Continuos+Integration&labelColor=18181B
+[action-ci-href]: https://github.com/ladesa-ro/docs/actions/workflows/ci.yml

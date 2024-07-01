@@ -1,5 +1,5 @@
 {
-  "name": "dev-docs",
+  "name": "@ladesa-ro/docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

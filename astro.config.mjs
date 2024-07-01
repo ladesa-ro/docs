@@ -3,11 +3,8 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
-export default defineConfig({
 
-  // site: 'https://docs.ladesa.com.br',
-  // base: 'dev',
-  
+export default defineConfig({
   output: "server",
 
   adapter: node({
@@ -25,23 +22,32 @@ export default defineConfig({
         },
       },
 
-      title: "Ladesa DEV Docs",
+      title: "Ladesa Docs",
 
       social: {
-        github: "https://github.com/ladesa-ro/dev-docs",
+        github: "https://github.com/ladesa-ro",
+      },
+
+      editLink: {
+        baseUrl: "https://github.com/ladesa-ro/docs/edit/main",
       },
 
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", link: "/guides/example/" },
-          ],
+          label: "Começo",
+          link: "/getting-started",
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Guia para Usuários",
+          autogenerate: {
+            directory: "user-guides",
+          },
+        },
+        {
+          label: "Guia para Desenvolvedores",
+          autogenerate: {
+            directory: "dev",
+          },
         },
       ],
     }),

@@ -53,7 +53,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: false
-          tags: cr.ladesa.local/dev-docs
+          tags: cr.ladesa.local/docs
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
