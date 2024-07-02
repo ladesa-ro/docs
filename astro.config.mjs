@@ -90,6 +90,16 @@ export default defineConfig({
                 },
 
                 {
+                  label: "Banco de Dados",
+                  items: [
+                    {
+                      label: "Postgres",
+                      link: "/dev/tutorials/database/postgres",
+                    },
+                  ],
+                },
+
+                {
                   label: "Plataformas",
                   collapsed: false,
                   items: [
