@@ -58,32 +58,87 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  label: "Git",
-                  link: "/dev/tutorials/git",
+                  label: "Gestão de Projeto",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "Jira",
+                      link: "/dev/tutorials/project-management/jira",
+                    },
+                  ],
                 },
                 {
-                  label: "Jira",
-                  link: "/dev/tutorials/jira",
+                  label: "Código-Fonte",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "Git",
+                      link: "/dev/tutorials/source-code/git",
+                    },
+
+                    {
+                      label: "Terminal",
+                      link: "/dev/tutorials/source-code/terminal",
+                    },
+
+                    {
+                      label: "VS Code",
+                      link: "/dev/tutorials/source-code/vs-code",
+                    },
+                  ],
                 },
+
                 {
-                  label: "Node",
-                  link: "/dev/tutorials/node",
+                  label: "Plataformas",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "C# / DotNET",
+                      link: "/dev/tutorials/csharp-dotnet",
+                    },
+
+                    {
+                      label: "Node.js",
+                      link: "/dev/tutorials/node",
+                    },
+                    {
+                      label: "Front-end",
+                      items: [
+                        {
+                          label: "Vue",
+                          link: "/dev/tutorials/front-end/vue",
+                        },
+                      ],
+                    },
+                  ],
                 },
+
                 {
-                  label: "Docker",
-                  link: "/dev/tutorials/docker",
+                  label: "Contêiners",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "Docker",
+                      link: "/dev/tutorials/containers/docker",
+                    },
+                  ],
                 },
+
                 {
-                  label: "Vue",
-                  link: "/dev/tutorials/vue",
-                },
-                {
-                  label: "C# / DotNET",
-                  link: "/dev/tutorials/csharp-dotnet",
-                },
-                {
-                  label: "Kubernetes",
-                  link: "/dev/tutorials/kubernetes",
+                  label: "Avançado",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "Contêiners",
+                      collapsed: true,
+                      items: [
+                        {
+                          label: "Kubernetes",
+                          link: "/dev/tutorials/advanced/containers/kubernetes",
+                        },
+                      ],
+                    },
+                  ],
                 },
               ],
             },
