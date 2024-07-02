@@ -11,7 +11,7 @@ O Git é um sistema de versionamento de código.
 ## Configuração inicial
 
 ```sh
-git config --global pull.rebase true
+git config --global pull.rebase false
 ```
 
 ```sh
