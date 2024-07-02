@@ -2,7 +2,7 @@
 title: Git
 ---
 
-O Git é um sistema de versionamento.
+O Git é um sistema de versionamento de código.
 
 ## Obter o Git
 

@@ -55,10 +55,15 @@ export default defineConfig({
             },
             {
               label: "Tutoriais",
+              collapsed: true,
               items: [
                 {
                   label: "Git",
                   link: "/dev/tutorials/git",
+                },
+                {
+                  label: "Jira",
+                  link: "/dev/tutorials/jira",
                 },
                 {
                   label: "Node",
@@ -68,10 +73,23 @@ export default defineConfig({
                   label: "Docker",
                   link: "/dev/tutorials/docker",
                 },
+                {
+                  label: "Vue",
+                  link: "/dev/tutorials/vue",
+                },
+                {
+                  label: "C# / DotNET",
+                  link: "/dev/tutorials/csharp-dotnet",
+                },
+                {
+                  label: "Kubernetes",
+                  link: "/dev/tutorials/kubernetes",
+                },
               ],
             },
             {
               label: "Sistemas",
+              collapsed: true,
               items: [
                 {
                   label: "Web",
@@ -92,6 +110,20 @@ export default defineConfig({
                 {
                   label: "Autenticação",
                   link: "/dev/services/auth/",
+                },
+                {
+                  label: "Documentação",
+                  link: "/dev/services/docs/",
+                },
+              ],
+            },
+            {
+              label: "Integração aos Sistemas",
+              collapsed: true,
+              items: [
+                {
+                  label: "API",
+                  link: "/dev/services-integrations/api/",
                 },
               ],
             },
