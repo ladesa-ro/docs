@@ -55,18 +55,8 @@ export default defineConfig({
             },
             {
               label: "Tutoriais",
-              collapsed: true,
+              collapsed: false,
               items: [
-                {
-                  label: "Gestão de Projeto",
-                  collapsed: true,
-                  items: [
-                    {
-                      label: "Jira",
-                      link: "/dev/tutorials/project-management/jira",
-                    },
-                  ],
-                },
                 {
                   label: "Código-Fonte",
                   collapsed: true,
@@ -84,6 +74,17 @@ export default defineConfig({
                     {
                       label: "VS Code",
                       link: "/dev/tutorials/source-code/vs-code",
+                    },
+                  ],
+                },
+
+                {
+                  label: "Gestão de Projeto",
+                  collapsed: true,
+                  items: [
+                    {
+                      label: "Jira",
+                      link: "/dev/tutorials/project-management/jira",
                     },
                   ],
                 },
@@ -144,7 +145,7 @@ export default defineConfig({
             },
             {
               label: "Sistemas",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   label: "Web",
@@ -174,7 +175,7 @@ export default defineConfig({
             },
             {
               label: "Integração aos Sistemas",
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   label: "API",
