@@ -58,17 +58,17 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
+                  label: "Linha de Comando",
+                  link: "/dev/tutorials/command-line",
+                },
+
+                {
                   label: "Código-Fonte",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Git",
                       link: "/dev/tutorials/source-code/git",
-                    },
-
-                    {
-                      label: "Terminal",
-                      link: "/dev/tutorials/source-code/terminal",
                     },
 
                     {
@@ -79,8 +79,8 @@ export default defineConfig({
                 },
 
                 {
-                  label: "Gestão de Projeto",
-                  collapsed: true,
+                  label: "Gestão de Projetos",
+                  collapsed: false,
                   items: [
                     {
                       label: "Jira",
@@ -91,7 +91,7 @@ export default defineConfig({
 
                 {
                   label: "Plataformas",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "C# / DotNET",
@@ -116,7 +116,7 @@ export default defineConfig({
 
                 {
                   label: "Contêiners",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Docker",
@@ -130,12 +130,12 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     {
-                      label: "Contêiners",
-                      collapsed: true,
+                      label: "Orquestração de Contêiners",
+                      collapsed: false,
                       items: [
                         {
                           label: "Kubernetes",
-                          link: "/dev/tutorials/advanced/containers/kubernetes",
+                          link: "/dev/tutorials/advanced/containers-orchestration/kubernetes",
                         },
                       ],
                     },
