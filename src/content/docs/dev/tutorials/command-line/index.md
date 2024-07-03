@@ -5,12 +5,13 @@ title: Linha de Comando
 O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_.
 Você verá que esse recurso é poderoso, pois permite a execução de comandos por meio de entrada
 textual, de forma a fornecer instruções para que o sistema operacional realize as operações
-submetidas. O primeiro passo para poder usufruir da linha de comando é ter um ambiente você possa
-fornecer essas instruções e visualizá-las, e para isso são utilizados os _Emuladores de Terminais_.
+submetidas. O primeiro passo para poder usufruir da linha de comando é ter um ambiente em que você
+possa fornecer essas instruções e visualizá-las, e para isso são utilizados os 
+_Emuladores de Terminais_.
 
 ## Emulador de Terminal
 
-Um _emulador de terminal_ é um software disponível no seu ambiente desktop que permite o acesso a um _shell_ — invólucro, intermediario entre o usuário e o sistema operacional —. O Emulador de Terminal permite o envio de comandos textuais para um _interpretador de shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
+Um _emulador de terminal_ é um software disponível no seu ambiente desktop que permite o acesso a um _shell_ — invólucro quando traduzido literamente, mas com o a idéia de ser um intermediario entre o usuário e o sistema operacional —. O Emulador de Terminal permite o envio de comandos textuais para um _interpretador de shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
 
 ### Windows
 
@@ -18,7 +19,7 @@ O sistema operacional Windows, em suas versões 10 e 11, conta com o _Windows Te
 
 Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
 
-- Instalar via _Microsoft Store_ (oficial e recomendado): <https://aka.ms/terminal>
+- Instalar via _Microsoft Store_ (oficial e recomendado): <https://aka.ms/terminal>.
 
 :::note[Curiosidade]
 Segundo a desenvolvedora, este programa conta com "_várias guias, painéis, suporte a caracteres Unicode e UTF-8, um mecanismo de renderização de texto acelerado por GPU e temas, estilos e configurações personalizados_".
@@ -40,11 +41,11 @@ Além disso, existem vários projetos independentes de código aberto que fazem 
 Apesar da popularidade dos seguintes softwares, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
 :::
 
-- Alacritty.
+- Alacritty;
 - Kitty;
 - Terminator;
 - Tilix;
-- Yakuake;
+- Yakuake.
 
 ### macOS
 
@@ -54,7 +55,7 @@ Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este t
 
 ## Shell
 
-O termo _shell_ é referido nessa documentação como sendo um _software_ capaz de interpretar instruções, estando próximo a comandos que interagam com o sistema operacional e o sistema de arquivos.
+Já introduzido anteriormente, o _shell_ ou _interpretador de shell_ é um _software_ capaz de interpretar instruções. Uma característias dos _shells_ é a capacidade de interpretar e executar comandos — toda sessão de um _shell_ está ligada a um usuário, veremos isso depois —, arquivos executáveis e o acesso a árvore do sistema de arquivos. 
 
 :::note[Documentação Incompleta]
 Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico.
