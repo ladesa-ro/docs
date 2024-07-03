@@ -5,7 +5,7 @@ title: Linha de Comando
 O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_.
 Você verá que esse recurso é poderoso, pois permite a execução de comandos por meio de entrada
 textual, de forma a fornecer instruções para que o sistema operacional realize as operações
-submetidas. O primeiro passo para poder usufruir da linha de comando é ter um ambiente vocôe possa
+submetidas. O primeiro passo para poder usufruir da linha de comando é ter um ambiente você possa
 fornecer essas instruções e visualizá-las, e para isso são utilizados os _Emuladores de Terminais_.
 
 ## Emulador de Terminal
