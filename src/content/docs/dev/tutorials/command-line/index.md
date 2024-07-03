@@ -10,7 +10,7 @@ fornecer essas instruções e visualizá-las, e para isso são utilizados os _Em
 
 ## Emulador de Terminal
 
-Um _emulador de terminal_ é um software disponível no seu ambiente desktop que permite o acesso a um _shell_ — invólucro, intermediario entre o usuário e o sistema operacional —. Esse software permite o envio de comandos textuais para um interpretador de _shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
+Um _emulador de terminal_ é um software disponível no seu ambiente desktop que permite o acesso a um _shell_ — invólucro, intermediario entre o usuário e o sistema operacional —. O Emulador de Terminal permite o envio de comandos textuais para um _interpretador de shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
 
 ### Windows
 
