@@ -34,7 +34,7 @@ export default defineConfig({
 
       sidebar: [
         {
-          label: "Começo",
+          label: "Começar",
           link: "/getting-started",
         },
         {

@@ -1,0 +1,80 @@
+---
+title: Linha de Comando
+---
+
+import { Aside, TabItem, Tabs } from "@astrojs/starlight/components";
+
+O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_. Você verá que esse recurso é poderoso, pois permite a execução de comandos por meio de entrada textual para que o sistema operacional realize as operações submetidas. O primeiro passo para poder usufruir da linha de comando é ter um ambiente em que você possa fornecer essas instruções e visualizá-las, e para isso são utilizados os _Emuladores de Terminais_.
+
+## Emulador de Terminal
+
+Um _emulador de terminal_ é um software disponível no seu ambiente desktop que permite o acesso a um _shell_ — invólucro quando traduzido literamente, mas com o a idéia de ser um intermediario entre o usuário e o sistema operacional. O Emulador de Terminal permite o envio de comandos textuais para um _interpretador de shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
+
+<Tabs syncKey="operatingSystem">
+  <TabItem label="Windows" icon="seti:windows">
+    O sistema operacional Windows, em suas versões 10 e 11, conta com o _Windows Terminal_ — sendo, segundo a Microsoft, um "_aplicativo de terminal moderno, rápido, eficiente, poderoso e produtivo para os usuários de ferramentas e shells de linha de comando, como prompt de comando, PowerShell e WSL_".
+
+    Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
+
+    - Instalar via _Microsoft Store_ (oficial e recomendado): \<https://aka.ms/terminal>.
+
+    <Aside title="Curiosidade">
+      Segundo a desenvolvedora, este programa conta com "_várias guias, painéis, suporte a caracteres Unicode e UTF-8, um mecanismo de renderização de texto acelerado por GPU e temas, estilos e configurações personalizados_".
+    </Aside>
+
+    Além disso, existem vários projetos independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
+
+    <Aside type="caution" title="Atenção">
+      Apesar da popularidade dos seguintes softwares, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
+    </Aside>
+
+    - cmder;
+    - Hyper.
+  </TabItem>
+  <TabItem label="Linux" icon="linux">
+    A depender da sua distribuição GNU/Linux, é bem provável que o seu ambiente desktop tenha instalado algum emulador de terminal por padrão. Por favor, verifique que o seu sistema operacional possua algum disponível para o uso. A seguir, estão listados os emulares de terminal padrões dos ambientes desktop populares no ecossistêma GNU/Linux:
+
+    - Konsole (para KDE);
+    - GNOME Terminal (para GNOME);
+    - Deepin Terminal (para deepin).
+
+    Além disso, existem vários projetos independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
+
+    <Aside type="caution" title="Atenção">
+      Apesar da popularidade dos seguintes softwares, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
+    </Aside>
+
+    - Alacritty;
+    - Kitty;
+    - Terminator;
+    - Tilix;
+    - Yakuake. 
+  </TabItem>
+  <TabItem label="macOS" icon="apple">
+    <Aside type="caution" title="Documentação Incompleta">
+      Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
+    </Aside>
+  </TabItem>
+</Tabs>
+
+## Shell
+
+Já introduzido anteriormente, o _shell_ ou _interpretador de shell_ é um _software_ capaz de interpretar instruções. Uma característias dos _shells_ é a capacidade de interpretar e executar comandos — toda sessão de um _shell_ está ligada a um usuário, veremos isso depois —, arquivos executáveis e o acesso a árvore do sistema de arquivos.
+
+<Tabs syncKey="operatingSystem">
+  <TabItem label="Windows" icon="seti:windows">
+    Por muito tempo, o _CMD_ — também conhecido como _Prompt de Comando do Windows_ —, esteve presente junto ao _Power Shell_ nos sistemas operacionais _Windows / NT_. Os dois projetos forneceram por muito tempo tanto o emulador de terminal quanto o interpretador de shell.
+    
+    Atualmente, projeto _Power Shell_ — que conta com muitos novos recursos, atualizações e otimizações —, caminha para desepenhar cada vez mais apenas o papel de shell — sendo esse o recomendado para a utilização em ambientes _Windows_. Assim, o trabalho de projetar a janela visual fica a cargo do _Windows Terminal_.
+  </TabItem>
+  <TabItem label="Linux" icon="linux">
+  </TabItem>
+  <TabItem label="macOS" icon="apple">
+  </TabItem>
+</Tabs>
+
+
+
+<Aside type="caution" title="Documentação Incompleta">
+  Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
+</Aside>
