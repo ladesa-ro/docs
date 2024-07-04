@@ -58,5 +58,5 @@ Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este t
 Já introduzido anteriormente, o _shell_ ou _interpretador de shell_ é um _software_ capaz de interpretar instruções. Uma característias dos _shells_ é a capacidade de interpretar e executar comandos — toda sessão de um _shell_ está ligada a um usuário, veremos isso depois —, arquivos executáveis e o acesso a árvore do sistema de arquivos. 
 
 :::note[Documentação Incompleta]
-Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico.
+Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
 :::
