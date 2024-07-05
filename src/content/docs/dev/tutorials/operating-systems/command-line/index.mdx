@@ -4,24 +4,24 @@ title: Linha de Comando
 
 import { Aside, TabItem, Tabs } from "@astrojs/starlight/components";
 
-O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_. 
 
-
-<Aside title="Este tutorial é sobre a Linha de Comando">
-  Você verá que a linha de comando é um recurso muito poderoso, pois permite a instrução de comandos para o sistema operacional por meio de entrada textual. 
+<Aside type="tip" title="Este tutorial é sobre a Linha de Comando">
+  Você verá que a linha de comando é um recurso muito poderoso, pois permite a instrução de comandos para o sistema operacional por meio de entrada textual.
 </Aside>
-
 
 <video controls loop muted autoplay>
   <source src="/assets/dev-tutorials-command-line/terminal-emulator-konsole-with-bash.mp4" type="video/mp4" />
 </video>
 > Captura de Tela do _Emulador de Terminal_ Konsole com o interpretador de shell _GNU bash_ no sistema operacional GNU/Linux Manjaro.
 
+O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_. 
+
 
 O primeiro passo para você poder usufruir da linha de comando é ter um ambiente capaz de (1º) receber os seus pedidos, em seguida (2º) encaminhar as instruções para o interpretador e por fim (3º) visualizar as saídas de seus comandos. Para esse propósito, existem os _Emuladores de Terminais_.
 
-
-
+<Aside  title="Saiba!">
+  É de extrema utilidade esses conceitos, que serão usados durante toda a _Documentação para Desenvolvedores_ do Ladesa.
+</Aside>
 
 ## Emulador de Terminal
 
@@ -85,13 +85,14 @@ Já introduzido anteriormente, o termo _shell_ ou _interpretador de shell_ é um
   O termo shell pode ter a tradução literal para _concha, casca ou invólucro_, e sua concepção dentro do contexto de linhas de comandos pode ser considerada como a de ser um intermediario entre o usuário e o sistema operacional.
 </Aside>
 
-Assim como os Emuladores de Terminais, existem diversos _interpretadores de shell_, cada um podendo conter a sua sintáxe de comandos e de trabalho com o fluxo de dados, arquivos e operações. Durante toda a _Documentação para Desenvolvedores do Ladesa_ será dado a preferência ao interpretador `GNU bash`.
+Assim como os Emuladores de Terminais, existem diversos _interpretadores de shell_, cada um podendo conter a sua sintáxe de comandos e forma trabalho com o fluxo de dados, arquivos e operações. 
+
 
 <Tabs syncKey="operatingSystem">
   <TabItem label="Windows" icon="seti:windows">
-    Por muito tempo, o _CMD_ — também conhecido como _Prompt de Comando do Windows_ —, esteve presente junto ao _Power Shell_ nos sistemas operacionais _Windows / NT_. Os dois projetos forneceram por muito tempo tanto o emulador de terminal quanto o interpretador de shell.
+    Por muito tempo, o _CMD_ — também conhecido como _Prompt de Comando do Windows_ —, esteve presente junto ao _Power Shell_ nos sistemas operacionais _Windows / NT_. Os dois projetos forneceram por muito tempo tanto um emulador de terminal quanto o interpretador de shell.
     
-    Atualmente, projeto _Power Shell_ — que conta com muitos novos recursos, atualizações e otimizações —, caminha para desepenhar cada vez mais apenas o papel de shell — sendo esse o recomendado para a utilização em ambientes _Windows_. Assim, o trabalho de projetar a janela visual fica a cargo do _Windows Terminal_.
+    Atualmente, projeto _Power Shell_ — que conta com muitos novos recursos, atualizações e otimizações —, caminha para desepenhar cada vez mais o papel apenas de shell — sendo esse o recomendado para a utilização em ambientes _Windows_. Assim, o trabalho de projetar a janela visual fica a cargo do _Windows Terminal_.
   </TabItem>
   <TabItem label="GNU/Linux" icon="linux">
   </TabItem>
@@ -99,7 +100,9 @@ Assim como os Emuladores de Terminais, existem diversos _interpretadores de shel
   </TabItem>
 </Tabs>
 
-
+<Aside type="tip" title="Saiba!">
+  Durante toda a _Documentação para Desenvolvedores_ do Ladesa, será dado a preferência a especificação léxica do `GNU bash`.
+</Aside>
 
 <Aside type="caution" title="Documentação Incompleta">
   Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
