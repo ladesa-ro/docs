@@ -60,7 +60,7 @@ export default defineConfig({
             },
             {
               label: "Tutoriais",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   label: "Linha de Comando",
@@ -69,7 +69,7 @@ export default defineConfig({
 
                 {
                   label: "Código-Fonte",
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       label: "Git",
@@ -85,7 +85,7 @@ export default defineConfig({
 
                 {
                   label: "Gestão de Projetos",
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       label: "Jira",
@@ -96,6 +96,7 @@ export default defineConfig({
 
                 {
                   label: "Banco de Dados",
+                  collapsed: true,
                   items: [
                     {
                       label: "Postgres",
@@ -106,7 +107,7 @@ export default defineConfig({
 
                 {
                   label: "Plataformas",
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       label: "C# / DotNET",
@@ -131,7 +132,7 @@ export default defineConfig({
 
                 {
                   label: "Contêiners",
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       label: "Docker",
@@ -160,7 +161,7 @@ export default defineConfig({
             },
             {
               label: "Sistemas",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   label: "Web",
@@ -190,7 +191,7 @@ export default defineConfig({
             },
             {
               label: "Integração aos Sistemas",
-              collapsed: false,
+              collapsed: true,
               items: [
                 {
                   label: "API",
