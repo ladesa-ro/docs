@@ -63,13 +63,24 @@ export default defineConfig({
               collapsed: true,
               items: [
                 {
-                  label: "Linha de Comando",
-                  link: "/dev/tutorials/command-line",
+                  label: "Visão Geral",
+                  link: "/dev/tutorials",
+                },
+
+                {
+                  label: "Sistemas Operacionais",
+                  collapsed: false,
+                  items: [
+                    {
+                      label: "Linha de Comando",
+                      link: "/dev/tutorials/operating-systems/command-line",
+                    },
+                  ],
                 },
 
                 {
                   label: "Código-Fonte",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Git",
@@ -85,7 +96,7 @@ export default defineConfig({
 
                 {
                   label: "Gestão de Projetos",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Jira",
@@ -96,7 +107,7 @@ export default defineConfig({
 
                 {
                   label: "Banco de Dados",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Postgres",
@@ -107,23 +118,23 @@ export default defineConfig({
 
                 {
                   label: "Plataformas",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "C# / DotNET",
-                      link: "/dev/tutorials/csharp-dotnet",
+                      link: "/dev/tutorials/platforms/csharp-dotnet",
                     },
 
                     {
                       label: "Node.js",
-                      link: "/dev/tutorials/node",
+                      link: "/dev/tutorials/platforms/node",
                     },
                     {
                       label: "Front-end",
                       items: [
                         {
                           label: "Vue",
-                          link: "/dev/tutorials/front-end/vue",
+                          link: "/dev/tutorials/platforms/front-end/vue",
                         },
                       ],
                     },
@@ -132,7 +143,7 @@ export default defineConfig({
 
                 {
                   label: "Contêiners",
-                  collapsed: true,
+                  collapsed: false,
                   items: [
                     {
                       label: "Docker",
