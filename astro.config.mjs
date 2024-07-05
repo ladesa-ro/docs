@@ -34,8 +34,13 @@ export default defineConfig({
 
       sidebar: [
         {
-          label: "Começar",
-          link: "/getting-started",
+          label: "Introdução",
+          items: [
+            {
+              label: "Vamos Começar",
+              link: "/intro/getting-started",
+            },
+          ],
         },
         {
           label: "Guia para Usuários",
