@@ -7,16 +7,21 @@ import { Aside, TabItem, Tabs } from "@astrojs/starlight/components";
 O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_. 
 
 
+<Aside title="Este tutorial é sobre a Linha de Comando">
+  Você verá que a linha de comando é um recurso muito poderoso, pois permite a instrução de comandos para o sistema operacional por meio de entrada textual. 
+</Aside>
+
+
 <video controls loop muted autoplay>
   <source src="/assets/dev-tutorials-command-line/terminal-emulator-konsole-with-bash.mp4" type="video/mp4" />
 </video>
 > Captura de Tela do _Emulador de Terminal_ Konsole com o interpretador de shell _GNU bash_ no sistema operacional GNU/Linux Manjaro.
 
 
-O primeiro passo para você poder usufruir da linha de comando é ter um ambiente capaz de receber os seus pedidos, em seguida encaminhar para o interpretador e por fim visualizar as saídas de seus comandos. Para isso, são utilizados os _Emuladores de Terminais_.
+O primeiro passo para você poder usufruir da linha de comando é ter um ambiente capaz de (1º) receber os seus pedidos, em seguida (2º) encaminhar as instruções para o interpretador e por fim (3º) visualizar as saídas de seus comandos. Para esse propósito, existem os _Emuladores de Terminais_.
 
 
-Você verá que a linha de comando é um recurso muito poderoso, pois permite a instrução de comandos para o sistema operacional por meio de entrada textual. 
+
 
 ## Emulador de Terminal
 
@@ -27,7 +32,9 @@ Um Emulador de Terminal permite o envio de comandos textuais para um _interpreta
 
     Os sistemas operacionais Windows, em suas versões 10 e 11, contam com o _Windows Terminal_ — sendo, segundo a Microsoft, um "_aplicativo de terminal moderno, rápido, eficiente, poderoso e produtivo para os usuários de ferramentas e shells de linha de comando, como prompt de comando, PowerShell e WSL_".
 
-    Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
+    <Aside title="Instalação do Windows Terminal">
+      Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
+    </Aside>
 
     - Instalar via _Microsoft Store_ (oficial e recomendado): [https://aka.ms/terminal](https://aka.ms/terminal).
 
@@ -44,7 +51,7 @@ Um Emulador de Terminal permite o envio de comandos textuais para um _interpreta
     - cmder;
     - Hyper.
   </TabItem>
-  <TabItem label="Linux" icon="linux">
+  <TabItem label="GNU/Linux" icon="linux">
     A depender da sua distribuição GNU/Linux, é bem provável que o seu ambiente desktop tenha instalado algum emulador de terminal por padrão. Por favor, verifique que o seu sistema operacional possua algum disponível para o uso. A seguir, estão listados os emulares de terminal padrões dos ambientes desktop populares no ecossistêma GNU/Linux:
 
     - Konsole (para KDE);
@@ -86,7 +93,7 @@ Assim como os Emuladores de Terminais, existem diversos _interpretadores de shel
     
     Atualmente, projeto _Power Shell_ — que conta com muitos novos recursos, atualizações e otimizações —, caminha para desepenhar cada vez mais apenas o papel de shell — sendo esse o recomendado para a utilização em ambientes _Windows_. Assim, o trabalho de projetar a janela visual fica a cargo do _Windows Terminal_.
   </TabItem>
-  <TabItem label="Linux" icon="linux">
+  <TabItem label="GNU/Linux" icon="linux">
   </TabItem>
   <TabItem label="macOS" icon="apple">
   </TabItem>
