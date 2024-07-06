@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+
+src/.vitepress/cache
+
 # dependencies
 node_modules/
 

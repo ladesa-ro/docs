@@ -1,15 +1,14 @@
 ---
-title: Início
 description: Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para desenvolvedores.
 ---
 
-import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+# Início
 
+<!-- import { CardGrid, LinkCard } from '@astrojs/starlight/components'; -->
 
 Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para desenvolvedores.
 
-
-<LinkCard
+<!-- <LinkCard
   title="Tutoriais"
   description="Aprenda conceitos e tecnologias com uma documentação preparada por nossa comunidade."
   href="/dev/tutorials/"
@@ -19,4 +18,4 @@ Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para 
   <LinkCard title="Sistemas" href="/dev/services" />
 
   <LinkCard title="Integração aos Sistemas" href="/dev/services-integrations/" />
-</CardGrid>
+</CardGrid> -->

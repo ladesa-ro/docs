@@ -1,21 +1,17 @@
 {
   "name": "@ladesa-ro/docs",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
   },
-  "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/node": "^8.3.2",
-    "@astrojs/starlight": "^0.24.5",
-    "astro": "^4.10.2",
-    "sharp": "^0.32.6",
-    "typescript": "^5.5.2"
+  "devDependencies": {
+    "@vue/tsconfig": "^0.5.1",
+    "typescript": "^5.5.2",
+    "vitepress": "^1.2.3",
+    "vue": "^3.4.31"
   },
   "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
 }
