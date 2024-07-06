@@ -4,7 +4,7 @@ title: VS Code
 
 O Visual Studio Code é um editor de código-fonte gratuito desenvolvido pela Microsoft.
 
-O VS Code é um dos editores mais utlizados do planeta pois oferece um ambiente completo para o desenvolvimento de sistemas. Suas capacidades incluem suporte a diversas linguagens de programação, terminal de comandos integrado, gerenciamento de projetos, integração com sistemas de controle de versão e extensibilidade.
+O VS Code é uma escolha popular pois oferece um ambiente completo para o desenvolvimento de sistemas. Suas capacidades incluem suporte a diversas linguagens de programação, terminal de comandos integrado, gerenciamento de projetos, integração com sistemas de controle de versão e extensibilidade.
 
 ### Customização
 
