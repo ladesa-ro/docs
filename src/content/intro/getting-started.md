@@ -2,8 +2,8 @@
 description: Visão geral da documentação do Ladesa.
 ---
 
-<script setup>
-import LinkCard from "../-components/LinkCard.vue";
+<script setup lang="ts">
+import LinkCard from "../../components/LinkCard.vue";
 </script>
 
 # Vamos Começar

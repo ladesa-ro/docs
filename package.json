@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev src",
-    "build": "vitepress build src",
-    "preview": "vitepress preview src"
+    "dev": "vitepress dev --strictPort --port 4321",
+    "build": "vitepress build",
+    "preview": "vitepress preview --port 4321"
   },
   "devDependencies": {
     "@vue/tsconfig": "^0.5.1",

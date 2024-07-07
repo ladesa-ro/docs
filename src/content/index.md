@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Vamos Lá
-      link: /dev
+      link: /intro/getting-started
 
 features:
   - title: Documentação para Desenvolvedores

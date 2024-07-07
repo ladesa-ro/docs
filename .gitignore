@@ -4,10 +4,10 @@ dist/
 .astro/
 
 
-src/.vitepress/cache
+.vitepress/cache
 
 # dependencies
-node_modules/
+node_modules
 
 # logs
 npm-debug.log*
