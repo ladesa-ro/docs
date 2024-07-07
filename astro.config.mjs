@@ -131,14 +131,38 @@ export default defineConfig({
                       label: "Node.js",
                       link: "/dev/tutorials/platforms/node",
                     },
+
                     {
-                      label: "Front-end",
+                      label: "Web",
+                      collapsed: false,
                       items: [
                         {
-                          label: "Vue",
-                          link: "/dev/tutorials/platforms/front-end/vue",
+                          label: "Front-end",
+                          collapsed: false,
+                          items: [
+                            {
+                              label: "Vue",
+                              link: "/dev/tutorials/platforms/web/front-end/vue",
+                            },
+                          ]
+                        },
+
+                        {
+                          label: "Nuxt",
+                          link: "/dev/tutorials/platforms/web/nuxt",
                         },
                       ],
+                    },
+                  ],
+                },
+
+                {
+                  label: "API",
+                  collapsed: false,
+                  items: [
+                    {
+                      label: "API",
+                      link: "/dev/tutorials/api",
                     },
                   ],
                 },
