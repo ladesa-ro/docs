@@ -1,6 +1,4 @@
----
-title: Vue.js
----
+# Vue.js
 
 Vue.js é um framework JavaScript de código aberto utilizado para construir interfaces de usuário.
 
@@ -11,7 +9,6 @@ Confira a documentação oficial do Vue <a href="https://vuejs.org/">aqui</a>.
 ### Abstração de outros frameworks
 
 Criado em 2014 por Evan You, o Vue é uma coleção dos principais recursos de dois frameworks de JavaScript: React e Angular. Portanto, conceitos básicos destes também estão presentes no Vue, tal como reatividade e manipulação do DOM (Document Objetct Model).
-
 
 ### Framework progressivo
 

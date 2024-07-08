@@ -1,17 +1,22 @@
 ---
-title: Vamos Começar
 description: Visão geral da documentação do Ladesa.
 ---
 
-import { Aside, CardGrid, LinkCard } from '@astrojs/starlight/components';
+<script setup lang="ts">
+import LinkCard from "../../components/LinkCard.vue";
+</script>
 
+# Vamos Começar
 
-
-A seguir, estão listados as guias que possam interessar a sua trilha por nossa base de conhecimento.
-
-<Aside title="Bem-vindo!">
+:::tip Bem-vindo!
 Seja muito bem-vindo a documentação do Ladesa.
-</Aside>
+:::
+
+---
+
+:::info Para onde ir?
+A seguir, estão listados as guias que possam interessar a sua trilha por nossa base de conhecimento.
+:::
 
 <LinkCard
   title="Guia para Usuários"

@@ -1,13 +1,14 @@
 ---
-title: Início
 description: Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para desenvolvedores.
 ---
 
-import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+# Início
 
+<script setup>
+  import LinkCard from '../../components/LinkCard.vue';
+</script>
 
 Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para desenvolvedores.
-
 
 <LinkCard
   title="Tutoriais"
@@ -15,8 +16,8 @@ Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para 
   href="/dev/tutorials/"
 />
 
-<CardGrid>
+<div>
   <LinkCard title="Sistemas" href="/dev/services" />
 
   <LinkCard title="Integração aos Sistemas" href="/dev/services-integrations/" />
-</CardGrid>
+</div>
