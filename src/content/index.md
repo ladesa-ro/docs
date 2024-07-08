@@ -8,13 +8,16 @@ hero:
 
   actions:
     - theme: brand
-      text: Vamos Lá
+      text: Ir para a Documentação
       link: /intro/getting-started
 
-features:
-  - title: Documentação para Desenvolvedores
-    details:
+    - theme: alt
+      text: GitHub
+      link: /intro/getting-started
+# features:
+#   - title: Documentação para Desenvolvedores
+#     details:
 
-  - title: Documentação para Usuários
-    details:
+#   - title: Documentação para Usuários
+#     details:
 ---

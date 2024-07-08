@@ -4,6 +4,8 @@ export const sidebar: DefaultTheme.Sidebar = [
   {
     text: "Introdução",
 
+    collapsed: false,
+
     items: [
       {
         text: "Vamos Começar",
@@ -13,7 +15,10 @@ export const sidebar: DefaultTheme.Sidebar = [
   },
   {
     text: "Guia para Usuários",
+    collapsed: false,
     link: "/user-guides/",
+
+    items: [],
   },
   {
     text: "Dev Docs",

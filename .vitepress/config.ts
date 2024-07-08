@@ -6,8 +6,13 @@ export default defineConfig({
   title: "Ladesa Docs",
   description: "Navegue pela base de conhecimento do Ladesa.",
 
-  srcDir: "src/content",
+  lastUpdated: true,
   cleanUrls: true,
+  metaChunk: true,
+
+  srcDir: "src/content",
+
+  lang: "pt-BR",
 
   locales: {
     root: {
@@ -32,5 +37,15 @@ export default defineConfig({
     sidebar: sidebar,
 
     socialLinks: [{ icon: "github", link: "https://github.com/ladesa-ro/docs" }],
+
+    externalLinkIcon: true,
+
+    lastUpdated: {
+      text: "Atualizado em",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
   },
 });
