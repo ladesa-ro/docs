@@ -4,13 +4,10 @@ title: Visão Geral dos Tutoriais
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-Visão Geral dos Tutoriais
-
 <LinkCard
   title="Sistemas Operacionais"
   href="/dev/tutorials/operating-systems"
 />
-
 
 <LinkCard
   title="Código-Fonte"
@@ -30,6 +27,11 @@ Visão Geral dos Tutoriais
 <LinkCard
   title="Plataformas"
   href="/dev/tutorials/platforms"
+/>
+
+<LinkCard
+  title="API"
+  href="/dev/tutorials/api"
 />
 
 <LinkCard

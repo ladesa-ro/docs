@@ -101,13 +101,36 @@ export const sidebar: DefaultTheme.Sidebar = [
                 link: "/dev/tutorials/platforms/node",
               },
               {
-                text: "Front-end",
+                text: "Web",
+                collapsed: false,
                 items: [
                   {
-                    text: "Vue",
-                    link: "/dev/tutorials/platforms/front-end/vue",
+                    text: "Front-end",
+                    collapsed: false,
+                    items: [
+                      {
+                        text: "Vue",
+                        link: "/dev/tutorials/platforms/web/front-end/vue",
+                      },
+                    ],
+                  },
+
+                  {
+                    text: "Nuxt",
+                    link: "/dev/tutorials/platforms/web/nuxt",
                   },
                 ],
+              },
+            ],
+          },
+
+          {
+            text: "API",
+            collapsed: false,
+            items: [
+              {
+                text: "API",
+                link: "/dev/tutorials/api",
               },
             ],
           },
