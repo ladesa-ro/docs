@@ -2,7 +2,9 @@
 title: Visão Geral dos Tutoriais
 ---
 
-import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+<script setup>
+  import LinkCard from '../../../components/LinkCard.vue';
+</script>
 
 <LinkCard
   title="Sistemas Operacionais"

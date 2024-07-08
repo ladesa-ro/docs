@@ -1,6 +1,4 @@
----
-title: Vue.js
----
+# Vue.js
 
 Vue.js é um framework JavaScript de código aberto utilizado para construir interfaces de usuário.
 
