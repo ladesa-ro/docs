@@ -1,6 +1,4 @@
----
-title: Visão Geral dos Tutoriais
----
+# Tutoriais
 
 <script setup>
   import LinkCard from '../../../components/LinkCard.vue';

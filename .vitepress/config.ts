@@ -22,7 +22,12 @@ export default defineConfig({
     },
 
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Início", link: "/" }],
+    nav: [
+      //
+      { text: "Início", link: "/" },
+      { text: "Guia para Usuários", link: "/user-guides/" },
+      { text: "Dev Docs", link: "/dev/" },
+    ],
 
     sidebar: sidebar,
 
