@@ -9,7 +9,18 @@ export default defineConfig({
   srcDir: "src/content",
   cleanUrls: true,
 
+  locales: {
+    root: {
+      label: "Português (brasileiro)",
+      lang: "pt-BR",
+    },
+  },
+
   themeConfig: {
+    search: {
+      provider: "local",
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Início", link: "/" }],
 
