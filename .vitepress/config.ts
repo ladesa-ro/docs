@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { sidebar } from "./-sidebar";
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,6 +20,12 @@ export default defineConfig({
       label: "Português (brasileiro)",
       lang: "pt-BR",
     },
+  },
+
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
   },
 
   themeConfig: {
