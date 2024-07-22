@@ -21,102 +21,98 @@ Um Emulador de Terminal permite o envio de comandos textuais para um _interpreta
 
 ### Obter um Emulador de Terminal
 
-<Tabs style="text-wrap: nowrap;" syncKey="operatingSystem">
-  <TabItem label="Windows" icon="seti:windows">
+<PluginTabs style="text-wrap: nowrap;" sharedStateKey="operatingSystem">
+<PluginTabsTab label="Windows" icon="seti:windows">
 
-    O sistema operacional _Windows_ conta com o _Prompt de Comando_ (CMD) e o _PowerShell_ disponíveis por padrão nas versões mais recentes dessa plataforma. Há também o software _Windows Terminal_, criado pela Microsoft, que desempenha o papel de _emulador de terminal_.
+O sistema operacional _Windows_ conta com o _Prompt de Comando_ (CMD) e o _PowerShell_ disponíveis por padrão nas versões mais recentes dessa plataforma. Há também o software _Windows Terminal_, criado pela Microsoft, que desempenha o papel de _emulador de terminal_.
 
-    ---
+---
 
-    > TODO: inserir foto do Windows Terminal + Prompt de Comando.
+> TODO: inserir foto do Windows Terminal + Prompt de Comando.
 
-    ---
+---
 
+| Projeto            | Janela visual                                | Interpreta comandos                          | Instalado por padrão                         |
+| ------------------ | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
+| _CMD_              | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
+| _PowerShell_       | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
+| _Git Bash_         | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge>    |
+| _Windows Terminal_ | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge>    | <Badge text="Não" variant="note"></Badge>    |
 
-    | Projeto            | Janela visual                                | Interpreta comandos  | Instalado por padrão |
-    |------------------- | -------------------------------------------- | ----------------------- | - |
-    | _CMD_              | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
-    | _PowerShell_       | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
-    | _Git Bash_         | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge> |
-    | _Windows Terminal_ | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge> | <Badge text="Não" variant="note"></Badge> |
+::: info Você sabia?
+O CMD tem suas raizes desde o MS-DOS. Entretanto, a Microsoft tem dado maior atenção a utilização do Windows Terminal (janela) + PowerShell (interpretador).
+:::
 
-    ::: info Você sabia?
-      O CMD tem suas raizes desde o MS-DOS. Entretanto, a Microsoft tem dado maior atenção a utilização do Windows Terminal (janela) + PowerShell (interpretador).
-    :::
+#### Windows Terminal como Emulador de Terminal <Badge text="Recomendado" variant="note"></Badge>
 
+Recomendamos o uso do _Windows Terminal_ como _emulador de terminal_ para o sistema operacional _Windows_. A seguir, você receberá as instruções para a instalação em seu sistema.
 
-    #### Windows Terminal como Emulador de Terminal <Badge text="Recomendado" variant="note"></Badge>
+::: tip Instalação do Windows Terminal
+Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
+:::
 
-    Recomendamos o uso do _Windows Terminal_ como _emulador de terminal_ para o sistema operacional _Windows_. A seguir, você receberá as instruções para a instalação em seu sistema.
+> TODO: inserir foto do windows terminal na microsoft store.
 
-    ::: tip Instalação do Windows Terminal
-      Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
-    :::
+- Instalar via _Microsoft Store_ (oficial e recomendado): [https://aka.ms/terminal](https://aka.ms/terminal).
 
-    > TODO: inserir foto do windows terminal na microsoft store.
+::: info Curiosidade
+Segundo a desenvolvedora, esse programa conta com "_várias guias, painéis, suporte a caracteres Unicode e UTF-8, um mecanismo de renderização de texto acelerado por GPU e temas, estilos e configurações personalizados_".
+:::
 
-    - Instalar via _Microsoft Store_ (oficial e recomendado): [https://aka.ms/terminal](https://aka.ms/terminal).
+---
 
-    ::: info Curiosidade
-      Segundo a desenvolvedora, esse programa conta com "_várias guias, painéis, suporte a caracteres Unicode e UTF-8, um mecanismo de renderização de texto acelerado por GPU e temas, estilos e configurações personalizados_".
-    :::
+Por muito tempo, ao utilizar o CMD ou o PowerShell, não era comum a separação entre a idéia de Emulador de Terminal e a de Intepretador de Comandos.
 
+> TODO: inserir foto do prompt de comando.
 
-    ---
+> TODO: inserir foto do powershell.
 
-    Por muito tempo, ao utilizar o CMD ou o PowerShell, não era comum a separação entre a idéia de Emulador de Terminal e a de Intepretador de Comandos.
+---
 
-    > TODO: inserir foto do prompt de comando.
+Apesar disso, ecossistema Windows caminha para a utilização do _Windows Terminal_ como Emulador de Terminal e o uso do _Power Shell_ como um interpretador de comandos.
 
-    > TODO: inserir foto do powershell.
+---
 
-    ---
+Além dos projetos apresentados anteriomente, existem vários outros softwares independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
 
-    Apesar disso, ecossistema Windows caminha para a utilização do _Windows Terminal_ como Emulador de Terminal e o uso do _Power Shell_ como um interpretador de comandos.
+::: warning Atenção
+Apesar da popularidade dos softwares mencionados, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
+:::
 
-    ---
+- cmder;
+- Hyper.
 
+---
 
-    Além dos projetos apresentados anteriomente, existem vários outros softwares independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
+Nessa parte, esperamos que você tenha um Emulador de Terminal disponível para uso em seu sistema operacional. Agora, você está pronto para continuar a leitura sobre shells!
 
-    ::: warning Atenção
-      Apesar da popularidade dos softwares mencionados, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
-    :::
+</PluginTabsTab>
+<PluginTabsTab label="GNU/Linux" icon="linux">
+A depender da sua distribuição GNU/Linux, é bem provável que o seu ambiente desktop tenha instalado algum emulador de terminal por padrão. Por favor, verifique que o seu sistema operacional possua algum disponível para o uso. A seguir, estão listados os emulares de terminal padrões dos ambientes desktop populares no ecossistêma GNU/Linux:
 
-    - cmder;
-    - Hyper.
+- Konsole (para KDE);
+- GNOME Terminal (para GNOME);
+- Deepin Terminal (para deepin).
 
-    ---
+Além disso, existem vários projetos independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
 
-    Nessa parte, esperamos que você tenha um Emulador de Terminal disponível para uso em seu sistema operacional. Agora, você está pronto para continuar a leitura sobre shells!
+::: warning Atenção
+Apesar da popularidade dos seguintes softwares, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
+:::
 
-  </TabItem>
-  <TabItem label="GNU/Linux" icon="linux">
-    A depender da sua distribuição GNU/Linux, é bem provável que o seu ambiente desktop tenha instalado algum emulador de terminal por padrão. Por favor, verifique que o seu sistema operacional possua algum disponível para o uso. A seguir, estão listados os emulares de terminal padrões dos ambientes desktop populares no ecossistêma GNU/Linux:
+- Alacritty;
+- Kitty;
+- Terminator;
+- Tilix;
+- Yakuake.
 
-    - Konsole (para KDE);
-    - GNOME Terminal (para GNOME);
-    - Deepin Terminal (para deepin).
-
-    Além disso, existem vários projetos independentes de código aberto que fazem o papel de emulador de terminal. A seguir, estão listados alguns deles.
-
-    ::: warning Atenção
-      Apesar da popularidade dos seguintes softwares, considere estar informado sobre o método de instalação, estado de manutenção e _problemas (ou issues)_ relatadas sobre o software escolhido antes de instalar.
-    :::
-
-    - Alacritty;
-    - Kitty;
-    - Terminator;
-    - Tilix;
-    - Yakuake.
-
-  </TabItem>
-  <TabItem label="macOS" icon="apple">
-    ::: warning Documentação Incompleta
-      Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
-    :::
-  </TabItem>
-</Tabs>
+</PluginTabsTab>
+<PluginTabsTab label="macOS" icon="apple">
+::: warning Documentação Incompleta
+  Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
+:::
+</PluginTabsTab>
+</PluginTabs>
 
 ## Shell
 
@@ -129,18 +125,18 @@ linhas de comandos pode ser considerada como a de ser um intermediario entre o u
 
 Assim como os Emuladores de Terminais, existem diversos _interpretadores de shell_, cada um podendo conter a sua sintáxe de comandos e forma trabalho com o fluxo de dados, arquivos e operações.
 
-<Tabs syncKey="operatingSystem">
-  <TabItem label="Windows" icon="seti:windows">
+<!-- <PluginTabs sharedStateKey="operatingSystem">
+<PluginTabsTab label="Windows" icon="seti:windows">
 
-    - PowerShell;
-    - CMD;
-    - Git Bash;
-    - WSL.
+- PowerShell;
+- CMD;
+- Git Bash;
+- WSL.
 
-  </TabItem>
-  <TabItem label="GNU/Linux" icon="linux"></TabItem>
-  <TabItem label="macOS" icon="apple"></TabItem>
-</Tabs>
+</PluginTabsTab>
+<PluginTabsTab label="GNU/Linux" icon="linux"></PluginTabsTab>
+<PluginTabsTab label="macOS" icon="apple"></PluginTabsTab>
+</PluginTabs> -->
 
 ---
 
