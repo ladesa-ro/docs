@@ -125,7 +125,7 @@ linhas de comandos pode ser considerada como a de ser um intermediario entre o u
 
 Assim como os Emuladores de Terminais, existem diversos _interpretadores de shell_, cada um podendo conter a sua sintáxe de comandos e forma trabalho com o fluxo de dados, arquivos e operações.
 
-<!-- <PluginTabs sharedStateKey="operatingSystem">
+<PluginTabs sharedStateKey="operatingSystem">
 <PluginTabsTab label="Windows" icon="seti:windows">
 
 - PowerShell;
@@ -136,7 +136,7 @@ Assim como os Emuladores de Terminais, existem diversos _interpretadores de shel
 </PluginTabsTab>
 <PluginTabsTab label="GNU/Linux" icon="linux"></PluginTabsTab>
 <PluginTabsTab label="macOS" icon="apple"></PluginTabsTab>
-</PluginTabs> -->
+</PluginTabs>
 
 ---
 
