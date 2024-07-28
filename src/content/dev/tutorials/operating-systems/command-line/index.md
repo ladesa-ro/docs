@@ -108,9 +108,11 @@ Apesar da popularidade dos seguintes softwares, considere estar informado sobre 
 
 </PluginTabsTab>
 <PluginTabsTab label="macOS" icon="apple">
+
 ::: warning Documentação Incompleta
-  Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
+Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
 :::
+
 </PluginTabsTab>
 </PluginTabs>
 
