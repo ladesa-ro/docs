@@ -52,7 +52,7 @@ const props = defineProps<Props>();
 }
 
 .link-card:hover {
-  background: var(--sl-color-gray-7, var(--sl-color-gray-6));
+  background: var(--vp-custom-block-info-bg);
   border-color: var(--sl-color-gray-2);
 
   color: var(--vp-c-text-2);
