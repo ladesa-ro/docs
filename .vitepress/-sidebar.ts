@@ -126,7 +126,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "API",
-                link: "/dev/tutorials/api",
+                link: "/dev/tutorials/api/",
               },
             ],
           },
@@ -195,8 +195,24 @@ export const sidebar: DefaultTheme.Sidebar = [
         collapsed: true,
         items: [
           {
-            text: "API",
-            link: "/dev/services-integrations/api",
+            text: "Integração à API",
+
+            collapsed: true,
+            items: [
+              {
+                text: "Introdução",
+                link: "/dev/connect/api/introduction",
+              },
+              {
+                text: "JavaScript/TypeScript",
+                items: [
+                  {
+                    text: "api-client-fetch",
+                    link: "/dev/connect/api/javascript/api-client-fetch",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
