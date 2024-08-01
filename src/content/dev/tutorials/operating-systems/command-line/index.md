@@ -30,6 +30,8 @@ O sistema operacional _Windows_ conta com o _Prompt de Comando_ (CMD) e o _Power
 
 > TODO: inserir foto do Windows Terminal + Prompt de Comando.
 
+![Windows Terminal e Prompt de Comando](/assets/dev-tutorials-command-line/windows-terminal-cmd.png)
+
 ---
 
 | Projeto            | Janela visual                                | Interpreta comandos                          | Instalado por padrão                         |
