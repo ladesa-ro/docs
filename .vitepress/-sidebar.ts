@@ -9,16 +9,20 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Vamos Começar",
-        link: "/intro/getting-started",
+        link: "/introduction/getting-started",
       },
     ],
   },
   {
     text: "Guia para Usuários",
     collapsed: false,
-    link: "/user-guides/",
 
-    items: [],
+    items: [
+      {
+        text: "Introdução",
+        link: "/user-guides/introduction",
+      },
+    ],
   },
   {
     text: "Dev Docs",
@@ -31,7 +35,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         text: "Tutoriais",
         collapsed: true,
 
-        link: "/dev/tutorials/",
+        // link: "/dev/tutorials/",
 
         items: [
           {

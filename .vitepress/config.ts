@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
+import { navbar } from "./-navbar";
 import { sidebar } from "./-sidebar";
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,26 +25,23 @@ export default defineConfig({
 
   markdown: {
     config(md) {
-      md.use(tabsMarkdownPlugin)
-    }
+      md.use(tabsMarkdownPlugin);
+    },
   },
 
   themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+
+    //
+
     search: {
       provider: "local",
     },
 
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      //
-      { text: "Início", link: "/" },
-      { text: "Guia para Usuários", link: "/user-guides/" },
-      { text: "Dev Docs", link: "/dev/" },
-    ],
+    nav: navbar.nav,
+    socialLinks: navbar.socialLinks,
 
     sidebar: sidebar,
-
-    socialLinks: [{ icon: "github", link: "https://github.com/ladesa-ro/docs" }],
 
     externalLinkIcon: true,
 

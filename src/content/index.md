@@ -9,11 +9,11 @@ hero:
   actions:
     - theme: brand
       text: Ir para a Documentação
-      link: /intro/getting-started
+      link: /introduction/getting-started
 
     - theme: alt
       text: GitHub
-      link: /intro/getting-started
+      link: https://github.com/ladesa-ro
 # features:
 #   - title: Documentação para Desenvolvedores
 #     details:

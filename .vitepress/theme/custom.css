@@ -1,0 +1,27 @@
+:root {
+  --sl-color-gray-5: hsl(224, 10%, 23%);
+
+  --sl-shadow-sm: 0px 1px 1px hsla(0, 0%, 0%, 0.12), 0px 2px 1px hsla(0, 0%, 0%, 0.24);
+  --sl-color-gray-6: hsl(224, 14%, 16%);
+  --sl-color-gray-2: hsl(224, 6%, 77%);
+
+  --sl-color-text-accent: hsl(224, 100%, 85%);
+}
+
+.VPHero .container {
+  padding-block: clamp(3rem, calc(1rem + 30vmin), 12.5rem);
+}
+
+.VPHero .container .VPButton {
+  padding: 0.5rem 1.5rem;
+  border-radius: 100rem;
+  font-size: 1rem;
+}
+
+.VPContent.is-home {
+  --overlay-blurple: hsla(255, 60%, 60%, 0.2);
+
+  background: linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
+}
