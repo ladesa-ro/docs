@@ -1,9 +1,20 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+import { computed } from "vue";
 import { getRandomMessage } from "../utils/GreatMessages";
 
 const message = ref(getRandomMessage());
+
+const content = computed(() => {
+  const messageValue = message.value;
+  return messageValue.content.replace(/([ \.]+)$/, "").trim();
+});
+
+const author = computed(() => {
+  const messageValue = message.value;
+  return messageValue.author?.trim() || "Autoria desconhecida";
+});
 </script>
 
 <template>
@@ -11,10 +22,9 @@ const message = ref(getRandomMessage());
     <div>
       <p>
         <span>"</span>
-        <span>{{ message.content }}</span>
-        <span>".</span>
-        <br />
-        <span class="block mt-0.5">- {{ message.author || "Autoria desconhecida" }}.</span>
+        <span>{{ content }}</span>
+        <span>"</span>
+        <span> - {{ author }}.</span>
       </p>
     </div>
   </div>
