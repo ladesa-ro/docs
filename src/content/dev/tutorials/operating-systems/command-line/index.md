@@ -6,9 +6,9 @@ O propósito deste tutorial é que você conheça e esteja ambientado a utilizar
   <source src="/assets/dev-tutorials-command-line/terminal-emulator-konsole-with-bash.mp4" type="video/mp4" />
 </video>
 
-:::tip Nós somos quem escolhemos ser... Por isso, escolha!
-Você verá que a Linha de Comando é um recurso muito poderoso, pois permite a instrução de comandos para
-o sistema operacional por meio da entrada textual.
+:::tip Você sabia?
+A _Linha de Comando_ é um recurso poderoso para qualquer pessoa que utilize um computador, pois permite a instrução de comandos para
+o sistema operacional por meio de entradas textuais.
 :::
 
 ## Emulador de Terminal
