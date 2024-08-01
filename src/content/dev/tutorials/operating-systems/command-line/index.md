@@ -2,22 +2,18 @@
 
 O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_.
 
-<video controls loop muted autoplay style="width: 100%; aspect-ratio: 53/28;">
+<video title="Captura de Tela do _Emulador de Terminal_ Konsole com o _interpretador de shell_ GNU bash no sistema operacional GNU/Linux Manjaro." controls loop muted autoplay style="width: 100%; aspect-ratio: 53/28;">
   <source src="/assets/dev-tutorials-command-line/terminal-emulator-konsole-with-bash.mp4" type="video/mp4" />
 </video>
 
-> Captura de Tela do _Emulador de Terminal_ Konsole com o _interpretador de shell_ GNU bash no sistema operacional GNU/Linux Manjaro.
-
-::: tip O Poder da Linha de Comando
-Você verá que a linha de comando é um recurso muito poderoso, pois permite a instrução de comandos para o sistema
-operacional por meio da entrada textual.
+:::tip Nós somos quem escolhemos ser... Por isso, escolha!
+Você verá que a Linha de Comando é um recurso muito poderoso, pois permite a instrução de comandos para
+o sistema operacional por meio da entrada textual.
 :::
-
-O primeiro passo para você poder usufruir da linha de comando é ter um ambiente capaz de (1º) receber os seus pedidos, em seguida (2º) encaminhar as instruções para o interpretador e por fim (3º) visualizar as saídas de seus comandos. Para esse propósito, existem os _Emuladores de Terminais_.
 
 ## Emulador de Terminal
 
-Um Emulador de Terminal permite o envio de comandos textuais para um _interpretador de shell_ — mas antes de entrarmos no tópico de _shells_, certifique-se de possuir um _emulador de terminal_ instalado no seu sistema.
+Um Emulador de Terminal permite o envio de comandos textuais para um _interpretador_.
 
 ### Obter um Emulador de Terminal
 
