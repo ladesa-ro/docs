@@ -6,6 +6,7 @@ prev: false
 
 <script setup lang="ts">
 import LinkCard from "../../components/LinkCard.vue";
+import HelpfulMessage from "../../components/HelpfulMessage.vue";
 </script>
 
 # Vamos Começar
@@ -13,8 +14,12 @@ import LinkCard from "../../components/LinkCard.vue";
 ---
 
 :::tip Bem-vindo!
-Seja muito bem-vindo a documentação do Ladesa.
+Seja muito bem-vindo à Documentação do Ladesa.
 :::
+
+---
+
+<HelpfulMessage />
 
 ---
 

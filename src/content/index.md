@@ -8,7 +8,7 @@ hero:
 
   actions:
     - theme: brand
-      text: Ir para a Documentação
+      text: Acessar a Documentação
       link: /introduction/getting-started
 
     - theme: alt
