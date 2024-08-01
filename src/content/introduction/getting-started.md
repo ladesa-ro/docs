@@ -25,7 +25,7 @@ A seguir, estão listados as guias que possam interessar a sua trilha por nossa 
 <LinkCard
   title="Guia para Usuários"
   description="Navegue pela documentação para os utilizadores do sistema."
-  href="/user-guides"
+  href="/user-guides/introduction"
 />
 
 <LinkCard
