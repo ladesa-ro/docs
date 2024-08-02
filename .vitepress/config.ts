@@ -52,5 +52,9 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
+
+    editLink: {
+      pattern: "https://github.com/ladesa-ro/docs/edit/main/src/content/:path",
+    },
   },
 });
