@@ -1,60 +1,68 @@
 # Linha de Comando
 
-O propósito deste tutorial é que você conheça e esteja ambientado a utilizar uma _Linha de Comando_.
+A _Linha de Comando_ pode ser uma aliada muito poderosa e de extrema utilidade no seu dia a dia, pois permite a você comandar o
+sistema operacional por meio de entradas textuais.
 
-<video title="Captura de Tela do _Emulador de Terminal_ Konsole com o _interpretador de shell_ GNU bash no sistema operacional GNU/Linux Manjaro." controls loop muted autoplay style="width: 100%; aspect-ratio: 53/28;">
+<script setup lang="ts">
+  const introVideo = {
+    title: "Por meio do comando 'echo', é retornado à saída textual o mesmo conteúdo que foi fornecido como argumento. Captura de Tela do Emulador de Terminal Konsole com o interpretador de shell GNU bash no sistema operacional GNU/Linux Manjaro."
+  }
+
+</script>
+
+<video :title="introVideo.title" controls loop muted autoplay style="width: 100%; aspect-ratio: 53/28;">
   <source src="/assets/dev-tutorials-command-line/terminal-emulator-konsole-with-bash.mp4" type="video/mp4" />
 </video>
 
-:::tip Você sabia?
-A _Linha de Comando_ é um recurso poderoso para qualquer pessoa que utilize um computador, pois permite a instrução de comandos para
-o sistema operacional por meio de entradas textuais.
-:::
+A utilização da Linha de Comando está relacionada a dois conceitos simples mas essenciais em sua utilização:
+
+- _**Interface de Usuário**_ — com a qual você interage diretamente —, aqui chamada de _Emulador de Terminal_;
+- _**Interpretador de instruções**_ — aquele que interpreta e encaminha os comandos à execução.
+
+Continue o seu aprendizado para iniciar as configurações da Linha de Comando em seu ambiente de trabalho já na próxima seção deste tutorial. Bons estudos!
 
 ## Emulador de Terminal
 
-Um Emulador de Terminal permite o envio de comandos textuais para um _interpretador_.
+O meio com o qual você pode interagir com a Linha de Comando é chamado de _Emulador de Terminal_. Esse recurso é o responsável por captar os seus comandos, direcionar ao interpretador de instruções e retornar ao seu conhecimento a saída de suas solicitações.
 
 ### Obter um Emulador de Terminal
 
 <PluginTabs style="text-wrap: nowrap;" sharedStateKey="operatingSystem">
 <PluginTabsTab label="Windows" icon="seti:windows">
 
-O sistema operacional _Windows_ conta com o _Prompt de Comando_ (CMD) e o _PowerShell_ disponíveis por padrão nas versões mais recentes dessa plataforma. Há também o software _Windows Terminal_, criado pela Microsoft, que desempenha o papel de _emulador de terminal_.
+#### Windows Terminal como Emulador de Terminal <Badge text="Recomendado" variant="note"></Badge>
 
----
+Caso você utilize o sistema operacional Windows em suas versões 10, 11 ou mais recente, recomendamos o uso do _Windows Terminal_ para atuar como _Emulador de Terminal_ nessa plataforma.
 
-> TODO: inserir foto do Windows Terminal + Prompt de Comando.
+##### Sobre o Windows Terminal
+
+![Windows Terminal distribuido oficialmente na Microsoft Store](/assets/dev-tutorials-command-line/windows-terminal-microsoft-store.png)
+
+A seguir você receberá instruções sobre como obter esse software.
+
+##### Instalar o Windows Terminal
+
+::: tip Obter via Microsoft Store
+Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da loja _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
+:::
 
 ![Windows Terminal e Prompt de Comando](/assets/dev-tutorials-command-line/windows-terminal-cmd.png)
 
+> Windows Terminal + Prompt de Comando (CMD).
+
 ---
 
-| Projeto            | Janela visual                                | Interpreta comandos                          | Instalado por padrão                         |
-| ------------------ | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
-| _CMD_              | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
-| _PowerShell_       | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> |
-| _Git Bash_         | <Badge text="Sim" variant="success"></Badge> | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge>    |
-| _Windows Terminal_ | <Badge text="Sim" variant="success"></Badge> | <Badge text="Não" variant="note"></Badge>    | <Badge text="Não" variant="note"></Badge>    |
+O sistema operacional _Windows_ conta com o _Prompt de Comando_ (CMD) e o _PowerShell_ disponíveis nas versões mais recentes dessa plataforma. Por muito tempo, atuaram como Emulador de Terminal e Interpretador ao mesmo tempo.
+
+| Projeto            | Janela visual                         | Interpreta comandos                      | Instalado por padrão                     |
+| ------------------ | ------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| _CMD_              | <Badge text="Sim" type="tip"></Badge> | <Badge text="Sim" type="tip"></Badge>    | <Badge text="Sim" type="tip"></Badge>    |
+| _PowerShell_       | <Badge text="Sim" type="tip"></Badge> | <Badge text="Sim" type="tip"></Badge>    | <Badge text="Sim" type="tip"></Badge>    |
+| _Git Bash_         | <Badge text="Sim" type="tip"></Badge> | <Badge text="Sim" type="tip"></Badge>    | <Badge text="Não" type="danger"></Badge> |
+| _Windows Terminal_ | <Badge text="Sim" type="tip"></Badge> | <Badge text="Não" type="danger"></Badge> | <Badge text="Não" type="danger"></Badge> |
 
 ::: info Você sabia?
 O CMD tem suas raizes desde o MS-DOS. Entretanto, a Microsoft tem dado maior atenção a utilização do Windows Terminal (janela) + PowerShell (interpretador).
-:::
-
-#### Windows Terminal como Emulador de Terminal <Badge text="Recomendado" variant="note"></Badge>
-
-Recomendamos o uso do _Windows Terminal_ como _emulador de terminal_ para o sistema operacional _Windows_. A seguir, você receberá as instruções para a instalação em seu sistema.
-
-::: tip Instalação do Windows Terminal
-Para instalar o _Windows Terminal_, a _Microsoft_ recomenda a instalação oficial por meio da _Microsoft Store_, que pode ser acessada [neste link](https://aka.ms/terminal).
-:::
-
-> TODO: inserir foto do windows terminal na microsoft store.
-
-- Instalar via _Microsoft Store_ (oficial e recomendado): [https://aka.ms/terminal](https://aka.ms/terminal).
-
-::: info Curiosidade
-Segundo a desenvolvedora, esse programa conta com "_várias guias, painéis, suporte a caracteres Unicode e UTF-8, um mecanismo de renderização de texto acelerado por GPU e temas, estilos e configurações personalizados_".
 :::
 
 ---
@@ -154,6 +162,7 @@ Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este t
 
 ## Veja também
 
+- <https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell>
 - <https://en.wikipedia.org/wiki/Comparison_of_command_shells>
 - <https://pt.wikipedia.org/wiki/PowerShell>
 - <https://en.wikipedia.org/wiki/Command-line_interface>

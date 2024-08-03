@@ -44,7 +44,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Linha de Comando",
-                link: "/dev/tutorials/operating-systems/command-line",
+                link: "/dev/tutorials/operating-systems/command-line/",
               },
             ],
           },

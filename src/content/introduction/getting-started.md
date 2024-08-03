@@ -27,13 +27,13 @@ Seja bem-vindo à Documentação do Ladesa.
 
 <LinkCard
   title="Guia para Usuários"
-  description="Navegue pela documentação para os utilizadores do sistema."
+  description="Navegue pela documentação destinada aos utilizadores do sistema."
   href="/user-guides/introduction"
 />
 
 <LinkCard
   title="Guia para Desenvolvedores"
-  description="Navegue pela documentação para os desenvolvedores do sistema."
+  description="Navegue pela documentação destinada aos desenvolvedores do sistema."
   href="/dev"
 />
 
