@@ -28,14 +28,14 @@ export const sidebar: DefaultTheme.Sidebar = [
     text: "Dev Docs",
     collapsed: true,
 
-    link: "/dev/",
+    link: "/developers/",
 
     items: [
       {
         text: "Tutoriais",
         collapsed: true,
 
-        // link: "/dev/tutorials/",
+        // link: "/developers/tutorials/",
 
         items: [
           {
@@ -44,7 +44,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Linha de Comando",
-                link: "/dev/tutorials/operating-systems/command-line/",
+                link: "/developers/tutorials/os/command-line/",
               },
             ],
           },
@@ -55,12 +55,12 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Git",
-                link: "/dev/tutorials/source-code/git",
+                link: "/developers/tutorials/source-code/git",
               },
 
               {
                 text: "VS Code",
-                link: "/dev/tutorials/source-code/vs-code",
+                link: "/developers/tutorials/source-code/vs-code",
               },
             ],
           },
@@ -71,7 +71,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Jira",
-                link: "/dev/tutorials/project-management/jira",
+                link: "/developers/tutorials/project-management/jira",
               },
             ],
           },
@@ -82,7 +82,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Postgres",
-                link: "/dev/tutorials/database/postgres",
+                link: "/developers/tutorials/database/postgres",
               },
             ],
           },
@@ -93,12 +93,12 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "C# / DotNET",
-                link: "/dev/tutorials/platforms/csharp-dotnet",
+                link: "/developers/tutorials/platforms/csharp-dotnet",
               },
 
               {
                 text: "Node.js",
-                link: "/dev/tutorials/platforms/node",
+                link: "/developers/tutorials/platforms/node",
               },
               {
                 text: "Web",
@@ -110,14 +110,14 @@ export const sidebar: DefaultTheme.Sidebar = [
                     items: [
                       {
                         text: "Vue",
-                        link: "/dev/tutorials/platforms/web/front-end/vue",
+                        link: "/developers/tutorials/platforms/web/front-end/vue",
                       },
                     ],
                   },
 
                   {
                     text: "Nuxt",
-                    link: "/dev/tutorials/platforms/web/nuxt",
+                    link: "/developers/tutorials/platforms/web/nuxt",
                   },
                 ],
               },
@@ -130,7 +130,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "API",
-                link: "/dev/tutorials/api/",
+                link: "/developers/tutorials/api/",
               },
             ],
           },
@@ -141,7 +141,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Docker",
-                link: "/dev/tutorials/containers/docker",
+                link: "/developers/tutorials/containers/docker",
               },
             ],
           },
@@ -156,7 +156,7 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Kubernetes",
-                    link: "/dev/tutorials/advanced/containers-orchestration/kubernetes",
+                    link: "/developers/tutorials/advanced/containers-orchestration/kubernetes",
                   },
                 ],
               },
@@ -170,27 +170,27 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Web",
-            link: "/dev/services/web",
+            link: "/developers/services/web",
           },
           {
             text: "Mobile",
-            link: "/dev/services/mobile",
+            link: "/developers/services/mobile",
           },
           {
             text: "Gerar Horário",
-            link: "/dev/services/gerar-horario",
+            link: "/developers/services/gerar-horario",
           },
           {
             text: "API",
-            link: "/dev/services/api",
+            link: "/developers/services/api",
           },
           {
             text: "Autenticação",
-            link: "/dev/services/auth",
+            link: "/developers/services/auth",
           },
           {
             text: "Documentação",
-            link: "/dev/services/docs",
+            link: "/developers/services/docs",
           },
         ],
       },
@@ -205,14 +205,14 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Introdução",
-                link: "/dev/connect/api/introduction",
+                link: "/developers/connect/api/introduction",
               },
               {
                 text: "JavaScript/TypeScript",
                 items: [
                   {
                     text: "api-client-fetch",
-                    link: "/dev/connect/api/javascript/api-client-fetch",
+                    link: "/developers/connect/api/javascript/api-client-fetch",
                   },
                 ],
               },

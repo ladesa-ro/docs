@@ -12,19 +12,20 @@ Bem-vindo à documentação feita pelos desenvolvedores do Ladesa para desenvolv
 
 <div>
   <LinkCard title="Sistemas"
-    href="/dev/services"
+    href="/developers/services"
     description="Veja os sistemas que constituem nossos projetos e aprenda como contribuir."
   />
 
-  <LinkCard
+<LinkCard
     title="Integração"
-    href="/dev/services-integrations/"
+    href="/developers/services-integrations/"
     description="Saiba como integrar os serviços do Ladesa em outros sistemas."
   />
 
-  <LinkCard
+<LinkCard
     title="Tutoriais"
     description="Aprenda conceitos e tecnologias com uma documentação preparada por nossa comunidade."
-    href="/dev/tutorials/"
+    href="/developers/tutorials/"
   />
+
 </div>

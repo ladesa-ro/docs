@@ -16,40 +16,40 @@ Qualquer contribuição será bem-vinda. Aproveite nossa documentação!
 
 <LinkCard
   title="Sistemas Operacionais"
-  href="/dev/tutorials/operating-systems"
+  href="/developers/tutorials/operating-systems"
 />
 
 <LinkCard
   title="Código-Fonte"
-  href="/dev/tutorials/source-code"
+  href="/developers/tutorials/source-code"
 />
 
 <LinkCard
   title="Gestão de Projetos"
-  href="/dev/tutorials/project-management"
+  href="/developers/tutorials/project-management"
 />
 
 <LinkCard
   title="Bancos de Dados"
-  href="/dev/tutorials/database"
+  href="/developers/tutorials/database"
 />
 
 <LinkCard
   title="Plataformas"
-  href="/dev/tutorials/platforms"
+  href="/developers/tutorials/platforms"
 />
 
 <LinkCard
   title="API"
-  href="/dev/tutorials/api"
+  href="/developers/tutorials/api"
 />
 
 <LinkCard
   title="Contêiners"
-  href="/dev/tutorials/containers"
+  href="/developers/tutorials/containers"
 />
 
 <LinkCard
   title="Avançado"
-  href="/dev/tutorials/advanced"
+  href="/developers/tutorials/advanced"
 />

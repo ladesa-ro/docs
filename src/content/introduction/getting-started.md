@@ -34,7 +34,7 @@ Seja bem-vindo à Documentação do Ladesa.
 <LinkCard
   title="Guia para Desenvolvedores"
   description="Navegue pela documentação destinada aos desenvolvedores do sistema."
-  href="/dev"
+  href="/developers"
 />
 
 ## O que é o Ladesa?
@@ -43,20 +43,22 @@ O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equip
 
 Somos participantes do projeto de ensino criado pelo professor Danilo Escudero.
 
-Confira <a href="">quem somos nós</a>.
-
+Confira [quem somos nós](#).
 
 ## Sistemas do Ladesa
 
-Confira uma descrição detalhada de cada um dos nossos sistemas no <a href="/dev">Guia para Desenvolvedores</a>.
+Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](/developers).
 
 ### SISGHA
+
 O Sistema Gerador de Horário Acadêmico (SISGHA)
 
 ### Gerar Horário
+
 O Gerador de Horário Acadêmico, também chamado de Gerar Horário
 
 ### SISGEA
+
 O Sistema de Controle de Ambientes Educacionais (REVISAR ESSE NOME DEPOIS)
 
 ### Calendário
