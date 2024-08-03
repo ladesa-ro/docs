@@ -11,21 +11,19 @@ import HelpfulMessage from "../../components/HelpfulMessage.vue";
 
 # Vamos Começar
 
----
-
-:::tip Bem-vindo!
-Seja muito bem-vindo à Documentação do Ladesa.
-:::
-
----
+<br/>
 
 <HelpfulMessage />
 
----
+Seja bem-vindo à Documentação do Ladesa!
 
-:::info Para aonde ir?
-A seguir, estão listados as guias que possam interessar a sua trilha por nossa base de conhecimento.
+:::info Para onde ir?
+A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
 :::
+
+<!-- :::tip Bem-vindo!
+Seja bem-vindo à Documentação do Ladesa.
+:::-->
 
 <LinkCard
   title="Guia para Usuários"
@@ -39,4 +37,26 @@ A seguir, estão listados as guias que possam interessar a sua trilha por nossa 
   href="/dev"
 />
 
----
+## O que é o Ladesa?
+
+O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equipe de desenvolvedores formada por estudantes de nível médio e superior do Instituto Federal de Rondônia – Campus Ji-Paraná.
+
+Somos participantes do projeto de ensino criado pelo professor Danilo Escudero.
+
+Confira <a href="">quem somos nós</a>.
+
+
+## Sistemas do Ladesa
+
+Confira uma descrição detalhada de cada um dos nossos sistemas no <a href="/dev">Guia para Desenvolvedores</a>.
+
+### SISGHA
+O Sistema Gerador de Horário Acadêmico (SISGHA)
+
+### Gerar Horário
+O Gerador de Horário Acadêmico, também chamado de Gerar Horário
+
+### SISGEA
+O Sistema de Controle de Ambientes Educacionais (REVISAR ESSE NOME DEPOIS)
+
+### Calendário
