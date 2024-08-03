@@ -1,6 +1,4 @@
----
-title: Node.js
----
+# Node.js
 
 Node.js é um software de código aberto que interpreta JavaScript do lado do servidor.
 

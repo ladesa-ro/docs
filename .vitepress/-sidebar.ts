@@ -3,9 +3,7 @@ import { DefaultTheme } from "vitepress";
 export const sidebar: DefaultTheme.Sidebar = [
   {
     text: "Introdução",
-
     collapsed: false,
-
     items: [
       {
         text: "Vamos Começar",
@@ -13,10 +11,22 @@ export const sidebar: DefaultTheme.Sidebar = [
       },
     ],
   },
+
+  {
+    text: "Institucional",
+    collapsed: false,
+
+    items: [
+      {
+        text: "Quem somos nós",
+        link: "/about/team",
+      },
+    ],
+  },
+
   {
     text: "Guia para Usuários",
     collapsed: false,
-
     items: [
       {
         text: "Introdução",
@@ -24,8 +34,10 @@ export const sidebar: DefaultTheme.Sidebar = [
       },
     ],
   },
+
   {
     text: "Dev Docs",
+
     collapsed: true,
 
     link: "/developers/",
@@ -96,7 +108,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Sistemas Operacionais",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Linha de Comando",
@@ -107,7 +119,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "Código-Fonte",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Git",
@@ -123,7 +135,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "Gestão de Projetos",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Jira",
@@ -134,7 +146,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "Banco de Dados",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Postgres",
@@ -145,7 +157,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "Plataformas",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "C# / DotNET",
@@ -158,11 +170,11 @@ export const sidebar: DefaultTheme.Sidebar = [
               },
               {
                 text: "Web",
-                collapsed: false,
+                collapsed: true,
                 items: [
                   {
                     text: "Front-end",
-                    collapsed: false,
+                    collapsed: true,
                     items: [
                       {
                         text: "Vue",
@@ -182,7 +194,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "API",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "API",
@@ -193,7 +205,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
           {
             text: "Contêiners",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Docker",
@@ -208,7 +220,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Orquestração de Contêiners",
-                collapsed: false,
+                collapsed: true,
                 items: [
                   {
                     text: "Kubernetes",

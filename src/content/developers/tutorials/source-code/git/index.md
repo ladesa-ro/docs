@@ -1,6 +1,4 @@
----
-title: Git
----
+# Git
 
 Git é um sistema de versionamento de código. Nesse viés, o Git registra o histórico de alterações em qualquer tipo de arquivo e concede acesso às versões anteriores.
 
@@ -13,10 +11,10 @@ O Git é baseado em utilitários de linha de comando para sistemas Unix. Veja um
 ```sh
 git fetch
 ```
+
 > git fetch _verifica se há atualizações no repositório remoto. Nos aprofundaremos nisso em breve._
 
 É por meio desses comandos de texto que o usuário pode alternar entre versões, bem como manipulá-las ou mandá-las para algum repositório.
-
 
 ## Obter o Git
 

@@ -1,6 +1,4 @@
----
-title: VS Code
----
+# VS Code
 
 O Visual Studio Code é um editor de código-fonte gratuito desenvolvido pela Microsoft.
 

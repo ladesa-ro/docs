@@ -1,6 +1,4 @@
----
-title: Postgres
----
+# Postgres
 
 Postgres é um sistema gerenciador de banco de dados relacional de código aberto.
 

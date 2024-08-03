@@ -8,11 +8,30 @@ type INavbar = {
 export const navbar: INavbar = {
   nav: [
     //
-    { text: "Início", link: "/" },
+    {
+      text: "Início",
+      link: "/",
+    },
 
-    { text: "Guia para Usuários", link: "/user-guides/introduction" },
+    {
+      text: "Sobre",
+      items: [
+        {
+          text: "Quem somos nós",
+          link: "/about/team",
+        },
+      ],
+    },
 
-    { text: "Dev Docs", link: "/dev/" },
+    {
+      text: "Guia para Usuários",
+      link: "/user-guides/introduction",
+    },
+
+    {
+      text: "Dev Docs",
+      link: "/dev/",
+    },
   ],
 
   socialLinks: [

@@ -1,6 +1,4 @@
----
-title: API
----
+# API
 
 API — _Application Programming Interface_ ou, em português, _Interface de Programação de Aplicações_ — é um intermediário de software que permite a comunicação entre diferentes sistemas ou partes de um mesmo sistema, como front-end e back-end.
 

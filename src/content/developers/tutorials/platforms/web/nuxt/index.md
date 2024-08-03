@@ -1,6 +1,4 @@
----
-title: Nuxt.js
----
+# Nuxt.js
 
 Nuxt.js é um framework de código aberto baseado em Vue.
 

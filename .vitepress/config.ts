@@ -5,7 +5,7 @@ import { sidebar } from "./-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Ladesa Docs",
+  title: "🦉 Ladesa Docs",
   description: "Navegue pela base de conhecimento do Ladesa.",
 
   lastUpdated: true,
@@ -27,6 +27,7 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin);
     },
+    lineNumbers: true,
   },
 
   themeConfig: {

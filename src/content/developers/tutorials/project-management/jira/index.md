@@ -1,6 +1,4 @@
----
-title: Jira
----
+# Jira
 
 O Jira é um software de gerenciamento de atividades lançado pela empresa Atlassian.
 

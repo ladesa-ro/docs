@@ -6,36 +6,13 @@ prev: false
 
 <script setup lang="ts">
 import LinkCard from "../../components/LinkCard.vue";
-import HelpfulMessage from "../../components/HelpfulMessage.vue";
 </script>
 
 # Vamos Começar
 
-<br/>
-
-<HelpfulMessage />
+---
 
 Seja bem-vindo à Documentação do Ladesa!
-
-:::info Para onde ir?
-A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
-:::
-
-<!-- :::tip Bem-vindo!
-Seja bem-vindo à Documentação do Ladesa.
-:::-->
-
-<LinkCard
-  title="Guia para Usuários"
-  description="Navegue pela documentação destinada aos utilizadores do sistema."
-  href="/user-guides/introduction"
-/>
-
-<LinkCard
-  title="Guia para Desenvolvedores"
-  description="Navegue pela documentação destinada aos desenvolvedores do sistema."
-  href="/developers"
-/>
 
 ## O que é o Ladesa?
 
@@ -43,7 +20,7 @@ O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equip
 
 Somos participantes do projeto de ensino criado pelo professor Danilo Escudero.
 
-Confira [quem somos nós](#).
+Confira [quem somos nós](../about/team.md).
 
 ## Sistemas do Ladesa
 
@@ -62,3 +39,25 @@ O Gerador de Horário Acadêmico, também chamado de Gerar Horário
 O Sistema de Controle de Ambientes Educacionais (REVISAR ESSE NOME DEPOIS)
 
 ### Calendário
+
+---
+
+:::tip Continue lendo!
+A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
+:::
+
+<!-- :::tip Bem-vindo!
+Seja bem-vindo à Documentação do Ladesa.
+:::-->
+
+<LinkCard
+  title="Guia para Usuários"
+  description="Navegue pela documentação destinada aos utilizadores do sistema."
+  href="/user-guides/introduction"
+/>
+
+<LinkCard
+  title="Guia para Desenvolvedores"
+  description="Navegue pela documentação destinada aos desenvolvedores do sistema."
+  href="/developers"
+/>
