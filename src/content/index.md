@@ -6,6 +6,7 @@ hero:
   name: "🦉 Ladesa Docs"
   tagline: |
     Bons estudos pela nossa base de conhecimento 📚!
+    # Navegue pela base de conhecimento do Ladesa
 
   actions:
     - theme: brand

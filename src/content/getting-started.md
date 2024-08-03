@@ -9,10 +9,31 @@ import LinkCard from "../components/LinkCard.vue";
 </script>
 
 # Vamos Começar
-
----
-
+<br/>
 Seja bem-vindo à Documentação do Ladesa!
+
+:::tip Para onde ir?
+A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
+:::
+
+<!-- :::tip Bem-vindo!
+Seja bem-vindo à Documentação do Ladesa.
+:::-->
+
+<div>
+  <LinkCard
+    title="Guia para Usuários"
+    description="Navegue pela documentação destinada aos utilizadores do sistema."
+    href="/user-guides/introduction"
+  />
+  
+  <LinkCard
+    title="Guia para Desenvolvedores"
+    description="Navegue pela documentação destinada aos desenvolvedores do sistema."
+    href="/developers"
+  />
+</div>
+
 
 ## O que é o Ladesa?
 
@@ -39,25 +60,3 @@ O Gerador de Horário Acadêmico, também chamado de Gerar Horário
 O Sistema de Controle de Ambientes Educacionais (REVISAR ESSE NOME DEPOIS)
 
 ### Calendário
-
----
-
-:::tip Continue lendo!
-A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
-:::
-
-<!-- :::tip Bem-vindo!
-Seja bem-vindo à Documentação do Ladesa.
-:::-->
-
-<LinkCard
-  title="Guia para Usuários"
-  description="Navegue pela documentação destinada aos utilizadores do sistema."
-  href="/user-guides/introduction"
-/>
-
-<LinkCard
-  title="Guia para Desenvolvedores"
-  description="Navegue pela documentação destinada aos desenvolvedores do sistema."
-  href="/developers"
-/>
