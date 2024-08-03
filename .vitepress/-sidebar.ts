@@ -32,6 +32,62 @@ export const sidebar: DefaultTheme.Sidebar = [
 
     items: [
       {
+        text: "Sistemas",
+        collapsed: true,
+        items: [
+          {
+            text: "Web",
+            link: "/developers/services/web",
+          },
+          {
+            text: "Mobile",
+            link: "/developers/services/mobile",
+          },
+          {
+            text: "Gerar Horário",
+            link: "/developers/services/gerar-horario",
+          },
+          {
+            text: "API",
+            link: "/developers/services/api",
+          },
+          {
+            text: "Autenticação",
+            link: "/developers/services/auth",
+          },
+          {
+            text: "Documentação",
+            link: "/developers/services/docs",
+          },
+        ],
+      },
+      {
+        text: "Integração",
+        collapsed: true,
+        items: [
+          {
+            text: "Integração à API",
+
+            collapsed: true,
+            items: [
+              {
+                text: "Introdução",
+                link: "/developers/connect/api/introduction",
+              },
+              {
+                text: "JavaScript/TypeScript",
+                items: [
+                  {
+                    text: "api-client-fetch",
+                    link: "/developers/connect/api/javascript/api-client-fetch",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
         text: "Tutoriais",
         collapsed: true,
 
@@ -157,62 +213,6 @@ export const sidebar: DefaultTheme.Sidebar = [
                   {
                     text: "Kubernetes",
                     link: "/developers/tutorials/advanced/containers-orchestration/kubernetes",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "Sistemas",
-        collapsed: true,
-        items: [
-          {
-            text: "Web",
-            link: "/developers/services/web",
-          },
-          {
-            text: "Mobile",
-            link: "/developers/services/mobile",
-          },
-          {
-            text: "Gerar Horário",
-            link: "/developers/services/gerar-horario",
-          },
-          {
-            text: "API",
-            link: "/developers/services/api",
-          },
-          {
-            text: "Autenticação",
-            link: "/developers/services/auth",
-          },
-          {
-            text: "Documentação",
-            link: "/developers/services/docs",
-          },
-        ],
-      },
-      {
-        text: "Integração aos Sistemas",
-        collapsed: true,
-        items: [
-          {
-            text: "Integração à API",
-
-            collapsed: true,
-            items: [
-              {
-                text: "Introdução",
-                link: "/developers/connect/api/introduction",
-              },
-              {
-                text: "JavaScript/TypeScript",
-                items: [
-                  {
-                    text: "api-client-fetch",
-                    link: "/developers/connect/api/javascript/api-client-fetch",
                   },
                 ],
               },
