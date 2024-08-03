@@ -5,7 +5,7 @@ prev: false
 ---
 
 <script setup lang="ts">
-import LinkCard from "../../components/LinkCard.vue";
+import LinkCard from "../components/LinkCard.vue";
 </script>
 
 # Vamos Começar
@@ -20,11 +20,11 @@ O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equip
 
 Somos participantes do projeto de ensino criado pelo professor Danilo Escudero.
 
-Confira [quem somos nós](../about/team.md).
+Confira [quem somos nós](./about/team.md).
 
 ## Sistemas do Ladesa
 
-Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](../developers/).
+Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](./developers/).
 
 ### SISGHA
 

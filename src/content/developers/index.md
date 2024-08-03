@@ -2,7 +2,7 @@
 description: Bem-vindo à documentação feita pelos desenvolvedores do SISGHA / Ladesa para desenvolvedores.
 ---
 
-# Hello, World!
+# Hello, World
 
 <script setup>
   import LinkCard from '../../components/LinkCard.vue';
@@ -17,10 +17,10 @@ Bem-vindo à documentação feita pelos desenvolvedores do Ladesa para desenvolv
   />
 
 <LinkCard
-    title="Integração"
-    href="/developers/services-integrations/"
-    description="Saiba como integrar os serviços do Ladesa em outros sistemas."
-  />
+  title="Integração"
+  href="/developers/connect/"
+  description="Saiba como integrar os serviços do Ladesa em outros sistemas."
+/>
 
 <LinkCard
     title="Tutoriais"
