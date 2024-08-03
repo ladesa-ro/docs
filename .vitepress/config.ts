@@ -14,6 +14,8 @@ export default defineConfig({
 
   srcDir: "src/content",
 
+  srcExclude: ["**/_parts/**/*"],
+
   lang: "pt-BR",
 
   locales: {
@@ -27,7 +29,6 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin);
     },
-    lineNumbers: true,
   },
 
   themeConfig: {
