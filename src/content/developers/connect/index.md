@@ -21,7 +21,7 @@ caso de uso, sem restrição à arquitetura que planejamos implantar para a util
 Assim, queremos que você possa usufruir do sistema como um todo ou de funcionalidades específicas, e que isso aconteça
 de maneira mais simples e satisfatória possível.
 
-## Integração à API
+### Integração à API
 
 <!--@include: ./api/overview.md#introduction -->
 
