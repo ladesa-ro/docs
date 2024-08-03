@@ -1,15 +1,17 @@
 # Conectar
 
 Olá, pequeno gafanhoto! Se você está lendo este texto, quer dizer que gostou de nossos sistemas e deseja usufruir das
-melhores coisas que eles têm a oferecer. Isso é uma ótima notícia! E melhor: fazemos questão de ajudar a você neste
+melhores coisas que eles têm a oferecer. 
+
+Isso é uma ótima notícia! E melhor: fazemos questão de ajudar a você neste
 processo!
 
 Todos os nossos sitemas são livres e de código aberto, e ficamos muito felizes porque você deseja fazer a
-integração às nossas tecnologias! Nesse guia, iniciaremos a sua jornada para que possa realizar essa conexão da melhor
-forma possível.
+integração às nossas tecnologias! 
 
-Continue lendo as próximas seções para descobrir os macetes e as formas de preparamos especialmente para você. Esperamos
-que dê tudo certo!
+Neste guia, iniciaremos a sua jornada para que possa realizar essa conexão da melhor forma possível.
+
+Continue lendo as próximas seções para descobrir os macetes e as formas de preparamos especialmente para você. Esperamos que dê tudo certo!
 
 ## De quais modos os serviços podem ser utilizados?
 
@@ -26,3 +28,5 @@ de maneira mais simples e satisfatória possível.
 <!--@include: ./api/overview.md#introduction -->
 
 Continue lendo [em nossa seção dedicada à Integração à API](./api/overview.md).
+
+### Recursos Individuais
