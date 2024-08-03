@@ -3,8 +3,9 @@
 layout: home
 
 hero:
-  name: "Ladesa Docs"
-  tagline: "Navegue pela base de conhecimento do Ladesa."
+  name: "🦉 Ladesa Docs"
+  tagline: |
+    Bons estudos pela nossa base de conhecimento 📚!
 
   actions:
     - theme: brand
@@ -14,6 +15,7 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/ladesa-ro
+#
 # features:
 #   - title: Documentação para Desenvolvedores
 #     details:
