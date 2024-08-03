@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { navbar } from "./-navbar";
@@ -57,6 +58,14 @@ export default defineConfig({
 
     editLink: {
       pattern: "https://github.com/ladesa-ro/docs/edit/main/src/content/:path",
+    },
+  },
+
+  vite: {
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("../src", import.meta.url)),
+      },
     },
   },
 });
