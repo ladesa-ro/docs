@@ -47,7 +47,7 @@ Confira [quem somos nós](#).
 
 ## Sistemas do Ladesa
 
-Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](../developers).
+Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](../developers/).
 
 ### SISGHA
 
