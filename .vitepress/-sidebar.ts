@@ -82,17 +82,17 @@ export const sidebar: DefaultTheme.Sidebar = [
             link: "/developers/connect/",
           },
           {
-            text: "Integração à API",
+            text: "Web APIs do Ladesa",
 
             collapsed: true,
             items: [
               {
                 text: "Visão Geral",
-                link: "/developers/connect/api/overview",
+                link: "/developers/connect/web/overview",
               },
               {
                 text: "JavaScript",
-                link: "/developers/connect/api/javascript/",
+                link: "/developers/connect/web/javascript/",
               },
             ],
           },
