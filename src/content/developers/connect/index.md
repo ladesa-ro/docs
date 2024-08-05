@@ -11,14 +11,14 @@ Neste guia, iniciaremos a sua jornada para que possa realizar essa conexão da m
 
 Os nossos sistemas foram projetados para serem pequenos componentes que podem operar em conjunto ou de maneira individual, sem restrição à arquitetura que planejamos implantar para a nossa utilização.
 
-A nossa intenção é de fornecer as funcionalidades individuais, caso você queira um recurso específico, e também de fornecer um sistema integrado que cuida de toda essa interação para você.
+A nossa intenção é de fornecer as funcionalidades individuais, caso você queira um recurso específico, e também de fornecer um sistema integrado que cuida de toda essa interação por você.
 
 Dessa forma, queremos que você possa usufruir do sistema como um todo ou de funcionalidades específicas, e que isso aconteça
 de maneira mais simples e satisfatória possível.
 
 ### Web API Integrada
 
-O serviço _Web API Integrada_ do Ladesa garante a utilização conjunta de todas as funcionalidades do sistema, que, dentre elas, incluem o recurso de autenticação, geração de horário e as funcionalidades pertinetes a gestão dos recursos do sistema.
+O serviço _Web API Integrada_ do Ladesa garante a utilização conjunta em um único canal de comunicação o acesso todas as funcionalidades do sistema que, dentre todas elas, incluem o recurso de autenticação, geração de horário e as funcionalidades pertinetes a gestão dos recursos do sistema.
 
 Ao utilizar a _Web API Integrada_, você pode focar no charme da interface visual e da experiência que os seus usuários terão ao utilizar as funcionalidades que fornecemos.
 
