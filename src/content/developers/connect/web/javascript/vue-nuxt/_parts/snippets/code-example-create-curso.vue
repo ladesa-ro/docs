@@ -13,7 +13,6 @@ const cadastrarCurso = () => {
   });
 
   // #region snippet
-
   await apiClient.cursos.cursoCreate({
     requestBody: {
       campus: campusJipa,

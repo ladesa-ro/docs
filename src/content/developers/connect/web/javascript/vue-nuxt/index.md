@@ -31,10 +31,9 @@ Um recurso no sistema geralmente possui pelo menos quatro formas de interação 
 
 ##### Cadastrar curso utilizando o LadesaApiClient
 
-Para cadastrar um curso no sistema, você pode utilizar o método [`cursoCreate`][api-client-doc-ladesa-api-client-cursos-curso-create].
+Para cadastrar um curso no sistema por meio do LadesaApiClient, você pode utilizar o método [`cursoCreate`][api-client-doc-ladesa-api-client-cursos-curso-create].
 
 <<< ./\_parts/snippets/code-example-create-curso.vue [components/Cursos/Create.vue]
-
 
 [api-doc-swagger]: https://dev.ladesa.com.br/api/doc-api
 [api-client-doc-ladesa-api-client]: https://docs.ladesa.com.br/packages/npm/api-client-fetch//classes/LadesaApiClient.html
