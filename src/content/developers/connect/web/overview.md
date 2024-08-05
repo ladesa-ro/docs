@@ -26,15 +26,13 @@ Você pode subir sua própria instância de nosso sistema de API — visto que n
 
 ### Instância Própria
 
-::: warning Documentação Incompleta
-Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
-:::
+Para subir a sua própria instância da Web API do Ladesa, por favor leia a seção [Serviços / API](../../services/api/index.md).
 
 ### Instância do Ladesa
 
-::: warning Documentação Incompleta
-Essa seção está incompleta. Sinta-se livre para sugerir conteúdo para este tópico!
-:::
+Contamos com uma instância de desenvolvimento acessível pela Internet que você pode interagir facilmente:
+
+- <https://dev.ladesa.com.br/api>.
 
 ---
 

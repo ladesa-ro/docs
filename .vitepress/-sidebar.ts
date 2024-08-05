@@ -94,6 +94,10 @@ export const sidebar: DefaultTheme.Sidebar = [
                 text: "JavaScript",
                 link: "/developers/connect/web/javascript/",
               },
+              {
+                text: "Vue/Nuxt",
+                link: "/developers/connect/web/javascript/vue-nuxt/",
+              },
             ],
           },
         ],
