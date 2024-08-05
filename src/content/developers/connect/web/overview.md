@@ -1,6 +1,6 @@
-# Web APIs do Ladesa
+# Web API Integrada
 
-Olá! Estamos felizes por você querer fazer a integração aos nossos serviços por meio da API. Antes de iniciarmos sua jornada de integração, recomendamos a leitura inicial da seção [Integração / Conectar](../index.md).
+Olá! Estamos felizes por você querer fazer a integração aos nossos serviços por meio da Web API Integrada. Antes de iniciarmos sua jornada de integração, recomendamos a leitura inicial da seção [Integração / Conectar](../index.md).
 
 <!-- #region introduction -->
 
@@ -8,7 +8,9 @@ Olá! Estamos felizes por você querer fazer a integração aos nossos serviços
   import imgOverview from "@/content/developers/connect/web/_parts/assets/api-overview.drawio.png"
 </script>
 
-<img :src="imgOverview" alt="Diagrama que demonstra a arquitetura de utilização da API, desde o usuário final até aos sistemas do projeto." />
+<img :src="imgOverview" alt="Diagrama que demonstra a arquitetura interação geral entre os usuários finais e os sistemas do projeto por meio da Web API Integrada." />
+
+> Diagrama que demonstra a arquitetura interação geral entre os usuários finais e os sistemas do projeto por meio da _Web API Integrada_.
 
 <!-- #endregion introduction -->
 

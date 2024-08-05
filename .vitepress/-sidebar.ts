@@ -82,7 +82,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             link: "/developers/connect/",
           },
           {
-            text: "Web APIs do Ladesa",
+            text: "Web API Integrada",
 
             collapsed: true,
             items: [
