@@ -16,7 +16,7 @@ Olá! Estamos felizes por você querer fazer a integração aos nossos serviços
 
 O termo API significa _Application Programming Interface_ (Interface de Programação de Aplicação). Esse termo não define exatamente qual o protocolo exato de comunicação, servindo apenas como forma de identificar os padrões de comunicação disponíveis entre duas aplicações.
 
-Saiba mais sobre essa idéia [em nossa seção dedicada ao conceito de API](../../tutorials/platforms/api/index.md).
+Saiba mais sobre essa idéia em nossa [seção dedicada ao conceito de API](../../tutorials/platforms/api/index.md).
 
 ## Escolher uma Instância
 

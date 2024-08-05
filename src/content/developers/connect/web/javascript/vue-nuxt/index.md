@@ -2,11 +2,11 @@
 
 A forma recomendada de interagir com a Web API do Ladesa é utilizando a classe `LadesaApiClient`. Você pode explorar a estrutura dessa classe [neste link][api-client-doc-ladesa-api-client].
 
-![Documentação da classe LadesaApiClient](./_parts/doc-classe-api-client-fetch.png)
+![Documentação da classe LadesaApiClient](./.parts/doc-classe-api-client-fetch.png)
 
 Essa classe fornece vários métodos disponíveis que fazem as chamadas automáticamente para cada ação disponível na [documentação swagger da api][api-doc-swagger].
 
-![Documentação Swagger da API](./_parts/doc-api-swagger.png)
+![Documentação Swagger da API](./.parts/doc-api-swagger.png)
 
 ## CRUD
 
@@ -23,7 +23,7 @@ Um recurso no sistema geralmente possui pelo menos quatro formas de interação 
 
 :::code-group
 
-<<< ./\_parts/snippets/code-example-composable.ts [composables/useApiClient.ts]
+<<< ./.parts/snippets/code-example-composable.ts [composables/useApiClient.ts]
 
 :::
 
@@ -33,7 +33,7 @@ Um recurso no sistema geralmente possui pelo menos quatro formas de interação 
 
 Para cadastrar um curso no sistema por meio do LadesaApiClient, você pode utilizar o método [`cursoCreate`][api-client-doc-ladesa-api-client-cursos-curso-create].
 
-<<< ./\_parts/snippets/code-example-create-curso.vue [components/Cursos/Create.vue]
+<<< ./.parts/snippets/code-example-create-curso.vue [components/Cursos/Create.vue]
 
 [api-doc-swagger]: https://dev.ladesa.com.br/api/doc-api
 [api-client-doc-ladesa-api-client]: https://docs.ladesa.com.br/packages/npm/api-client-fetch//classes/LadesaApiClient.html

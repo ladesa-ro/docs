@@ -25,7 +25,7 @@ Ao utilizar a API, você pode focar no charme da interface visual e da experiên
 
 <!--@include: ./web/overview.md#introduction -->
 
-Continue lendo [em nossa seção dedicada a Web APIs do Ladesa](./web/overview.md).
+Continue lendo em nossa [seção dedicada a Web APIs do Ladesa](./web/overview.md).
 
 ### Recursos Individuais
 
