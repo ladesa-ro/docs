@@ -5,9 +5,8 @@ layout: home
 hero:
   name: "🦉 Ladesa Docs"
   tagline: |
-    Bons estudos pela nossa base de conhecimento 📚!
-    # Navegue pela base de conhecimento do Ladesa
-
+    Navegue pela base de conhecimento do Ladesa
+# Bons estudos pela nossa base de conhecimento 📚!
   actions:
     - theme: brand
       text: Acessar a Documentação
