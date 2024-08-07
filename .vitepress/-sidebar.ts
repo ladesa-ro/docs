@@ -13,18 +13,6 @@ export const sidebar: DefaultTheme.Sidebar = [
   },
 
   {
-    text: "Institucional",
-    collapsed: false,
-
-    items: [
-      {
-        text: "Quem somos nós",
-        link: "/about/team",
-      },
-    ],
-  },
-
-  {
     text: "Guia para Usuários",
     collapsed: false,
     items: [
