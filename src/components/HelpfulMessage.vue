@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-
 import { computed } from "vue";
 import { getRandomMessage } from "../utils/GreatMessages";
 

@@ -1,23 +1,30 @@
 # Web
 
-<!-- badge flat -->
-<!-- [![Repositório Aplicação Web][github-web-application-icon]][github-web-application-href]
-
-[github-web-application-icon]: https://img.shields.io/badge/Ladesa--Ro/Web-black?style=flat&logo=GitHub&logoColor=white&labelColor=black&color=white
-[github-web-application-href]: https://github.com/ladesa-ro/web -->
-
-
 [![Repositório Aplicação Web][github-web-application-icon]][github-web-application-href]
 
-[github-web-application-icon]: https://img.shields.io/badge/GitHub-Web-black?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=white
-[github-web-application-href]: https://github.com/ladesa-ro/web
+A Aplicação Web é acessada diretamente no navegador e consiste na interação entre dois sistemas: SISGHA e SISGEA.
+
+## Linguagens e ferramentas
+
+> Talvez adicionar imagens ou uma tabela nesta seção.
+
+### Frameworks
+
+JavaScript
+- Vue.js
+- Nuxt
+- Vuetify
 
 
-<!-- ::: info GitHub
-Veja o repositório no GitHub.
-::: -->
 
-A Aplicação Web consiste na interação entre dois sistemas: SISGHA e SISGEA.
+CSS
+- Tailwind
+
+### Bibliotecas
+
+JavaScript
+- Dayjs
+- Entre outras.
 
 ## Organização de pastas
 
@@ -55,15 +62,20 @@ npm run dev
 
 ## Colaboradores
 
-- Anna Isabela B. Pontuschka
+- Anna Isabela Bianchini Pontuschka
 - Danilo Pereira Escudero
-- Gabriel Guedes
-- Gabriel R. Antunes
+- Gabriel Guedes Alves de Moura
+- Gabriel Rodrigues Antunes
 - Iury Fim da Silva
-- Kauan Marques
-- Vitor Melo
+- Kauan Marques da Luz
+- Vitor Daniel Silva Melo
 
 <!-- Badges -->
+
+<!-- Badges / GitHub -->
+
+[github-web-application-icon]: https://img.shields.io/badge/GitHub-Web-black?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=white
+[github-web-application-href]: https://github.com/ladesa-ro/web
 
 <!-- Badges / Actions / Production  -->
 
