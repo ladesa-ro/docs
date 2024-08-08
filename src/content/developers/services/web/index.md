@@ -1,5 +1,27 @@
 # Web
 
+<!-- escolher um dos dois estilos de botão (flat ou for-the-badge) a seguir -->
+
+<!-- flat -->
+[![Repositório Aplicação Web][github-web-application-icon]][github-web-application-href]
+
+[github-web-application-icon]: https://img.shields.io/badge/Web-black?style=flat&logo=GitHub&logoColor=white&labelColor=black&color=white
+[github-web-application-href]: https://github.com/ladesa-ro/web
+
+---
+
+<!-- for-the-badge -->
+[![Static Badge](https://img.shields.io/badge/Web-black?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=white)](https://github.com/ladesa-ro/web)
+
+  
+<!-- ::: info GitHub
+Veja o repositório no GitHub.
+::: -->
+
+A Aplicação Web consiste na interação entre dois sistemas: SISGHA e SISGEA.
+
+
+
 ## Ambientes
 
 | Estágio         | Devops                                                       | URL                                                      |
