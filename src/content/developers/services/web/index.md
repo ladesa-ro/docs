@@ -9,7 +9,7 @@
 
 [![Repositório Aplicação Web][github-web-application-icon]][github-web-application-href]
 
-[github-web-application-icon]: https://img.shields.io/badge/Ladesa--Ro/Web-black?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=white
+[github-web-application-icon]: https://img.shields.io/badge/GitHub-Web-black?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=white
 [github-web-application-href]: https://github.com/ladesa-ro/web
 
 
