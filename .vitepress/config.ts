@@ -30,7 +30,7 @@ export default defineConfig({
 
   markdown: {
     config(md) {
-      md.use(tabsMarkdownPlugin);
+      md.use(tabsMarkdownPlugin as (md: any) => void);
     },
   },
 

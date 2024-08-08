@@ -40,5 +40,6 @@
     "noImplicitThis": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["./dist"]
+  "exclude": ["./dist"],
+  "include": ["src", ".vitepresss"]
 }

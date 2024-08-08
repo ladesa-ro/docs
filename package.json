@@ -8,6 +8,7 @@
     "preview": "vitepress preview --port 4321"
   },
   "devDependencies": {
+    "@types/node": "^22.1.0",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.20",
     "lucide-vue-next": "^0.418.0",
