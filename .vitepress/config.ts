@@ -26,6 +26,8 @@ export default defineConfig({
     },
   },
 
+  ignoreDeadLinks: "localhostLinks",
+
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin);
