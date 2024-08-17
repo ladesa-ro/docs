@@ -5,7 +5,7 @@ prev: false
 ---
 
 <script setup lang="ts">
-import LinkCard from "../components/LinkCard.vue";
+import LinkCard from "../../components/LinkCard.vue";
 </script>
 
 # Vamos Começar
@@ -37,26 +37,14 @@ Seja bem-vindo à Documentação do Ladesa.
 
 ## O que é o Ladesa?
 
-O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equipe de desenvolvedores formada por estudantes de nível médio e superior do Instituto Federal de Rondônia – Campus Ji-Paraná.
+O Laboratório de Desenvolvimento de Softwares Acadêmicos (Ladesa) é uma equipe de desenvolvedores formada por professores e estudantes de nível médio e superior do Instituto Federal de Rondônia – Campus Ji-Paraná.
 
-Somos participantes do projeto de ensino criado pelo professor Danilo Escudero.
+<!-- Somos participantes do projeto de ensino criado pelo professor Danilo Escudero. -->
 
-Confira [quem somos nós](./about/team.md).
+Confira [quem somos nós](../about/team.md).
 
 ## Sistemas do Ladesa
 
-Confira uma descrição detalhada de cada um dos nossos sistemas no [Guia para Desenvolvedores](./developers/).
+Leia sobre os nossos sistemas [aqui](./systems.md).
 
-### SISGHA
-
-O Sistema Gerador de Horário Acadêmico (SISGHA)
-
-### Gerar Horário
-
-O Gerador de Horário Acadêmico, também chamado de Gerar Horário
-
-### SISGEA
-
-O Sistema de Controle de Ambientes Educacionais (REVISAR ESSE NOME DEPOIS)
-
-### Calendário
+Também, confira uma descrição detalhada dos nossos serviços e como contribuir no [Guia para Desenvolvedores](../developers/).

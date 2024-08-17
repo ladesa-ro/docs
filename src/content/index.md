@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Acessar a Documentação
-      link: /getting-started
+      link: /introduction/getting-started
 
     - theme: alt
       text: GitHub

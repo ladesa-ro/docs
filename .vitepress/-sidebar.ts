@@ -7,8 +7,12 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Vamos Começar",
-        link: "/getting-started",
+        link: "/introduction/getting-started",
       },
+      {
+        text: "Sistemas do Ladesa",
+        link: "/introduction/systems"
+      }
     ],
   },
 
