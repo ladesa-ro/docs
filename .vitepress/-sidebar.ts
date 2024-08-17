@@ -31,7 +31,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
     items: [
       {
-        text: "Sistemas",
+        text: "Microsserviços",
         collapsed: true,
         items: [
           {
@@ -47,11 +47,15 @@ export const sidebar: DefaultTheme.Sidebar = [
             link: "/developers/services/gerar-horario/",
           },
           {
-            text: "API",
+            text: "Web API Integrada",
             link: "/developers/services/api/",
           },
           {
             text: "Autenticação",
+            link: "/developers/services/auth/",
+          },
+          {
+            text: "Kit para Desenvolvedores",
             link: "/developers/services/auth/",
           },
           {

@@ -20,6 +20,10 @@ export const navbar: INavbar = {
           text: "Quem somos nós",
           link: "/about/team",
         },
+        {
+          text: "Documentação Técnica",
+          link: "https://docs.google.com/document/d/1HB6QzwVzIVluIq6WzlZJ68DHcR_M7PNXsbHyp2g5BlU/edit?usp=sharing",
+        },
       ],
     },
 
