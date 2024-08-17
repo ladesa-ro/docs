@@ -35,28 +35,50 @@ export const sidebar: DefaultTheme.Sidebar = [
         collapsed: true,
         items: [
           {
-            text: "Web",
-            link: "/developers/services/web/",
+            text: "Primeiros passos",
+            collapsed: true,
+            items: [
+              {
+                text: "Configurar ambiente",
+                link: "/developers/services/first-steps/setup/"
+              },
+              {
+                text: "Kit para Desenvolvedores",
+                link: "/developers/services/first-steps/dev-kit"
+              }
+            ]
           },
           {
-            text: "Mobile",
-            link: "/developers/services/mobile/",
+            text: "Front-End",
+            collapsed: true,
+            items: [
+              {
+                text: "Web",
+                link: "/developers/services/web/",
+              },
+              {
+                text: "Mobile",
+                link: "/developers/services/mobile/",
+              }
+            ]
           },
           {
-            text: "Gerar Horário",
-            link: "/developers/services/gerar-horario/",
-          },
-          {
-            text: "Web API Integrada",
-            link: "/developers/services/api/",
-          },
-          {
-            text: "Autenticação",
-            link: "/developers/services/auth/",
-          },
-          {
-            text: "Kit para Desenvolvedores",
-            link: "/developers/services/auth/",
+            text: "Back-End",
+            collapsed: true,
+            items: [
+              {
+                text: "Web API Integrada",
+                link: "/developers/services/api/",
+              },
+              {
+                text: "Gerar Horário",
+                link: "/developers/services/gerar-horario/",
+              },
+              {
+                text: "Autenticação",
+                link: "/developers/services/auth/",
+              }
+            ]
           },
           {
             text: "Documentação",
