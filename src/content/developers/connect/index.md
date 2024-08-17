@@ -3,7 +3,7 @@
 Olá, desenvolvedor aventureiro! Se você está lendo este texto, quer dizer que gostou de nossos sistemas e deseja usufruir das melhores coisas que eles têm a oferecer. Isso é uma ótima notícia para nós!
 
 Todos os nossos sitemas são livres e de código aberto, e ficamos felizes pois você deseja fazer a
-integração às nossas tecnologias. E melhor: fazemos questão de ajudar você neste processo \;).
+integração às nossas tecnologias. E melhor: fazemos questão de ajudar você neste processo ;).
 
 Neste guia, iniciaremos a sua jornada para que possa realizar essa conexão da melhor forma possível. Continue lendo as próximas seções para descobrir os macetes e as formas que preparamos especialmente para você, e esperamos que dê tudo certo!
 

@@ -125,12 +125,74 @@ export const sidebar: DefaultTheme.Sidebar = [
 
         items: [
           {
-            text: "Gestão de Projetos",
+            text: "Plataformas",
             collapsed: true,
             items: [
               {
-                text: "Jira",
-                link: "/developers/tutorials/project-management/jira/",
+                text: "Node.js",
+                link: "/developers/tutorials/platforms/node/",
+              },
+
+              {
+                text: "C# / .NET",
+                link: "/developers/tutorials/platforms/csharp-dotnet/",
+              },
+              
+              {
+                text: "API",
+                link: "/developers/tutorials/platforms/api/",
+              },
+
+              {
+                text: "Web",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Vue.js",
+                    link: "/developers/tutorials/platforms/web/vue/about",
+                  },
+
+                  {
+                    text: "Nuxt.js",
+                    link: "/developers/tutorials/platforms/web/vue/nuxt/",
+                  },
+
+                  {
+                    text: "libs/vue-query",
+                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/",
+                  },
+                ],
+              },
+
+              {
+                text: "Banco de Dados",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Postgres",
+                    link: "/developers/tutorials/platforms/database/postgres/",
+                  },
+                ],
+              },
+              {
+                text: "Contêiners",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Docker",
+                    link: "/developers/tutorials/platforms/containers/docker/",
+                  },
+                  {
+                    text: "Orquestração",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Kubernetes",
+                        link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/",
+                      },
+                    ],
+                  },
+                ],
               },
             ],
           },
@@ -163,74 +225,12 @@ export const sidebar: DefaultTheme.Sidebar = [
           },
 
           {
-            text: "Plataformas",
+            text: "Gestão de Projetos",
             collapsed: true,
             items: [
               {
-                text: "API",
-                link: "/developers/tutorials/platforms/api/",
-              },
-
-              {
-                text: "C# / .NET",
-                link: "/developers/tutorials/platforms/csharp-dotnet/",
-              },
-
-              {
-                text: "Node.js",
-                link: "/developers/tutorials/platforms/node/",
-              },
-
-              {
-                text: "Web/Vue",
-                collapsed: true,
-                items: [
-                  {
-                    text: "Sobre",
-                    link: "/developers/tutorials/platforms/web/vue/about",
-                  },
-
-                  {
-                    text: "NuxtJS",
-                    link: "/developers/tutorials/platforms/web/vue/nuxt/",
-                  },
-
-                  {
-                    text: "libs/vue-query",
-                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/",
-                  },
-                ],
-              },
-
-              {
-                text: "Bancos de Dados",
-                collapsed: true,
-                items: [
-                  {
-                    text: "Postgres",
-                    link: "/developers/tutorials/platforms/database/postgres/",
-                  },
-                ],
-              },
-              {
-                text: "Contêiners",
-                collapsed: true,
-                items: [
-                  {
-                    text: "Docker",
-                    link: "/developers/tutorials/platforms/containers/docker/",
-                  },
-                  {
-                    text: "Orquestração",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Kubernetes",
-                        link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/",
-                      },
-                    ],
-                  },
-                ],
+                text: "Jira",
+                link: "/developers/tutorials/project-management/jira/",
               },
             ],
           },

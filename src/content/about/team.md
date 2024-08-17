@@ -1,18 +1,18 @@
 # Quem somos nós
 
+### Doscentes
 - Danilo Escudero
 - Wanderson Roger Dias
 
-<br/>
-
+### Discentes
 - Anna Isabela Pontuschka
+- Fabrine
 - Gabriel Guedes
 - Gabriel Oliveira
 - Gabriel Rodrigues Antunes
 - Hugo Santos
 - Iury Fim da Silva
 - Kauan Marques
-- Pedro Henrique Batista
-- Thiciane Frata
 - Uriel Procópio
 - Vitor Melo
+- Yuri Gabriel
