@@ -13,46 +13,46 @@
 
 <LinkCard
   title="Configurar Ambiente"
-  href="/developers/first-steps/setup/"
+  href="/developers/services/first-steps/setup/"
 />
 
 <LinkCard
   title="Kit para Desenvolvedores"
-  href="/developers/first-steps/dev-kit/"
+  href="/developers/services/first-steps/dev-kit/"
 />
 
 ### Front-End
 
 <LinkCard
   title="Aplicação Web"
-  href="/developers/web/"
+  href="/developers/services/web/"
 />
 
 <LinkCard
   title="Mobile"
-  href="/developers/mobile/"
+  href="/developers/services/mobile/"
 />
 
 ### Back-End
 
 <LinkCard
   title="Web API Integrada"
-  href="/developers/api/"
+  href="/developers/services/api/"
 />
 
 <LinkCard
   title="Gerar Horário"
-  href="/developers/gerar-horario/"
+  href="/developers/services/gerar-horario/"
 />
 
 <LinkCard
   title="Autenticação"
-  href="/developers/auth/"
+  href="/developers/services/auth/"
 />
 
 ### Documentação
 
 <LinkCard
   title="Documentação"
-  href="/developers/docs/"
+  href="/developers/services/docs/"
 />
