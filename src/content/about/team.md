@@ -13,6 +13,6 @@
 - Hugo Santos
 - Iury Fim da Silva
 - Kauan Marques
-- Uriel Procópio
+- Uriel Nicolas Procópio Ramos
 - Vitor Melo
 - Yuri Gabriel
