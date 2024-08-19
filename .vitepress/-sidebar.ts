@@ -21,7 +21,7 @@ export const sidebar: DefaultTheme.Sidebar = [
     collapsed: false,
     items: [
       {
-        text: "Introdução",
+        text: "Início",
         link: "/user-guides/introduction",
       },
     ],
@@ -31,19 +31,28 @@ export const sidebar: DefaultTheme.Sidebar = [
     text: "Dev Docs",
     collapsed: true,
 
-    link: "/developers/",
+    // link: "/developers/",
 
     items: [
+      {
+        text: "Início",
+        link: "/developers/"
+      },
       {
         text: "Microsserviços",
         collapsed: true,
         items: [
           {
+            text: "Sobre",
+            link: "/developers/services/"
+          },
+
+          {
             text: "Primeiros passos",
             collapsed: true,
             items: [
               {
-                text: "Configurar ambiente",
+                text: "Configurar Ambiente",
                 link: "/developers/services/first-steps/setup/"
               },
               {
@@ -52,12 +61,13 @@ export const sidebar: DefaultTheme.Sidebar = [
               }
             ]
           },
+
           {
             text: "Front-End",
             collapsed: true,
             items: [
               {
-                text: "Web",
+                text: "Aplicação Web",
                 link: "/developers/services/web/",
               },
               {
@@ -72,23 +82,23 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Web API Integrada",
-                link: "/developers/services/api/",
+                link: "/developers/services/api/"
               },
               {
                 text: "Gerar Horário",
-                link: "/developers/services/gerar-horario/",
+                link: "/developers/services/gerar-horario/"
               },
               {
                 text: "Autenticação",
-                link: "/developers/services/auth/",
+                link: "/developers/services/auth/"
               }
             ]
           },
           {
             text: "Documentação",
-            link: "/developers/services/docs/",
-          },
-        ],
+            link: "/developers/services/docs/"
+          }
+        ]
       },
       {
         text: "Integração",
@@ -97,7 +107,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Conectar",
-            link: "/developers/connect/",
+            link: "/developers/connect/"
           },
           {
             text: "Web API Integrada",
@@ -106,28 +116,29 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Visão Geral",
-                link: "/developers/connect/web/overview",
+                link: "/developers/connect/web/overview"
               },
               {
                 text: "JavaScript",
-                link: "/developers/connect/web/javascript/",
+                link: "/developers/connect/web/javascript/"
               },
               {
                 text: "Vue/Nuxt",
-                link: "/developers/connect/web/javascript/vue-nuxt/",
-              },
-            ],
-          },
-        ],
+                link: "/developers/connect/web/javascript/vue-nuxt/"
+              }
+            ]
+          }
+        ]
       },
 
       {
         text: "Tutoriais",
         collapsed: true,
-
-        link: "/developers/tutorials/",
-
         items: [
+          {
+            text: "Motivação",
+            link: "/developers/tutorials/"
+          },
           {
             text: "Plataformas",
             collapsed: true,
@@ -138,12 +149,12 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Vue.js",
-                    link: "/developers/tutorials/platforms/web/vue/about"
+                    link: "/developers/tutorials/platforms/web/vue/"
                   },
 
                   {
-                    text: "Nuxt.js",
-                    link: "/developers/tutorials/platforms/web/vue/nuxt/"
+                    text: "Vuetify",
+                    link: "/developers/tutorials/platforms/web/vue/vuetify/"
                   },
 
                   {
@@ -157,6 +168,11 @@ export const sidebar: DefaultTheme.Sidebar = [
                 text: "Back-End",
                 collapsed: true,
                 items: [
+                  {
+                    text: "Nuxt.js",
+                    link: "/developers/tutorials/platforms/web/vue/nuxt/"
+                  },
+
                   {
                     text: "Node.js",
                     link: "/developers/tutorials/platforms/node/",

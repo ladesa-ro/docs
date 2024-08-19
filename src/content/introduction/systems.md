@@ -12,8 +12,6 @@ O Sistema Gerador de Horário Acadêmico (SISGHA) [...].
 
 O Sistema Gerenciador de Ambientes Acadêmicos (SISGEA) [...].
 
----
+## Guia para Desenvolvedores
 
-### Guia para Desenvolvedores
-
-Caso queira contribuir ou usufruir de nossos serviços, acesse o [Guia para Desenvolvedores](../developers/).
+Caso queira contribuir ou utilizar nossos serviços em seu projeto, acesse o [Guia para Desenvolvedores](../developers/).

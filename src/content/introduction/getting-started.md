@@ -1,6 +1,5 @@
 ---
 description: Visão geral da documentação do Ladesa.
-next: false
 prev: false
 ---
 
