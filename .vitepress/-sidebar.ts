@@ -48,7 +48,7 @@ export const sidebar: DefaultTheme.Sidebar = [
               },
               {
                 text: "Kit para Desenvolvedores",
-                link: "/developers/services/first-steps/dev-kit"
+                link: "/developers/services/first-steps/dev-kit/"
               }
             ]
           },
@@ -133,72 +133,73 @@ export const sidebar: DefaultTheme.Sidebar = [
             collapsed: true,
             items: [
               {
-                text: "Node.js",
-                link: "/developers/tutorials/platforms/node/",
-              },
-
-              {
-                text: "C# / .NET",
-                link: "/developers/tutorials/platforms/csharp-dotnet/",
-              },
-              
-              {
-                text: "API",
-                link: "/developers/tutorials/platforms/api/",
-              },
-
-              {
-                text: "Web",
+                text: "Front-End",
                 collapsed: true,
                 items: [
                   {
                     text: "Vue.js",
-                    link: "/developers/tutorials/platforms/web/vue/about",
+                    link: "/developers/tutorials/platforms/web/vue/about"
                   },
 
                   {
                     text: "Nuxt.js",
-                    link: "/developers/tutorials/platforms/web/vue/nuxt/",
+                    link: "/developers/tutorials/platforms/web/vue/nuxt/"
                   },
 
                   {
                     text: "libs/vue-query",
-                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/",
-                  },
-                ],
+                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/"
+                  }
+                ]
               },
 
               {
-                text: "Banco de Dados",
+                text: "Back-End",
                 collapsed: true,
                 items: [
                   {
-                    text: "Postgres",
-                    link: "/developers/tutorials/platforms/database/postgres/",
+                    text: "Node.js",
+                    link: "/developers/tutorials/platforms/node/",
                   },
-                ],
+                  
+                  {
+                    text: "C# / .NET",
+                    link: "/developers/tutorials/platforms/csharp-dotnet/",
+                  },
+                  
+                  {
+                    text: "API",
+                    link: "/developers/tutorials/platforms/api/",
+                  },
+
+                  {
+                    text: "Banco de Dados",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Postgres",
+                        link: "/developers/tutorials/platforms/database/postgres/",
+                      }
+                    ]
+                  }
+                ]
               },
+
               {
-                text: "Contêiners",
+                text: "Infraestrutura",
                 collapsed: true,
                 items: [
                   {
                     text: "Docker",
-                    link: "/developers/tutorials/platforms/containers/docker/",
+                    link: "/developers/tutorials/platforms/containers/docker/"
                   },
                   {
-                    text: "Orquestração",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Kubernetes",
-                        link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
+                    text: "Kubernetes",
+                    link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/"
+                  }
+                ]
+              }
+            ]
           },
 
           {
@@ -222,7 +223,7 @@ export const sidebar: DefaultTheme.Sidebar = [
               },
 
               {
-                text: "VS Code",
+                text: "Visual Studio Code",
                 link: "/developers/tutorials/source-code/vs-code/",
               },
             ],
