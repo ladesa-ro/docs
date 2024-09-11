@@ -2,6 +2,7 @@
 
 ### Doscentes
 - Danilo Escudero
+- Wanderson Maikon Silva
 - Wanderson Roger Dias
 
 ### Discentes
