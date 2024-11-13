@@ -1,4 +1,4 @@
-name: "CD: Build and Push"
+name: "CD / Build and Push"
 
 on:
   workflow_call:
@@ -24,7 +24,7 @@ on:
 
       image-tag:
         type: string
-        required: true    
+        required: true
     secrets:
       push-image-registry-url:
         required: false
@@ -79,6 +79,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: ${{ inputs.push-image == true }}
-          tags: ${{ inputs.push-image-registry-url }}/${{ inputs.image-name }}:${{ inputs.image-tag }}
+          tags: ${{ secrets.push-image-registry-url }}/${{ inputs.image-name }}:${{ inputs.image-tag }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
