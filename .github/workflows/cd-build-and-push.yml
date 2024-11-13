@@ -1,0 +1,71 @@
+name: "CD: Build and Push"
+
+on:
+  workflow_call:
+
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+env:
+  SETUP_QEMU: false
+
+  ENABLE_PUSH_IMAGE: ${{ vars.ENABLE_PUSH_IMAGE }}
+  ENABLE_BUILD_IMAGE: ${{ vars.ENABLE_BUILD_IMAGE }}
+
+  CI_BRANCH: ${{ vars.CI_BRANCH }}
+  IMAGE_TAG: ${{ vars.IMAGE_TAG }}
+
+  REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+  REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+  REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+  IMAGE_NAME: ${{ vars.IMAGE_NAME  }}
+
+  # REGISTRY_URL: ${{ 'ghcr.io' }}
+  # REGISTRY_USERNAME: ${{ github.actor }}
+  # REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  image-build-push:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # packages: write
+      # attestations: write
+      # id-token: write
+      contents: read
+
+    steps:
+      - name: Set up QEMU
+        if: ${{ env.SETUP_QEMU == 'true' }}
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Local build container image
+        if: ${{ env.ENABLE_BUILD_IMAGE == 'true' }}
+        uses: docker/build-push-action@v6
+        with:
+          push: false
+          tags: cr.ladesa.local/docs
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Login into Registry
+        if: ${{ env.ENABLE_PUSH_IMAGE == 'true' }}
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY_URL }}
+          username: ${{ env.REGISTRY_USERNAME }}
+          password: ${{ env.REGISTRY_TOKEN }}
+
+      - name: Build and push container image to the registry
+        if: ${{ env.ENABLE_PUSH_IMAGE == 'true' && env.ENABLE_BUILD_IMAGE == 'true' && github.ref_name == env.CI_BRANCH }}
+        uses: docker/build-push-action@v6
+        with:
+          push: ${{ env.ENABLE_PUSH_IMAGE == 'true' }}
+          tags: ${{ env.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
