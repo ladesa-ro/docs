@@ -24,18 +24,15 @@ on:
 
       image-tag:
         type: string
-        required: true
-
+        required: true    
+    secrets:
       push-image-registry-url:
-        type: string
         required: false
 
       push-image-registry-username:
-        type: string
         required: false
 
       push-image-registry-token:
-        type: string
         required: false
 
 # concurrency:
