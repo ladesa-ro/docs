@@ -2,29 +2,45 @@ name: "CD: Build and Push"
 
 on:
   workflow_call:
+    inputs:
+      setup-qemu:
+        type: boolean
+        required: false
+        default: false
 
-concurrency:
-  cancel-in-progress: true
-  group: ${{ github.workflow }}-${{ github.ref }}
+      build-image:
+        type: boolean
+        required: false
+        default: true
 
-env:
-  SETUP_QEMU: false
+      push-image:
+        type: boolean
+        required: false
+        default: true
 
-  ENABLE_PUSH_IMAGE: ${{ vars.ENABLE_PUSH_IMAGE }}
-  ENABLE_BUILD_IMAGE: ${{ vars.ENABLE_BUILD_IMAGE }}
+      image-name:
+        type: string
+        required: true
 
-  CI_BRANCH: ${{ vars.CI_BRANCH }}
-  IMAGE_TAG: ${{ vars.IMAGE_TAG }}
+      image-tag:
+        type: string
+        required: true
 
-  REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
-  REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
-  REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-  IMAGE_NAME: ${{ vars.IMAGE_NAME  }}
+      push-image-registry-url:
+        type: string
+        required: false
 
-  # REGISTRY_URL: ${{ 'ghcr.io' }}
-  # REGISTRY_USERNAME: ${{ github.actor }}
-  # REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  # IMAGE_NAME: ${{ github.repository }}
+      push-image-registry-username:
+        type: string
+        required: false
+
+      push-image-registry-token:
+        type: string
+        required: false
+
+# concurrency:
+#   cancel-in-progress: false
+#   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   image-build-push:
@@ -38,34 +54,34 @@ jobs:
 
     steps:
       - name: Set up QEMU
-        if: ${{ env.SETUP_QEMU == 'true' }}
+        if: ${{ inputs.setup-qemu == true }}
         uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Local build container image
-        if: ${{ env.ENABLE_BUILD_IMAGE == 'true' }}
-        uses: docker/build-push-action@v6
-        with:
-          push: false
-          tags: cr.ladesa.local/docs
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      # - name: Local build container image
+      #   if: ${{ inputs.build-image == true }}
+      #   uses: docker/build-push-action@v6
+      #   with:
+      #     push: false
+      #     tags: cr.ladesa.local/docs
+      #     cache-from: type=gha
+      #     cache-to: type=gha,mode=max
 
       - name: Login into Registry
-        if: ${{ env.ENABLE_PUSH_IMAGE == 'true' }}
+        if: ${{ inputs.push-image == true }}
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REGISTRY_URL }}
-          username: ${{ env.REGISTRY_USERNAME }}
-          password: ${{ env.REGISTRY_TOKEN }}
+          registry: ${{ inputs.push-image-registry-url }}
+          username: ${{ inputs.push-image-registry-username }}
+          password: ${{ inputs.push-image-registry-token }}
 
       - name: Build and push container image to the registry
-        if: ${{ env.ENABLE_PUSH_IMAGE == 'true' && env.ENABLE_BUILD_IMAGE == 'true' && github.ref_name == env.CI_BRANCH }}
+        if: ${{ inputs.build-image == true }}
         uses: docker/build-push-action@v6
         with:
-          push: ${{ env.ENABLE_PUSH_IMAGE == 'true' }}
-          tags: ${{ env.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+          push: ${{ inputs.push-image == true }}
+          tags: ${{ inputs.push-image-registry-url }}/${{ inputs.image-name }}:${{ inputs.image-tag }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
