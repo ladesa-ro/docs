@@ -1,0 +1,24 @@
+name: "CD: Deploy"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-production:
+    name: Deploy to Cluster
+    runs-on: deploy
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: deploy resources to kubernetes cluster
+        working-directory: ./.devops/k8s/overlays/production
+        run: |
+          kubectl kustomize . | envsubst | kubectl apply -f -;
+
+          kubectl rollout restart \
+            deployment.apps/ladesa-ro-docs \
+            --namespace ladesa-ro-production \
+          ;
