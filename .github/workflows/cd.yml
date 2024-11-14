@@ -18,7 +18,7 @@ jobs:
       push-image-registry-username: ${{ secrets.REGISTRY_USERNAME }}
       push-image-registry-token: ${{ secrets.REGISTRY_TOKEN }}
 
-  cd-build-push-deploy:
+  cd-deploy:
     name: "CD: Deploy"
     uses: ./.github/workflows/cd-deploy.yml
     secrets: inherit
