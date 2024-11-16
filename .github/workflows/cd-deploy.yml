@@ -7,7 +7,9 @@ jobs:
   deploy-production:
     name: Deploy to Cluster
     runs-on: deploy
-    environment: production
+    environment: 
+      name: production
+      url: https://docs.ladesa.com.br
     steps:
       - uses: actions/checkout@v4
 
