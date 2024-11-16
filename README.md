@@ -1,66 +1,100 @@
 # Ladesa Docs
 
-[![Continuos Integration][action-ci-src]][action-ci-href] [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Continuos Deployment][action-cd-src]][action-cd-href]
+[![Build with Vitepress][built-with-vitepress-src]][built-with-vitepress-href]
 
 ## Configuração Local
 
-### Obter o código-fonte do projeto
+### Clonar o repositório
 
 ```sh
 git clone https://github.com/ladesa-ro/docs.git
 cd docs
 ```
 
-### Instalar as dependências do projeto
+### Instalar as dependências
+
+Certifique-se de ter o `pnpm` instalado:
 
 ```sh
 pnpm install
 ```
 
-## 🚀 Estrutura do projeto
+### Requisitos
+- **Node.js** 22 ou superior.
+- `pnpm` como gerenciador de pacotes.
+- Editor de texto com suporte a Markdown, como o VSCode.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Estrutura do Projeto
 
 ```txt
 .
+├── docs/
+│   ├── .vitepress/
+│   │   ├── config.ts
+│   ├── index.md
+│   ├── guia/
+│   └── assets/
 ├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
+├── scripts/
+│   └── download-remote.ts
 ├── package.json
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+- **docs/**: Arquivos `.md` usados para a documentação.
+- **.vitepress/config.ts**: Arquivo de configuração.
+- **scripts/download-remote.ts**: Script para baixar conteúdo remoto.
+- **public/**: Arquivos estáticos.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+Arquivo de configuração (`.vitepress/config.ts`)
 
-Static assets, like favicons, can be placed in the `public/` directory.
+https://github.com/ladesa-ro/docs/blob/main/.vitepress/config.ts#L7-L10
 
-## 🧞 Commands
+## Comandos Disponíveis
 
-All commands are run from the root of the project, from a terminal:
+| Comando                   | Ação                                                   |
+|---------------------------|--------------------------------------------------------|
+| `pnpm install`            | Instala as dependências                                 |
+| `pnpm run download-remote`| Executa o script para baixar conteúdo remoto            |
+| `pnpm run dev`            | Inicia o servidor de desenvolvimento (`localhost:4321`) |
+| `pnpm run build`          | Gera a versão de produção em `./dist/`                  |
+| `pnpm run preview`        | Visualiza a versão de produção (`localhost:4321`)       |
+| `pnpm run clean`          | Limpa arquivos de cache e builds anteriores             |
 
-| Command                    | Action                                           |
-| :------------------------- | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm run build`           | Build your production site to `./dist/`          |
-| `pnpm run preview`         | Preview your build locally, before deploying     |
-| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
+## Executando o Servidor Local
 
-## 👀 Want to learn more?
+```sh
+pnpm run dev
+```
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Acesse o site em [http://localhost:4321](http://localhost:4321).
+
+## Deploy
+
+Para gerar a versão de produção:
+
+```sh
+pnpm run build
+```
+
+Teste a versão de produção:
+
+```sh
+pnpm run preview
+```
+
+## Recursos Adicionais
+
+Para mais informações sobre o Vitepress, consulte a [documentação oficial](https://vitepress.dev/guide/getting-started).
+
 
 <!-- Badges -->
 
 <!-- Badges / Actions  -->
 
-[action-ci-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/docs/ci.yml?style=flat&logo=github&logoColor=white&label=Continuos+Integration&labelColor=18181B
-[action-ci-href]: https://github.com/ladesa-ro/docs/actions/workflows/ci.yml
+[action-cd-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/docs/cd.yml?style=flat&logo=rocket&logoColor=white&label=Continuos+Deployment&labelColor=18181B
+[action-cd-href]: https://github.com/ladesa-ro/docs/actions/workflows/cd.yml
+
+[built-with-vitepress-src]: https://img.shields.io/badge/built%20with%20vitepress-%233e63dd?style=flat&logo=vitepress&logoColor=white
+[built-with-vitepress-href]: https://vitepress.dev/
