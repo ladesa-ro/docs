@@ -1,4 +1,4 @@
-name: "CD / Deploy"
+name: "Continuous Deployment – Job Deploy"
 
 on:
   workflow_call:

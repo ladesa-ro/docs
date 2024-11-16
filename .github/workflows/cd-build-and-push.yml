@@ -1,4 +1,4 @@
-name: "CD / Build and Push"
+name: "Continuous Deployment – Job Build and Push"
 
 on:
   workflow_call:
