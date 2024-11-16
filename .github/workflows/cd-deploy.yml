@@ -3,13 +3,21 @@ name: "Continuous Deployment – Job Deploy"
 on:
   workflow_call:
 
+env:
+  PRODUCTION_URL: https://docs.ladesa.com.br
+  PRODUCTION_K8S_DEPLOYMENT: ladesa-ro-docs
+  PRODUCTION_K8S_NAMESPACE: ladesa-ro-production
+
 jobs:
   deploy-production:
     name: Deploy to Cluster
+    
     runs-on: deploy
-    environment: 
+    
+    environment:
       name: production
-      url: https://docs.ladesa.com.br
+      url: ${{ env.PRODUCTION_URL }}
+      
     steps:
       - uses: actions/checkout@v4
 
@@ -19,6 +27,6 @@ jobs:
           kubectl kustomize . | envsubst | kubectl apply -f -;
 
           kubectl rollout restart \
-            deployment.apps/ladesa-ro-docs \
-            --namespace ladesa-ro-production \
+            deployment.apps/${{ env.PRODUCTION_K8S_DEPLOYMENT }} \
+            --namespace ${{ env.PRODUCTION_K8S_NAMESPACE }} \
           ;
