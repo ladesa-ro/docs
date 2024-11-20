@@ -1,4 +1,4 @@
-import { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from "vitepress";
 
 export const sidebar: DefaultTheme.Sidebar = [
   {
@@ -11,8 +11,8 @@ export const sidebar: DefaultTheme.Sidebar = [
       },
       {
         text: "Sistemas do Ladesa",
-        link: "/introduction/systems"
-      }
+        link: "/introduction/systems",
+      },
     ],
   },
 
@@ -36,7 +36,7 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Início",
-        link: "/developers/"
+        link: "/developers/",
       },
       {
         text: "Microsserviços",
@@ -44,7 +44,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Sobre",
-            link: "/developers/services/"
+            link: "/developers/services/",
           },
 
           {
@@ -53,13 +53,13 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Configurar Ambiente",
-                link: "/developers/services/first-steps/setup/"
+                link: "/developers/services/first-steps/setup/",
               },
               {
                 text: "Kit para Desenvolvedores",
-                link: "/developers/services/first-steps/dev-kit/"
-              }
-            ]
+                link: "/developers/services/first-steps/dev-kit/",
+              },
+            ],
           },
 
           {
@@ -73,8 +73,8 @@ export const sidebar: DefaultTheme.Sidebar = [
               {
                 text: "Mobile",
                 link: "/developers/services/mobile/",
-              }
-            ]
+              },
+            ],
           },
           {
             text: "Back-End",
@@ -82,23 +82,23 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Web API Integrada",
-                link: "/developers/services/api/"
+                link: "/developers/services/api/",
               },
               {
                 text: "Gerar Horário",
-                link: "/developers/services/gerar-horario/"
+                link: "/developers/services/gerar-horario/",
               },
               {
                 text: "Autenticação",
-                link: "/developers/services/auth/"
-              }
-            ]
+                link: "/developers/services/auth/",
+              },
+            ],
           },
           {
             text: "Documentação",
-            link: "/developers/services/docs/"
-          }
-        ]
+            link: "/developers/services/docs/",
+          },
+        ],
       },
       {
         text: "Integração",
@@ -107,7 +107,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Conectar",
-            link: "/developers/connect/"
+            link: "/developers/connect/",
           },
           {
             text: "Web API Integrada",
@@ -116,19 +116,19 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Visão Geral",
-                link: "/developers/connect/web/overview"
+                link: "/developers/connect/web/overview",
               },
               {
                 text: "JavaScript",
-                link: "/developers/connect/web/javascript/"
+                link: "/developers/connect/web/javascript/",
               },
               {
                 text: "Vue/Nuxt",
-                link: "/developers/connect/web/javascript/vue-nuxt/"
-              }
-            ]
-          }
-        ]
+                link: "/developers/connect/web/javascript/vue-nuxt/",
+              },
+            ],
+          },
+        ],
       },
 
       {
@@ -137,7 +137,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Motivação",
-            link: "/developers/tutorials/"
+            link: "/developers/tutorials/",
           },
           {
             text: "Plataformas",
@@ -149,19 +149,19 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Vue.js",
-                    link: "/developers/tutorials/platforms/web/vue/"
+                    link: "/developers/tutorials/platforms/web/vue/",
                   },
 
                   {
                     text: "Vuetify",
-                    link: "/developers/tutorials/platforms/web/vue/vuetify/"
+                    link: "/developers/tutorials/platforms/web/vue/vuetify/",
                   },
 
                   {
                     text: "libs/vue-query",
-                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/"
-                  }
-                ]
+                    link: "/developers/tutorials/platforms/web/vue/libs/vue-query/",
+                  },
+                ],
               },
 
               {
@@ -170,19 +170,19 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Nuxt.js",
-                    link: "/developers/tutorials/platforms/web/vue/nuxt/"
+                    link: "/developers/tutorials/platforms/web/vue/nuxt/",
                   },
 
                   {
                     text: "Node.js",
                     link: "/developers/tutorials/platforms/node/",
                   },
-                  
+
                   {
                     text: "C# / .NET",
                     link: "/developers/tutorials/platforms/csharp-dotnet/",
                   },
-                  
+
                   {
                     text: "API",
                     link: "/developers/tutorials/platforms/api/",
@@ -195,10 +195,10 @@ export const sidebar: DefaultTheme.Sidebar = [
                       {
                         text: "Postgres",
                         link: "/developers/tutorials/platforms/database/postgres/",
-                      }
-                    ]
-                  }
-                ]
+                      },
+                    ],
+                  },
+                ],
               },
 
               {
@@ -207,15 +207,15 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Docker",
-                    link: "/developers/tutorials/platforms/containers/docker/"
+                    link: "/developers/tutorials/platforms/containers/docker/",
                   },
                   {
                     text: "Kubernetes",
-                    link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/"
-                  }
-                ]
-              }
-            ]
+                    link: "/developers/tutorials/platforms/containers/orchestration/kubernetes/",
+                  },
+                ],
+              },
+            ],
           },
 
           {
@@ -254,6 +254,50 @@ export const sidebar: DefaultTheme.Sidebar = [
                 link: "/developers/tutorials/project-management/jira/",
               },
             ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    text: "Notas de Implantação",
+    collapsed: true,
+    items: [
+      {
+        text: "Início",
+        link: "/deploy/",
+      },
+      {
+        text: "Notas do Ladesa",
+        items: [
+          {
+            text: "Início",
+            link: "/deploy/ladesa-notes/",
+          },
+          {
+            text: "Ferramentas Necessárias",
+            link: "/deploy/ladesa-notes/01-required-tools/",
+          },
+          {
+            text: "Preparação do Cluster Kubernetes",
+            link: "/deploy/ladesa-notes/02-prepare-kubernetes-cluster/",
+          },
+          {
+            text: "Namespaces",
+            link: "/deploy/ladesa-notes/03-namespaces/",
+          },
+          {
+            text: "Armazenamento",
+            link: "/deploy/ladesa-notes/04-overview-storages/",
+          },
+          {
+            text: "Serviços",
+            link: "/deploy/ladesa-notes/05-services/",
+          },
+          {
+            text: "Hacks",
+            link: "/deploy/ladesa-notes/hacks/",
           },
         ],
       },
