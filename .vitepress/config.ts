@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import { navbar } from "./-navbar";
 import { sidebar } from "./-sidebar";
+import { META } from "./meta";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,7 +14,7 @@ export default defineConfig({
   cleanUrls: true,
   metaChunk: true,
 
-  srcDir: "src/content",
+  srcDir: META.vitepress.srcDir,
 
   srcExclude: ["**/_parts/**/*"],
 
@@ -59,7 +60,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: "https://github.com/ladesa-ro/docs/edit/main/src/content/:path",
+      pattern: `${META.github.repo}/edit/${META.github.branch}/src/${META.vitepress.srcDir}/:path`,
     },
   },
 
