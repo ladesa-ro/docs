@@ -51,3 +51,4 @@ jobs:
           helm-values: ${{ vars.DEPLOY_HELM_VALUES }}
           deployment: ${{ vars.K8S_DEPLOYMENT }}
           namespace: ${{ vars.K8S_NAMESPACE }}
+          helm-release-name: ${{ vars.K8S_DEPLOYMENT }}
