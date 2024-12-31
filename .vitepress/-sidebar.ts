@@ -38,98 +38,6 @@ export const sidebar: DefaultTheme.Sidebar = [
         text: "Início",
         link: "/developers/",
       },
-      {
-        text: "Microsserviços",
-        collapsed: true,
-        items: [
-          {
-            text: "Sobre",
-            link: "/developers/services/",
-          },
-
-          {
-            text: "Primeiros passos",
-            collapsed: true,
-            items: [
-              {
-                text: "Configurar Ambiente",
-                link: "/developers/services/first-steps/setup/",
-              },
-              {
-                text: "Kit para Desenvolvedores",
-                link: "/developers/services/first-steps/dev-kit/",
-              },
-            ],
-          },
-
-          {
-            text: "Front-End",
-            collapsed: true,
-            items: [
-              {
-                text: "Aplicação Web",
-                link: "/developers/services/web/",
-              },
-              {
-                text: "Mobile",
-                link: "/developers/services/mobile/",
-              },
-            ],
-          },
-          {
-            text: "Back-End",
-            collapsed: true,
-            items: [
-              {
-                text: "Web API Integrada",
-                link: "/developers/services/api/",
-              },
-              {
-                text: "Gerar Horário",
-                link: "/developers/services/gerar-horario/",
-              },
-              {
-                text: "Autenticação",
-                link: "/developers/services/auth/",
-              },
-            ],
-          },
-          {
-            text: "Documentação",
-            link: "/developers/services/docs/",
-          },
-        ],
-      },
-      {
-        text: "Integração",
-        collapsed: true,
-
-        items: [
-          {
-            text: "Conectar",
-            link: "/developers/connect/",
-          },
-          {
-            text: "Web API Integrada",
-
-            collapsed: true,
-            items: [
-              {
-                text: "Visão Geral",
-                link: "/developers/connect/web/overview",
-              },
-              {
-                text: "JavaScript",
-                link: "/developers/connect/web/javascript/",
-              },
-              {
-                text: "Vue/Nuxt",
-                link: "/developers/connect/web/javascript/vue-nuxt/",
-              },
-            ],
-          },
-        ],
-      },
 
       {
         text: "Tutoriais",
@@ -226,6 +134,10 @@ export const sidebar: DefaultTheme.Sidebar = [
                 text: "Linha de Comando",
                 link: "/developers/tutorials/os/command-line/",
               },
+              {
+                text: "Permissões de Arquivos",
+                link: "/developers/tutorials/os/file-permissions/",
+              },
             ],
           },
 
@@ -257,49 +169,288 @@ export const sidebar: DefaultTheme.Sidebar = [
           },
         ],
       },
-    ],
-  },
 
-  {
-    text: "Notas de Implantação",
-    collapsed: true,
-    items: [
       {
-        text: "Início",
-        link: "/deploy/",
-      },
-      {
-        text: "Notas do Ladesa",
+        text: "Microsserviços",
+        collapsed: true,
         items: [
           {
-            text: "Início",
-            link: "/deploy/ladesa-notes/",
+            text: "Sobre",
+            link: "/developers/services/",
+          },
+
+          {
+            text: "Primeiros passos",
+            collapsed: true,
+            items: [
+              {
+                text: "Configurar Ambiente",
+                link: "/developers/services/first-steps/setup/",
+              },
+              {
+                text: "Kit para Desenvolvedores",
+                link: "/developers/services/first-steps/dev-kit/",
+              },
+            ],
+          },
+
+          {
+            text: "Front-End",
+            collapsed: true,
+            items: [
+              {
+                text: "Aplicação Web",
+                link: "/developers/services/web/",
+              },
+              {
+                text: "Mobile",
+                link: "/developers/services/mobile/",
+              },
+            ],
           },
           {
-            text: "Ferramentas Necessárias",
-            link: "/deploy/ladesa-notes/01-required-tools/",
+            text: "Back-End",
+            collapsed: true,
+            items: [
+              {
+                text: "Web API Integrada",
+                link: "/developers/services/api/",
+              },
+              {
+                text: "Gerar Horário",
+                link: "/developers/services/gerar-horario/",
+              },
+              {
+                text: "Autenticação",
+                link: "/developers/services/auth/",
+              },
+            ],
           },
           {
-            text: "Preparação do Cluster Kubernetes",
-            link: "/deploy/ladesa-notes/02-prepare-kubernetes-cluster/",
-          },
-          {
-            text: "Namespaces",
-            link: "/deploy/ladesa-notes/03-namespaces/",
-          },
-          {
-            text: "Armazenamento",
-            link: "/deploy/ladesa-notes/04-overview-storages/",
-          },
-          {
-            text: "Serviços",
-            link: "/deploy/ladesa-notes/05-services/",
-          },
-          {
-            text: "Hacks",
-            link: "/deploy/ladesa-notes/hacks/",
+            text: "Documentação",
+            link: "/developers/services/docs/",
           },
         ],
+      },
+      {
+        text: "Integração",
+        collapsed: true,
+
+        items: [
+          {
+            text: "Conectar",
+            link: "/developers/connect/",
+          },
+          {
+            text: "Web API Integrada",
+
+            collapsed: true,
+            items: [
+              {
+                text: "Visão Geral",
+                link: "/developers/connect/web/overview",
+              },
+              {
+                text: "JavaScript",
+                link: "/developers/connect/web/javascript/",
+              },
+              {
+                text: "Vue/Nuxt",
+                link: "/developers/connect/web/javascript/vue-nuxt/",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        text: "Implantação",
+        collapsed: true,
+        items: [
+          {
+            text: "Vamos Implantar",
+            link: "/developers/deploy/",
+          },
+
+          {
+            text: "Plataformas de Execução",
+            link: "/developers/deploy/runtime-platforms",
+          },
+
+          {
+            text: "Ambientes",
+            link: "/developers/deploy/environments",
+          },
+
+          {
+            text: "Distribuição",
+            collapsed: true,
+
+            items: [
+              {
+                text: "Vamos Distribuir",
+                link: "/developers/deploy/distribution/",
+              },
+
+              {
+                text: "Clientes (front-end)",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Web",
+                    link: "/developers/deploy/distribution/client-front-end/web/",
+                  },
+                  {
+                    text: "Mobile",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Android",
+                        link: "/developers/deploy/distribution/client-front-end/mobile/android/",
+                      },
+                      {
+                        text: "iOS",
+                        link: "/developers/deploy/distribution/client-front-end/mobile/ios/",
+                      },
+                    ],
+                  },
+                  {
+                    text: "Desktop",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Windows",
+                        link: "/developers/deploy/distribution/client-front-end/desktop/windows/",
+                      },
+                      {
+                        text: "macOS",
+                        link: "/developers/deploy/distribution/client-front-end/desktop/macos/",
+                      },
+                      {
+                        text: "Linux",
+                        link: "/developers/deploy/distribution/client-front-end/desktop/linux/",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                text: "Servidor (back-end)",
+
+                items: [
+                  {
+                    text: "Containers OCI",
+                    link: "/developers/deploy/distribution/server-back-end/",
+                  },
+                ],
+              },
+            ],
+          },
+
+          {
+            text: "Execução",
+            collapsed: true,
+            items: [
+              {
+                text: "Cluster",
+
+                collapsed: true,
+
+                items: [
+                  {
+                    text: "Inicializar Kubernetes",
+                    link: "/developers/deploy/cluster/01-initialize-kubernetes/",
+                  },
+
+                  {
+                    text: "Certificados",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "CertManager",
+                        link: "/developers/deploy/cluster/certificates/setup-cert-manager",
+                      },
+                      {
+                        text: "ClusterIssuer",
+                        link: "/developers/deploy/cluster/certificates/cluster-issuer",
+                      },
+                    ],
+                  },
+
+                  {
+                    text: "Configurar o Portainer",
+                    link: "/developers/deploy/cluster/02-setup-portainer/",
+                  },
+
+                  {
+                    text: "Bancos de Dados",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Postgres",
+                        link: "/developers/deploy/cluster/03-databases/postgres/",
+                      },
+                      {
+                        text: "Redis",
+                        link: "/developers/deploy/cluster/03-databases/redis/",
+                      },
+                    ],
+                  },
+
+                  {
+                    text: "Infisical",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Server",
+                        link: "/developers/deploy/cluster/04-infisical/server/",
+                      },
+                      {
+                        text: "Operator",
+                        link: "/developers/deploy/cluster/04-infisical/pulling-secrets/kubernetes/operator/",
+                      },
+                      {
+                        text: "Secret Sync",
+                        link: "/developers/deploy/cluster/04-infisical/pulling-secrets/kubernetes/infisical-secret-resource/",
+                      },
+                    ],
+                  },
+
+                  {
+                    text: "Registry",
+                    link: "/developers/deploy/cluster/05-registry/",
+                  },
+
+                  {
+                    text: "Sistemas do Ladesa",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "API",
+                        link: "/developers/deploy/cluster/06-ladesa/api/",
+                      },
+                    ],
+                  },
+                ],
+              },
+
+              {
+                text: "VPN",
+              },
+
+              {
+                text: "Hacks",
+                link: "/developers/deploy/hacks/",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        text: "Devops",
+        collapsed: true,
+        items: [],
       },
     ],
   },

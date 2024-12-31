@@ -1,19 +1,13 @@
 applicationName: ladesa-ro-docs
 
-service:
-  enabled: true
-  type: NodePort
-  ports:
-    - name: web-service
-      port: 80
-      targetPort: web-port
-
 deployment:
   enabled: false
 
   replicas: 1
 
-  containerSecurityContext: false
+  containerSecurityContext:
+    runAsNonRoot: false
+    readOnlyRootFilesystem: false
 
   ports:
     - containerPort: 80
@@ -37,6 +31,14 @@ deployment:
       port: 80
     failureThreshold: 30
     periodSeconds: 10
+
+service:
+  enabled: true
+  type: NodePort
+  ports:
+    - name: web-service
+      port: 80
+      targetPort: web-port
 
 ingress:
   enabled: false
