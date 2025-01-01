@@ -45,7 +45,7 @@ Para isso funcionar, duas coisas são necessárias:
 console.log("Hello, world!");
 ```
 
-2 - O arquivo deve possuir a [permissão](../../tutorials/os/file-permissions/index.md) de execução.
+2 - O arquivo deve possuir a [permissão](../tutorials/os/file-permissions/index.md) de execução.
 
 ```bash
 chmod +x ./main.js
@@ -61,4 +61,4 @@ Algumas plataformas de programação necessitam de uma etapa a qual o código-fo
 
 Quando um projeto é _buildado_, apenas o necessário é incluído, e coisas como _ferramentas de inspeção_ e _recarregamento instantâneo (hot reload)_ são quase sempre removidas.
 
-Dessa forma, o artefato final fica muito mais leve e requer menos recursos do que quando executado em um [Ambiente de Desenvolvimento](../environments.md).
+Dessa forma, o artefato final fica muito mais leve e requer menos recursos do que quando executado em um [Ambiente de Desenvolvimento](./environments.md).

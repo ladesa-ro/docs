@@ -12,7 +12,7 @@ Quando um programador implementa os requisitos e as funcionalidades de um sistem
 
 Assim, é possível fazer com que a máquina, seja ela física (CPU) ou virtual (interpretador da linguagem de programação), realize as operações conforme foram escritas.
 
-Diante disso, as plataformas utilizam diferentes estratégias e cada uma possui suas próprias características quando ao formato de execução dos comandos. As duas modalidades mais conhecidas são: [plataformas intepretadas e plataformas compiladas](./runtime-platforms/).
+Diante disso, as plataformas utilizam diferentes estratégias e cada uma possui suas próprias características quando ao formato de execução dos comandos. As duas modalidades mais conhecidas são: [plataformas intepretadas e plataformas compiladas](./runtime-platforms).
 
 ## Ambientes
 
