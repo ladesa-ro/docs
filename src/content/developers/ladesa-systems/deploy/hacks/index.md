@@ -31,7 +31,6 @@ echo "hello" | at now +5 minutes
 
 ## kubectl shell completion
 
-
 ```bash
 source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
 echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o autocomplete permanentemente no seu shell bash.
@@ -42,10 +41,15 @@ source <(kubectl completion zsh)  # configuração para usar autocomplete no ter
 echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc # adicionar auto completar permanentemente para o seu shell zsh
 ```
 
-
 ## kubectl aliases
 
 ```sh
 alias k=kubectl
 complete -o default -F __start_kubectl k
+```
+
+##
+
+```bash
+docker save my/local-image:v1.2.3 | sudo k3s ctr images import -
 ```

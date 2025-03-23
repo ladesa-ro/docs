@@ -31,8 +31,6 @@ export const sidebar: DefaultTheme.Sidebar = [
     text: "Dev Docs",
     collapsed: true,
 
-    // link: "/developers/",
-
     items: [
       {
         text: "Início",
@@ -40,13 +38,365 @@ export const sidebar: DefaultTheme.Sidebar = [
       },
 
       {
-        text: "Tutoriais",
+        text: "Sistemas do Ladesa",
+        collapsed: true,
+        items: [
+          {
+            text: "Primeiros Passos",
+            link: "/developers/ladesa-systems/",
+          },
+
+          {
+            text: "Microsserviços",
+            collapsed: true,
+            items: [
+              {
+                text: "Sobre",
+                link: "/developers/ladesa-systems/microservices/",
+              },
+
+              {
+                text: "Primeiros passos",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Configurar Ambiente",
+                    link: "/developers/ladesa-systems/microservices/first-steps/setup/",
+                  },
+                  {
+                    text: "Kit para Desenvolvedores",
+                    link: "/developers/ladesa-systems/microservices/first-steps/dev-kit/",
+                  },
+                ],
+              },
+
+              {
+                text: "Front-End",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Aplicação Web",
+                    link: "/developers/ladesa-systems/microservices/front-end/web/",
+                  },
+                  {
+                    text: "Mobile",
+                    link: "/developers/ladesa-systems/microservices/front-end/mobile/",
+                  },
+                ],
+              },
+              {
+                text: "Back-End",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Web API Integrada",
+                    link: "/developers/ladesa-systems/microservices/back-end/api/",
+                  },
+                  {
+                    text: "Gerar Horário",
+                    link: "/developers/ladesa-systems/microservices/back-end/gerar-horario/",
+                  },
+                  {
+                    text: "Autenticação",
+                    link: "/developers/ladesa-systems/microservices/back-end/auth/",
+                  },
+                ],
+              },
+              {
+                text: "Documentação",
+                link: "/developers/ladesa-systems/microservices/docs/",
+              },
+            ],
+          },
+
+          {
+            text: "Integração",
+            collapsed: true,
+
+            items: [
+              {
+                text: "Conectar",
+                link: "/developers/ladesa-systems/connect/",
+              },
+              {
+                text: "Web API Integrada",
+
+                collapsed: true,
+                items: [
+                  {
+                    text: "Visão Geral",
+                    link: "/developers/ladesa-systems/connect/web-api/overview",
+                  },
+                  {
+                    text: "JavaScript",
+                    link: "/developers/ladesa-systems/connect/web-api/javascript/",
+                  },
+                  {
+                    text: "Vue/Nuxt",
+                    link: "/developers/ladesa-systems/connect/web-api/javascript/vue-nuxt/",
+                  },
+                ],
+              },
+            ],
+          },
+
+          {
+            text: "Distribuição",
+            collapsed: true,
+
+            items: [
+              {
+                text: "Vamos Distribuir",
+                link: "/developers/ladesa-systems/distribute/",
+              },
+
+              {
+                text: "Build e Empacotamento",
+                link: "/developers/ladesa-systems/distribute/build-and-package/",
+              },
+
+              {
+                text: "Clientes (front-end)",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Web",
+                    link: "/developers/ladesa-systems/distribute/client-front-end/web/",
+                  },
+                  {
+                    text: "Mobile",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Android",
+                        link: "/developers/ladesa-systems/distribute/client-front-end/mobile/android/",
+                      },
+                      {
+                        text: "iOS",
+                        link: "/developers/ladesa-systems/distribute/client-front-end/mobile/ios/",
+                      },
+                    ],
+                  },
+                  {
+                    text: "Desktop",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "Windows",
+                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/windows/",
+                      },
+                      {
+                        text: "macOS",
+                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/macos/",
+                      },
+                      {
+                        text: "Linux",
+                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/linux/",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                text: "Servidor (back-end)",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Container OCI",
+                    link: "/developers/ladesa-systems/distribute/server-back-end/container/",
+                  },
+                ],
+              },
+            ],
+          },
+
+          {
+            text: "Implantação",
+            collapsed: true,
+            items: [
+              {
+                text: "Vamos Implantar",
+                link: "/developers/ladesa-systems/deploy/",
+              },
+
+              {
+                text: "Execução",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Cluster",
+
+                    collapsed: true,
+
+                    items: [
+                      {
+                        text: "Inicializar Kubernetes",
+                        link: "/developers/ladesa-systems/deploy/cluster/initialize-kubernetes/",
+                      },
+
+                      {
+                        text: "Certificados",
+                        collapsed: true,
+                        items: [
+                          {
+                            text: "CertManager",
+                            link: "/developers/ladesa-systems/deploy/cluster/certificates/setup-cert-manager",
+                          },
+                          {
+                            text: "ClusterIssuer",
+                            link: "/developers/ladesa-systems/deploy/cluster/certificates/cluster-issuer",
+                          },
+                        ],
+                      },
+
+                      {
+                        text: "Configurar o Portainer",
+                        link: "/developers/ladesa-systems/deploy/cluster/setup-portainer/",
+                      },
+
+                      {
+                        text: "Bancos de Dados",
+                        collapsed: true,
+                        items: [
+                          {
+                            text: "Postgres",
+                            link: "/developers/ladesa-systems/deploy/cluster/databases/postgres/",
+                          },
+                          {
+                            text: "MariaDB",
+                            link: "/developers/ladesa-systems/deploy/cluster/databases/mariadb/",
+                          },
+                          {
+                            text: "Redis",
+                            link: "/developers/ladesa-systems/deploy/cluster/databases/redis/",
+                          },
+                        ],
+                      },
+
+                      {
+                        text: "Infisical",
+                        collapsed: true,
+                        items: [
+                          {
+                            text: "Server",
+                            link: "/developers/ladesa-systems/deploy/cluster/infisical/server/",
+                          },
+                          {
+                            text: "Operator",
+                            link: "/developers/ladesa-systems/deploy/cluster/infisical/pulling-secrets/kubernetes/operator/",
+                          },
+                          {
+                            text: "Secret Sync",
+                            link: "/developers/ladesa-systems/deploy/cluster/infisical/pulling-secrets/kubernetes/infisical-secret-resource/",
+                          },
+                        ],
+                      },
+
+                      {
+                        text: "Registry",
+                        link: "/developers/ladesa-systems/deploy/cluster/registry/",
+                      },
+
+                      {
+                        text: "E-mail",
+                        collapsed: true,
+                        items: [
+                          {
+                            text: "Postal",
+                            link: "/developers/ladesa-systems/deploy/cluster/e-mail/postal/",
+                          },
+                        ],
+                      },
+
+                      {
+                        text: "RabbitMQ",
+                        link: "/developers/ladesa-systems/deploy/cluster/rabbitmq/",
+                      },
+
+                      {
+                        text: "Sistemas do Ladesa",
+                        collapsed: true,
+                        items: [
+                          {
+                            text: "API",
+                            link: "/developers/ladesa-systems/deploy/cluster/ladesa/api/",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+
+                  {
+                    text: "VPN",
+                  },
+
+                  {
+                    text: "Hacks",
+                    link: "/developers/ladesa-systems/deploy/hacks/",
+                  },
+                ],
+              },
+
+              {
+                text: "Devops",
+                collapsed: true,
+                items: [],
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        text: "Tutoriais Gerais",
         collapsed: true,
         items: [
           {
             text: "Motivação",
             link: "/developers/tutorials/",
           },
+
+          {
+            text: "Ambientes e Estágios",
+            link: "/developers/tutorials/environments",
+          },
+
+          {
+            text: "Sistemas Operacionais",
+            collapsed: true,
+            items: [
+              {
+                text: "Linha de Comando",
+                link: "/developers/tutorials/os/command-line/",
+              },
+              {
+                text: "Permissões de Arquivos",
+                link: "/developers/tutorials/os/file-permissions/",
+              },
+            ],
+          },
+
+          {
+            text: "Código-fonte",
+            collapsed: true,
+            items: [
+              {
+                text: "Plataformas de Execução",
+                link: "/developers/tutorials/source-code/runtime-platforms",
+              },
+
+              {
+                text: "Git",
+                link: "/developers/tutorials/source-code/git/",
+              },
+
+              {
+                text: "Visual Studio Code",
+                link: "/developers/tutorials/source-code/vs-code/",
+              },
+            ],
+          },
+
           {
             text: "Plataformas",
             collapsed: true,
@@ -127,37 +477,6 @@ export const sidebar: DefaultTheme.Sidebar = [
           },
 
           {
-            text: "Sistemas Operacionais",
-            collapsed: true,
-            items: [
-              {
-                text: "Linha de Comando",
-                link: "/developers/tutorials/os/command-line/",
-              },
-              {
-                text: "Permissões de Arquivos",
-                link: "/developers/tutorials/os/file-permissions/",
-              },
-            ],
-          },
-
-          {
-            text: "Código-fonte",
-            collapsed: true,
-            items: [
-              {
-                text: "Git",
-                link: "/developers/tutorials/source-code/git/",
-              },
-
-              {
-                text: "Visual Studio Code",
-                link: "/developers/tutorials/source-code/vs-code/",
-              },
-            ],
-          },
-
-          {
             text: "Gestão de Projetos",
             collapsed: true,
             items: [
@@ -168,289 +487,6 @@ export const sidebar: DefaultTheme.Sidebar = [
             ],
           },
         ],
-      },
-
-      {
-        text: "Microsserviços",
-        collapsed: true,
-        items: [
-          {
-            text: "Sobre",
-            link: "/developers/services/",
-          },
-
-          {
-            text: "Primeiros passos",
-            collapsed: true,
-            items: [
-              {
-                text: "Configurar Ambiente",
-                link: "/developers/services/first-steps/setup/",
-              },
-              {
-                text: "Kit para Desenvolvedores",
-                link: "/developers/services/first-steps/dev-kit/",
-              },
-            ],
-          },
-
-          {
-            text: "Front-End",
-            collapsed: true,
-            items: [
-              {
-                text: "Aplicação Web",
-                link: "/developers/services/web/",
-              },
-              {
-                text: "Mobile",
-                link: "/developers/services/mobile/",
-              },
-            ],
-          },
-          {
-            text: "Back-End",
-            collapsed: true,
-            items: [
-              {
-                text: "Web API Integrada",
-                link: "/developers/services/api/",
-              },
-              {
-                text: "Gerar Horário",
-                link: "/developers/services/gerar-horario/",
-              },
-              {
-                text: "Autenticação",
-                link: "/developers/services/auth/",
-              },
-            ],
-          },
-          {
-            text: "Documentação",
-            link: "/developers/services/docs/",
-          },
-        ],
-      },
-      {
-        text: "Integração",
-        collapsed: true,
-
-        items: [
-          {
-            text: "Conectar",
-            link: "/developers/connect/",
-          },
-          {
-            text: "Web API Integrada",
-
-            collapsed: true,
-            items: [
-              {
-                text: "Visão Geral",
-                link: "/developers/connect/web/overview",
-              },
-              {
-                text: "JavaScript",
-                link: "/developers/connect/web/javascript/",
-              },
-              {
-                text: "Vue/Nuxt",
-                link: "/developers/connect/web/javascript/vue-nuxt/",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        text: "Implantação",
-        collapsed: true,
-        items: [
-          {
-            text: "Vamos Implantar",
-            link: "/developers/deploy/",
-          },
-
-          {
-            text: "Plataformas de Execução",
-            link: "/developers/deploy/runtime-platforms",
-          },
-
-          {
-            text: "Ambientes",
-            link: "/developers/deploy/environments",
-          },
-
-          {
-            text: "Distribuição",
-            collapsed: true,
-
-            items: [
-              {
-                text: "Vamos Distribuir",
-                link: "/developers/deploy/distribution/",
-              },
-
-              {
-                text: "Clientes (front-end)",
-                collapsed: true,
-                items: [
-                  {
-                    text: "Web",
-                    link: "/developers/deploy/distribution/client-front-end/web/",
-                  },
-                  {
-                    text: "Mobile",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Android",
-                        link: "/developers/deploy/distribution/client-front-end/mobile/android/",
-                      },
-                      {
-                        text: "iOS",
-                        link: "/developers/deploy/distribution/client-front-end/mobile/ios/",
-                      },
-                    ],
-                  },
-                  {
-                    text: "Desktop",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Windows",
-                        link: "/developers/deploy/distribution/client-front-end/desktop/windows/",
-                      },
-                      {
-                        text: "macOS",
-                        link: "/developers/deploy/distribution/client-front-end/desktop/macos/",
-                      },
-                      {
-                        text: "Linux",
-                        link: "/developers/deploy/distribution/client-front-end/desktop/linux/",
-                      },
-                    ],
-                  },
-                ],
-              },
-              {
-                text: "Servidor (back-end)",
-
-                items: [
-                  {
-                    text: "Containers OCI",
-                    link: "/developers/deploy/distribution/server-back-end/",
-                  },
-                ],
-              },
-            ],
-          },
-
-          {
-            text: "Execução",
-            collapsed: true,
-            items: [
-              {
-                text: "Cluster",
-
-                collapsed: true,
-
-                items: [
-                  {
-                    text: "Inicializar Kubernetes",
-                    link: "/developers/deploy/cluster/01-initialize-kubernetes/",
-                  },
-
-                  {
-                    text: "Certificados",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "CertManager",
-                        link: "/developers/deploy/cluster/certificates/setup-cert-manager",
-                      },
-                      {
-                        text: "ClusterIssuer",
-                        link: "/developers/deploy/cluster/certificates/cluster-issuer",
-                      },
-                    ],
-                  },
-
-                  {
-                    text: "Configurar o Portainer",
-                    link: "/developers/deploy/cluster/02-setup-portainer/",
-                  },
-
-                  {
-                    text: "Bancos de Dados",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Postgres",
-                        link: "/developers/deploy/cluster/03-databases/postgres/",
-                      },
-                      {
-                        text: "Redis",
-                        link: "/developers/deploy/cluster/03-databases/redis/",
-                      },
-                    ],
-                  },
-
-                  {
-                    text: "Infisical",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "Server",
-                        link: "/developers/deploy/cluster/04-infisical/server/",
-                      },
-                      {
-                        text: "Operator",
-                        link: "/developers/deploy/cluster/04-infisical/pulling-secrets/kubernetes/operator/",
-                      },
-                      {
-                        text: "Secret Sync",
-                        link: "/developers/deploy/cluster/04-infisical/pulling-secrets/kubernetes/infisical-secret-resource/",
-                      },
-                    ],
-                  },
-
-                  {
-                    text: "Registry",
-                    link: "/developers/deploy/cluster/05-registry/",
-                  },
-
-                  {
-                    text: "Sistemas do Ladesa",
-                    collapsed: true,
-                    items: [
-                      {
-                        text: "API",
-                        link: "/developers/deploy/cluster/06-ladesa/api/",
-                      },
-                    ],
-                  },
-                ],
-              },
-
-              {
-                text: "VPN",
-              },
-
-              {
-                text: "Hacks",
-                link: "/developers/deploy/hacks/",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        text: "Devops",
-        collapsed: true,
-        items: [],
       },
     ],
   },

@@ -14,4 +14,4 @@ A integração de uma API depende da documentação fornecida pelo desenvolvedor
 
 O Ladesa fornece o serviço de API que garante as formas de interagir com o sistema de autenticação, geração de horário e de todas as funcionalidades pertinetes a gestão acadêmica. Ao utilizar a API do Ladesa, você pode focar no charme da interface visual e da experiência que os seus usuários terão ao utilizar as funcionalidades que fornecemos.
 
-Continue lendo em nossa seção dedicada à [Conexão aos Serviços do Ladesa](../../../connect/index.md).
+Continue lendo em nossa seção dedicada à [Conexão aos Serviços do Ladesa](../../../ladesa-systems/connect/index.md).

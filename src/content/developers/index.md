@@ -11,22 +11,18 @@ description: Bem-vindo à documentação feita pelos desenvolvedores do SISGHA /
 Bem-vindo à documentação feita pelos desenvolvedores do Ladesa para desenvolvedores.
 
 <div>
-  <LinkCard title="Microsserviços"
-    href="/developers/services"
+
+<LinkCard title="Sistemas do Ladesa"
+    href="/developers/ladesa-systems"
     description="Veja os sistemas que constituem nossos projetos e aprenda como contribuir."
   />
 
 <LinkCard
-  title="Integração"
-  href="/developers/connect/"
-  description="Saiba como integrar os serviços do Ladesa em outros sistemas."
-/>
-
-<LinkCard
-    title="Tutoriais"
+    title="Tutoriais Gerais"
     href="/developers/tutorials/"
     description="Aprenda conceitos e tecnologias com uma documentação preparada por nossa comunidade."
   />
+
 </div>
 
 ## Documentação técnica

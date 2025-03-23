@@ -16,7 +16,7 @@ JavaScript
 
 - Vue.js
 - Nuxt
-- Vuetify
+- ~Vuetify~
 
 CSS
 
@@ -35,10 +35,9 @@ sla uaikkkkkkkkk
 
 ## Ambientes
 
-| Estágio         | Devops                                                       | URL                                                      |
-| --------------- | ------------------------------------------------------------ | -------------------------------------------------------- |
-| Produção        | [![CI: Production][action-ci-prod-src]][action-ci-prod-href] | `não disponível`.                                        |
-| Desenvolvimento | [![CI: Development][action-ci-dev-src]][action-ci-dev-href]  | <https://luna.sisgha.com/>; <https://dev.ladesa.com.br/> |
+| Estágio         | Devops                                                      | URL                                                      |
+| --------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
+| Desenvolvimento | [![CI: Development][action-ci-dev-src]][action-ci-dev-href] | <https://luna.sisgha.com/>; <https://dev.ladesa.com.br/> |
 
 ## Configuração Local
 
@@ -52,7 +51,7 @@ cd web
 ### Instalar as dependências do projeto
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Iniciar servidor de desenvolvimento local
@@ -60,7 +59,7 @@ npm install
 Comece o servidor de desenvolvimento em [`http://localhost:3000`](http://localhost:3000):
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Colaboradores

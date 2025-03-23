@@ -24,7 +24,7 @@ Ao utilizar a _Web API Integrada_, você pode focar no charme da interface visua
 
 <!--@include: ./web/overview.md#introduction -->
 
-Continue lendo em nossa [seção dedicada a _Web API Integrada_](./web/overview.md).
+Continue lendo em nossa [seção dedicada a _Web API Integrada_](./web-api/overview.md).
 
 ### Recursos Individuais
 

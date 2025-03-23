@@ -17,13 +17,23 @@ kubectl create namespace infisical;
 ```
 
 ```bash
+# encryption key
+openssl rand -base64 16 | xclip -copy sel
+```
+
+```bash
+# auth key
+openssl rand -base64 32 | xclip -copy sel
+```
+
+```bash
 cat <<EOF > setup.env
-ENCRYPTION_KEY=$(openssl rand -base64 16)
-AUTH_SECRET=$(openssl rand -hex 32)
+ENCRYPTION_KEY=<encryption key>
+AUTH_SECRET=<auth key>
 SITE_URL=https://infisical.ladesa.com.br
 PORT=8080
 TELEMETRY_ENABLED=true
-REDIS_URL=redis://:{CHANGE_ME}@redis-server.redis-server.svc.cluster.local:6379/0
+REDIS_URL=redis://<redis username>:<redis-password>@redis-server.redis-server.svc.cluster.local:6379/0
 DB_CONNECTION_URI=postgres://infisical:$(openssl rand -hex 16)@cluster-postgres-rw.default.svc.cluster.local/infisical
 EOF
 ```

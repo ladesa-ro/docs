@@ -5,7 +5,7 @@ Olá! Estamos felizes por você querer fazer a integração aos nossos serviços
 <!-- #region introduction -->
 
 <script setup lang="ts">
-  import imgOverview from "@/content/developers/connect/web/_parts/assets/api-overview.drawio.png"
+  import imgOverview from "@/content/developers/ladesa-systems/connect/web-api/_parts/assets/api-overview.drawio.png"
 </script>
 
 <img :src="imgOverview" alt="Diagrama que demonstra a arquitetura interação geral entre os usuários finais e os sistemas do projeto por meio da Web API Integrada." />
@@ -18,7 +18,7 @@ Olá! Estamos felizes por você querer fazer a integração aos nossos serviços
 
 O termo API significa _Application Programming Interface_ (Interface de Programação de Aplicação). Esse termo não define exatamente qual o protocolo exato de comunicação, servindo apenas como forma de identificar os padrões de comunicação disponíveis entre duas aplicações.
 
-Saiba mais sobre essa idéia em nossa [seção dedicada ao conceito de API](../../tutorials/platforms/api/index.md).
+Saiba mais sobre essa idéia em nossa [seção dedicada ao conceito de API](../../../tutorials/platforms/api/index.md).
 
 ## Escolher uma Instância
 
@@ -28,7 +28,7 @@ Você pode subir sua própria instância de nosso sistema de API — visto que n
 
 ### Instância Própria
 
-Para subir a sua própria instância da Web API do Ladesa, por favor leia a seção [Serviços / API](../../services/api/index.md).
+Para subir a sua própria instância da Web API do Ladesa, por favor leia a seção [Serviços / API](../../../ladesa-systems/microservices/back-end/api/index.md).
 
 ### Instância do Ladesa
 
@@ -40,4 +40,4 @@ Contamos com uma instância de desenvolvimento acessível pela Internet que voc�
 
 ## Veja também
 
-- [API | 🦉 Ladesa Docs](../../tutorials/platforms/api/index.md)
+- [API | 🦉 Ladesa Docs](../../../tutorials/platforms/api/index.md)

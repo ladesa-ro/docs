@@ -17,13 +17,13 @@ kubectl get deployment -n cnpg-system cnpg-controller-manager
 
 ```bash
 apiVersion: v1
+kind: Secret
+type: kubernetes.io/basic-auth
 data:
   username: b64
   password: b64
-kind: Secret
 metadata:
   name: db-postgres-secret
-type: kubernetes.io/basic-auth
 ---
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster

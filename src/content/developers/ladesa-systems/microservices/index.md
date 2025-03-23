@@ -6,7 +6,7 @@
 ## Sumário de conteúdos
 
 <script setup>
-  import LinkCard from '../../../components/LinkCard.vue';
+  import LinkCard from '@/components/LinkCard.vue';
 </script>
 
 ### Primeiros Passos
