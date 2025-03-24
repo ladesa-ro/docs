@@ -8,7 +8,9 @@ import LinkCard from "../../components/LinkCard.vue";
 </script>
 
 # Vamos Começar
+
 <br/>
+
 Seja bem-vindo à Documentação do Ladesa!
 
 :::tip Para onde ir?
@@ -32,7 +34,6 @@ Seja bem-vindo à Documentação do Ladesa.
     href="/developers"
   />
 </div>
-
 
 ## O que é o Ladesa?
 
