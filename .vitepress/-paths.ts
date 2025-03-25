@@ -1,0 +1,20 @@
+export const PATH_ROOT = "";
+
+export const PATH_INTRODUCTION = `${PATH_ROOT}/introduction`;
+export const PATH_INTRODUCTION_GETTING_STARTED = `${PATH_INTRODUCTION}/getting-started`;
+export const PATH_INTRODUCTION_SYSTEMS = `${PATH_INTRODUCTION}/systems`;
+
+export const PATH_USER_GUIDES = `${PATH_ROOT}/user-guides`;
+export const PATH_USER_GUIDES_INTRODUCTION = `${PATH_USER_GUIDES}/introduction`;
+
+export const PATH_DEV_DOCS = `${PATH_ROOT}/developers`;
+export const PATH_DEV_DOCS_INTRO = `${PATH_DEV_DOCS}/`;
+
+export const PATH_DEV_DOCS_SYSTEMS = `${PATH_DEV_DOCS}/ladesa-systems`;
+export const PATH_DEV_DOCS_SYSTEMS_INTRO = `${PATH_DEV_DOCS_SYSTEMS}/`;
+
+export const PATH_DEV_DOCS_SYSTEMS_MICROSERVICES = `${PATH_DEV_DOCS_SYSTEMS}/microservices`;
+export const PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_INTRO = `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/`;
+
+export const PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_FIRST_STEPS_SETUP = `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/first-steps/setup/`
+export const PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_DEV_KIT = `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/first-steps/dev-kit/`

@@ -1,4 +1,16 @@
 import type { DefaultTheme } from "vitepress";
+import {
+  PATH_DEV_DOCS_INTRO,
+  PATH_DEV_DOCS_SYSTEMS,
+  PATH_DEV_DOCS_SYSTEMS_INTRO,
+  PATH_DEV_DOCS_SYSTEMS_MICROSERVICES,
+  PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_DEV_KIT,
+  PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_FIRST_STEPS_SETUP,
+  PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_INTRO,
+  PATH_INTRODUCTION_GETTING_STARTED,
+  PATH_INTRODUCTION_SYSTEMS,
+  PATH_USER_GUIDES_INTRODUCTION,
+} from "./-paths";
 
 export const sidebar: DefaultTheme.Sidebar = [
   {
@@ -7,11 +19,11 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Vamos Começar",
-        link: "/introduction/getting-started",
+        link: PATH_INTRODUCTION_GETTING_STARTED,
       },
       {
         text: "Sistemas do Ladesa",
-        link: "/introduction/systems",
+        link: PATH_INTRODUCTION_SYSTEMS,
       },
     ],
   },
@@ -22,7 +34,7 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Início",
-        link: "/user-guides/introduction",
+        link: PATH_USER_GUIDES_INTRODUCTION,
       },
     ],
   },
@@ -34,7 +46,7 @@ export const sidebar: DefaultTheme.Sidebar = [
     items: [
       {
         text: "Início",
-        link: "/developers/",
+        link: PATH_DEV_DOCS_INTRO,
       },
 
       {
@@ -43,7 +55,7 @@ export const sidebar: DefaultTheme.Sidebar = [
         items: [
           {
             text: "Primeiros Passos",
-            link: "/developers/ladesa-systems/",
+            link: PATH_DEV_DOCS_SYSTEMS_INTRO,
           },
 
           {
@@ -52,7 +64,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Sobre",
-                link: "/developers/ladesa-systems/microservices/",
+                link: PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_INTRO,
               },
 
               {
@@ -61,11 +73,11 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Configurar Ambiente",
-                    link: "/developers/ladesa-systems/microservices/first-steps/setup/",
+                    link: PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_FIRST_STEPS_SETUP,
                   },
                   {
                     text: "Kit para Desenvolvedores",
-                    link: "/developers/ladesa-systems/microservices/first-steps/dev-kit/",
+                    link: PATH_DEV_DOCS_SYSTEMS_MICROSERVICES_DEV_KIT,
                   },
                 ],
               },
@@ -76,11 +88,11 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Aplicação Web",
-                    link: "/developers/ladesa-systems/microservices/front-end/web/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/front-end/web/`,
                   },
                   {
                     text: "Mobile",
-                    link: "/developers/ladesa-systems/microservices/front-end/mobile/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/front-end/mobile/`,
                   },
                 ],
               },
@@ -90,21 +102,21 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Web API Integrada",
-                    link: "/developers/ladesa-systems/microservices/back-end/api/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/back-end/api/`,
                   },
                   {
                     text: "Gerar Horário",
-                    link: "/developers/ladesa-systems/microservices/back-end/gerar-horario/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/back-end/gerar-horario/`,
                   },
                   {
                     text: "Autenticação",
-                    link: "/developers/ladesa-systems/microservices/back-end/auth/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/back-end/auth/`,
                   },
                 ],
               },
               {
                 text: "Documentação",
-                link: "/developers/ladesa-systems/microservices/docs/",
+                link: `${PATH_DEV_DOCS_SYSTEMS_MICROSERVICES}/docs/`,
               },
             ],
           },
@@ -116,7 +128,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Conectar",
-                link: "/developers/ladesa-systems/connect/",
+                link: `${PATH_DEV_DOCS_SYSTEMS}/connect/`,
               },
               {
                 text: "Web API Integrada",
@@ -125,15 +137,15 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Visão Geral",
-                    link: "/developers/ladesa-systems/connect/web-api/overview",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/connect/web-api/overview`,
                   },
                   {
                     text: "JavaScript",
-                    link: "/developers/ladesa-systems/connect/web-api/javascript/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/connect/web-api/javascript/`,
                   },
                   {
                     text: "Vue/Nuxt",
-                    link: "/developers/ladesa-systems/connect/web-api/javascript/vue-nuxt/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/connect/web-api/javascript/vue-nuxt/`,
                   },
                 ],
               },
@@ -147,12 +159,12 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Vamos Distribuir",
-                link: "/developers/ladesa-systems/distribute/",
+                link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/`,
               },
 
               {
                 text: "Build e Empacotamento",
-                link: "/developers/ladesa-systems/distribute/build-and-package/",
+                link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/build-and-package/`,
               },
 
               {
@@ -161,7 +173,7 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Web",
-                    link: "/developers/ladesa-systems/distribute/client-front-end/web/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/web/`,
                   },
                   {
                     text: "Mobile",
@@ -169,11 +181,11 @@ export const sidebar: DefaultTheme.Sidebar = [
                     items: [
                       {
                         text: "Android",
-                        link: "/developers/ladesa-systems/distribute/client-front-end/mobile/android/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/mobile/android/`,
                       },
                       {
                         text: "iOS",
-                        link: "/developers/ladesa-systems/distribute/client-front-end/mobile/ios/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/mobile/ios/`,
                       },
                     ],
                   },
@@ -183,15 +195,15 @@ export const sidebar: DefaultTheme.Sidebar = [
                     items: [
                       {
                         text: "Windows",
-                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/windows/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/desktop/windows/`,
                       },
                       {
                         text: "macOS",
-                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/macos/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/desktop/macos/`,
                       },
                       {
                         text: "Linux",
-                        link: "/developers/ladesa-systems/distribute/client-front-end/desktop/linux/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/client-front-end/desktop/linux/`,
                       },
                     ],
                   },
@@ -203,7 +215,7 @@ export const sidebar: DefaultTheme.Sidebar = [
                 items: [
                   {
                     text: "Container OCI",
-                    link: "/developers/ladesa-systems/distribute/server-back-end/container/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/distribute/server-back-end/container/`,
                   },
                 ],
               },
@@ -216,7 +228,7 @@ export const sidebar: DefaultTheme.Sidebar = [
             items: [
               {
                 text: "Vamos Implantar",
-                link: "/developers/ladesa-systems/deploy/",
+                link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/`,
               },
 
               {
@@ -231,7 +243,7 @@ export const sidebar: DefaultTheme.Sidebar = [
                     items: [
                       {
                         text: "Inicializar Kubernetes",
-                        link: "/developers/ladesa-systems/deploy/cluster/initialize-kubernetes/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/initialize-kubernetes/`,
                       },
 
                       {
@@ -240,18 +252,18 @@ export const sidebar: DefaultTheme.Sidebar = [
                         items: [
                           {
                             text: "CertManager",
-                            link: "/developers/ladesa-systems/deploy/cluster/certificates/setup-cert-manager",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/certificates/setup-cert-manager`,
                           },
                           {
                             text: "ClusterIssuer",
-                            link: "/developers/ladesa-systems/deploy/cluster/certificates/cluster-issuer",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/certificates/cluster-issuer`,
                           },
                         ],
                       },
 
                       {
                         text: "Configurar o Portainer",
-                        link: "/developers/ladesa-systems/deploy/cluster/setup-portainer/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/setup-portainer/`,
                       },
 
                       {
@@ -260,15 +272,15 @@ export const sidebar: DefaultTheme.Sidebar = [
                         items: [
                           {
                             text: "Postgres",
-                            link: "/developers/ladesa-systems/deploy/cluster/databases/postgres/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/databases/postgres/`,
                           },
                           {
                             text: "MariaDB",
-                            link: "/developers/ladesa-systems/deploy/cluster/databases/mariadb/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/databases/mariadb/`,
                           },
                           {
                             text: "Redis",
-                            link: "/developers/ladesa-systems/deploy/cluster/databases/redis/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/databases/redis/`,
                           },
                         ],
                       },
@@ -279,22 +291,22 @@ export const sidebar: DefaultTheme.Sidebar = [
                         items: [
                           {
                             text: "Server",
-                            link: "/developers/ladesa-systems/deploy/cluster/infisical/server/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/infisical/server/`,
                           },
                           {
                             text: "Operator",
-                            link: "/developers/ladesa-systems/deploy/cluster/infisical/pulling-secrets/kubernetes/operator/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/infisical/pulling-secrets/kubernetes/operator/`,
                           },
                           {
                             text: "Secret Sync",
-                            link: "/developers/ladesa-systems/deploy/cluster/infisical/pulling-secrets/kubernetes/infisical-secret-resource/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/infisical/pulling-secrets/kubernetes/infisical-secret-resource/`,
                           },
                         ],
                       },
 
                       {
                         text: "Registry",
-                        link: "/developers/ladesa-systems/deploy/cluster/registry/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/registry/`,
                       },
 
                       {
@@ -303,14 +315,14 @@ export const sidebar: DefaultTheme.Sidebar = [
                         items: [
                           {
                             text: "Postal",
-                            link: "/developers/ladesa-systems/deploy/cluster/e-mail/postal/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/e-mail/postal/`,
                           },
                         ],
                       },
 
                       {
                         text: "RabbitMQ",
-                        link: "/developers/ladesa-systems/deploy/cluster/rabbitmq/",
+                        link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/rabbitmq/`,
                       },
 
                       {
@@ -319,7 +331,7 @@ export const sidebar: DefaultTheme.Sidebar = [
                         items: [
                           {
                             text: "API",
-                            link: "/developers/ladesa-systems/deploy/cluster/ladesa/api/",
+                            link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/cluster/ladesa/api/`,
                           },
                         ],
                       },
@@ -332,7 +344,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 
                   {
                     text: "Hacks",
-                    link: "/developers/ladesa-systems/deploy/hacks/",
+                    link: `${PATH_DEV_DOCS_SYSTEMS}/deploy/hacks/`,
                   },
                 ],
               },
