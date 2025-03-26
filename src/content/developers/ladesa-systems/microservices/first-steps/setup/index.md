@@ -1,1 +1,0 @@
-# Configurar ambiente de desenvolvimento

@@ -1,8 +1,0 @@
-.plugin-tabs--content {
-  overflow: hidden;
-  text-wrap: wrap;
-}
-
-a:has(img)::after {
-  content: none !important;
-}
