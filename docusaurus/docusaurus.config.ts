@@ -40,7 +40,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ladesa-ro/docs/tree/main/",
+          editUrl: "https://github.com/ladesa-ro/docs/tree/main/docusaurus",
         },
         blog: {
           showReadingTime: true,
@@ -50,7 +50,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ladesa-ro/docs/tree/main/",
+          editUrl: "https://github.com/ladesa-ro/docs/tree/main/docusaurus",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -129,7 +129,7 @@ const config: Config = {
           items: [
             {
               label: "YouTube",
-              href: "https://example.com/#",
+              href: "https://www.youtube.com/@LadesaRO",
             },
             {
               label: "Discord",
