@@ -28,13 +28,13 @@ O que estamos fazendo com os comandos anteriores é utilizar um outro programa q
 
 ### Shebang
 
-Os sistemas operacionais baseados em Unix suportam uma estratégia chamada [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)). Com ela, é possível "chamar" o arquivo de código-fonte diretamente na linha de comando, sem precisar indicar o comando do interpretador diretamente:
+Os sistemas operacionais baseados em Unix suportam uma estratégia chamada [shebang](<https://en.wikipedia.org/wiki/Shebang_(Unix)>). Com ela, é possível "chamar" o arquivo de código-fonte diretamente na linha de comando, sem precisar indicar o comando do interpretador diretamente:
 
 ```bash
 ./main.js
 ```
 
-:::: details Como fazer
+::::details Como fazer
 
 Para isso funcionar, duas coisas são necessárias:
 

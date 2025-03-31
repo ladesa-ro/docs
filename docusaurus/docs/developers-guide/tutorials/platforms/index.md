@@ -8,51 +8,51 @@
 
 <LinkCard
   title="Vue.js"
-  href="/developers/tutorials/platforms/web/vue/"
+  docId="developers-guide/tutorials/platforms/web/vue/index"
 />
 
 <LinkCard
   title="Vuetify"
-  href="/developers/tutorials/platforms/web/vue/vuetify/"
+  docId="developers-guide/tutorials/platforms/web/vue/vuetify/index"
 />
 
 ## Back-End
 
 <LinkCard
   title="Nuxt.js"
-  href="/developers/tutorials/platforms/web/vue/nuxt/"
+  docId="developers-guide/tutorials/platforms/web/vue/nuxt/index"
 />
 
 <LinkCard
   title="Node.js"
-  href="/developers/tutorials/platforms/node/"
+  docId="developers-guide/tutorials/platforms/node/index"
 />
 
 <LinkCard
   title="C# / .Net"
-  href="/developers/tutorials/platforms/csharp-dotnet/"
+  docId="developers-guide/tutorials/platforms/csharp-dotnet/index"
 />
 
 <LinkCard
   title="API"
-  href="/developers/tutorials/platforms/api/"
+  docId="developers-guide/tutorials/platforms/api/index"
 />
 
 ### Banco de Dados
 
 <LinkCard
   title="Postgres"
-  href="/developers/tutorials/platforms/database/postgres/"
+  docId="developers-guide/tutorials/platforms/database/postgres/index"
 />
 
 ## Infraestrutura
 
 <LinkCard
   title="Docker"
-  href="/developers/tutorials/platforms/containers/docker/"
+  docId="developers-guide/tutorials/platforms/containers/docker/index"
 />
 
 <LinkCard
   title="Kubernetes"
-  href="/developers/tutorials/platforms/containers/orchestration/kubernetes/"
+  docId="developers-guide/tutorials/platforms/containers/orchestration/kubernetes/index"
 />

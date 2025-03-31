@@ -6,10 +6,17 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
+import { useLatestVersion } from "@docusaurus/plugin-content-docs/lib/client/index.js";
+import { useXDocEntrypointUrl } from "../hooks/useDocUrl";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+
+  const docsEntrypointUrl = useXDocEntrypointUrl();
+
+  console.log(useLatestVersion(undefined));
+
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
@@ -21,17 +28,10 @@ function HomepageHeader() {
 
         <div className={styles.buttons}>
           <Link
+            to={docsEntrypointUrl}
             className="button button--secondary button--lg"
-            to="/docs/overview/introduction/getting-started"
           >
             Acessar a Documentação
-          </Link>
-
-          <Link
-            className="button button--primary button--lg"
-            to="https://github.com/ladesa-ro"
-          >
-            GitHub
           </Link>
         </div>
       </div>
@@ -41,6 +41,7 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title={`${siteConfig.title}`}

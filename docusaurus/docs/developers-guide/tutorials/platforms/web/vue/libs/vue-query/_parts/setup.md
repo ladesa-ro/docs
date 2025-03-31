@@ -1,4 +1,4 @@
-::: code-group
+:::code-group
 
 ```sh [npm]
 npm install @tanstack/vue-query
@@ -30,14 +30,22 @@ app.use(VueQueryPlugin);
 
 ### Nuxt 3
 
-::: code-group
+:::code-group
 
 ```ts [plugins/vue-query.ts]
 import { useState } from "#app";
 import { persistQueryClient } from "@tanstack/query-persist-client-core";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
-import type { DehydratedState, VueQueryPluginOptions } from "@tanstack/vue-query";
-import { QueryClient, VueQueryPlugin, dehydrate, hydrate } from "@tanstack/vue-query";
+import type {
+  DehydratedState,
+  VueQueryPluginOptions,
+} from "@tanstack/vue-query";
+import {
+  QueryClient,
+  VueQueryPlugin,
+  dehydrate,
+  hydrate,
+} from "@tanstack/vue-query";
 
 export default defineNuxtPlugin((nuxt) => {
   const vueQueryState = useState<DehydratedState | null>("vue-query");

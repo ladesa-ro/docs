@@ -20,17 +20,17 @@ Qualquer contribuição será bem-vinda. **Aproveite nossa documentação!**
 
 <LinkCard
   title="Plataformas"
-  href="/developers/tutorials/platforms/"
+  docId="developers-guide/tutorials/platforms/index"
 />
 <LinkCard
   title="Código-Fonte"
-  href="/developers/tutorials/source-code/git/"
+  docId="developers-guide/tutorials/source-code/git/index"
 />
 <LinkCard
   title="Sistemas Operacionais"
-  href="/developers/tutorials/os/command-line/"
+  docId="developers-guide/tutorials/os/command-line/index"
 />
 <LinkCard
   title="Gestão de Projetos"
-  href="/developers/tutorials/project-management/jira/"
+  docId="developers-guide/tutorials/project-management/jira/index"
 />

@@ -18,7 +18,7 @@ sidebar_label: JS Vanilla
 
 ## Instalação
 
-::: code-group
+:::code-group
 
 ```sh [npm]
 npm install @ladesa-ro/api-client-fetch

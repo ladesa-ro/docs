@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Vamos Começar
 
-import DocCardList from "@theme/DocCardList";
+import { useXDocUrl } from "../../../src/hooks/useDocUrl";
 
 <br />
 
@@ -14,19 +14,17 @@ Seja bem-vindo à Documentação do Ladesa!
 A seguir, estão listados guias que possam interessar à sua trilha por nossa base de conhecimento.
 :::
 
-<DocCardList
+<LinkCardList
   items={[
     {
-      type: "link",
-      label: "Guia para Usuários",
+      title: "Guia para Usuários",
       description: "Documentação destinada aos utilizadores do sistema.",
-      href: "/docs/users-guide/intro",
+      docId: "users-guide/intro",
     },
     {
-      type: "link",
-      label: "Guia para Desenvolvedores",
+      title: "Guia para Desenvolvedores",
       description: "Documentação destinada aos desenvolvedores do sistema.",
-      href: "/docs/developers-guide/intro",
+      docId: "developers-guide/intro",
     },
   ]}
 />
