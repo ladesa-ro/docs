@@ -1,5 +1,5 @@
 import { useLatestVersion } from "@docusaurus/plugin-content-docs/lib/client/index.js";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 
 export const useXDocUrl = (docId: string) => {
   const version = useLatestVersion(undefined);
@@ -9,9 +9,9 @@ export const useXDocUrl = (docId: string) => {
     [docId],
   );
 
-  useEffect(() => {
-    console.debug("available docs:", version.docs);
-  }, [version]);
+  // useEffect(() => {
+  //   console.debug("available docs:", version.docs);
+  // }, [version]);
 
   if (!doc) {
     throw new Error(`doc with id not found: ${docId}`);
