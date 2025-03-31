@@ -1,4 +1,4 @@
-# Registry
+# Configurar o Registry
 
 ## PersistentVolumeClaim
 
