@@ -18,6 +18,10 @@ jobs:
     environment:
       name: production
 
+    env:
+      BUILD_IMAGE_NAME: production
+      BUILD_IMAGE_TAG: production
+
     steps:
       - uses: actions/checkout@v4
 
@@ -31,8 +35,8 @@ jobs:
 
       - uses: ladesa-ro/esteira-ci-cd/actions/image-build-push@main
         with:
-          image-tag: ${{ vars.BUILD_IMAGE_TAG }}
-          image-name: ${{ vars.BUILD_IMAGE_NAME  }}
+          image-tag: ${{ env.BUILD_IMAGE_TAG }}
+          image-name: ${{ env.BUILD_IMAGE_NAME  }}
 
           build-image: "true"
           build-target-tag: "runtime"
@@ -48,15 +52,19 @@ jobs:
 
     environment:
       name: production
-      url: ${{ vars.DEPLOY_URL }}
+      url: https://docs.ladesa.com.br
 
+    env:
+      K8S_NAMESPACE: ladesa-ro-production
+      K8S_DEPLOYMENT: ladesa-ro-docs
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ladesa-ro/esteira-ci-cd/actions/deploy-k8s-stakater-application@main
-        with:
-          helm-values: ${{ vars.DEPLOY_HELM_VALUES }}
-          deployment: ${{ vars.K8S_DEPLOYMENT }}
-          namespace: ${{ vars.K8S_NAMESPACE }}
-          helm-release-name: ${{ vars.K8S_DEPLOYMENT }}
-          helm-release-extra-options: ""
+      - shell: bash
+        run: |
+          helm upgrade -i ${HELM_RELEASE_NAME} --repo https://stakater.github.io/stakater-charts application --version 6.0.2 --namespace=${K8S_NAMESPACE} -f ./.github/workflows/deploy/values.prod.yml;
+
+          kubectl rollout restart \
+            deployment.apps/${K8S_DEPLOYMENT} \
+            --namespace ${K8S_NAMESPACE} \
+          ;
