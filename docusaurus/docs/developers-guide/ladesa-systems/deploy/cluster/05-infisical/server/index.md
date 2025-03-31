@@ -1,4 +1,8 @@
-# Infisical
+---
+sidebar_position: 1
+---
+
+# Configurar Servidor do Infisical
 
 [Kubernetes via Helm Chart - Infisical](https://infisical.com/docs/self-hosting/deployment-options/kubernetes-helm)
 
