@@ -19,7 +19,7 @@ jobs:
       name: production
 
     env:
-      BUILD_IMAGE_NAME: production
+      BUILD_IMAGE_NAME: docs
       BUILD_IMAGE_TAG: production
 
     steps:
