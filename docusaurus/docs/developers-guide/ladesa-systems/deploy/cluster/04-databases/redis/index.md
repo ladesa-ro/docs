@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Redis
 
 [Deploying Redis to Kubernetes cluster K3s](https://rpi4cluster.com/k3s-redis/#redis)

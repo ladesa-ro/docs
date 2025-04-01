@@ -1,0 +1,42 @@
+---
+sidebar_position: 1
+---
+
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+# Gerenciador cert-manager
+
+O [cert-manager](https://cert-manager.io/docs/) é uma solução automatizada para a gestão de certificados TLS em clusters Kubernetes.
+
+Integrado diretamente ao cluster, ele permite a emissão e renovação automática de certificados para diversas aplicações – como aquelas que utilizam HTTPS – sem intervenção manual.
+
+Com suporte para múltiplos provedores de certificados (como Let's Encrypt, Vault, [entre outros](https://cert-manager.io/docs/configuration/issuers/)), o cert-manager simplifica o processo de criação sob demanda e assegura que os certificados estejam sempre atualizados, aumentando a segurança e reduzindo a carga operacional.
+
+## Instalação
+
+<Tabs>
+
+<TabItem value="kubectl" label="kubectl">
+
+:::note
+
+Documentação oficial do cert-manager para a instalação via kubectl: [clique aqui](https://cert-manager.io/docs/installation/kubectl/).
+
+:::
+
+Para instalar o cert-manager v1.16.2 no [cluster k3s](../01-initialize-kubernetes/index.md) via [kubectl](https://kubernetes.io/docs/tasks/tools/), execute o seguinte comando:
+
+```bash
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.16.2/cert-manager.yaml
+```
+
+</TabItem>
+
+</Tabs>
+
+### Verificar instalação
+
+```bash
+kubectl get pods --namespace cert-manager
+```

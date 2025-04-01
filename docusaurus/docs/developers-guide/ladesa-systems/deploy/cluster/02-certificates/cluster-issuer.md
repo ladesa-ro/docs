@@ -2,7 +2,15 @@
 sidebar_position: 2
 ---
 
-# ClusterIssuer
+# Provedores de Certificado
+
+O cert-manager obtém novos certificados dos Provedores de Certificados conforme as regras configuradas. Por meio dos recursos do tipo `Issuer` ou `ClusterIssuer`, é possível definir de forma precisa qual autoridade (ou provedor) será utilizada para gerar cada certificado – podendo, inclusive, aplicar filtros com base em domínios, entre outros critérios.
+
+- `Issuer`: recurso criado em um namespace específico do cluster Kubernetes, e só pode ser utilizado por certificados que residem nesse mesmo namespace.
+
+- `Cluster Issuer`: recurso de âmbito cluster, disponível para todos os namespaces. Dessa forma, pode ser referenciado por certificados localizados em qualquer parte do cluster.
+
+A escolha de utilização entre `Issuer` e `ClusterIssuer` pode ficar à critério de cada caso, sendo o responsável pela implantação considerar o melhor caso.
 
 <!-- ## Development
 
@@ -32,7 +40,7 @@ spec:
 
 ``` -->
 
-## Production
+## Ambiente de Produção
 
 ```yaml
 apiVersion: cert-manager.io/v1
@@ -42,7 +50,7 @@ metadata:
   namespace: ladesa-ro-production
 spec:
   acme:
-    email: ${EMAIL}
+    email: <email para registro no lets encrypt>
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: ladesa-ro-issuer-production
