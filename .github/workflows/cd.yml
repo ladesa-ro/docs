@@ -55,14 +55,12 @@ jobs:
       url: https://docs.ladesa.com.br
 
     env:
-      HELM_RELEASE_NAME: ladesa-ro-docs
-      K8S_NAMESPACE: ladesa-ro-production
       K8S_DEPLOYMENT: ladesa-ro-docs
+      K8S_NAMESPACE: ladesa-ro-production
+      HELM_RELEASE_NAME: ladesa-ro-docs
     steps:
       - uses: actions/checkout@v4
 
       - shell: bash
-        run: |
-          helm upgrade -i ${HELM_RELEASE_NAME} --repo https://stakater.github.io/stakater-charts application --version 6.0.2 --namespace=${K8S_NAMESPACE} -f ./.github/workflows/deploy/values.prod.yml;
-
-          kubectl rollout restart --namespace ${K8S_NAMESPACE} deployment.apps/${K8S_DEPLOYMENT};
+        working-directory: ./.github/workflows/deploy/ladesa-production/
+        run: ./deploy.sh
