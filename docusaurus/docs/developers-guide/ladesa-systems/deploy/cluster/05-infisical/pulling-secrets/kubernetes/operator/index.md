@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Infisical Operator
 
 [Kubernetes Operator - Infisical](https://infisical.com/docs/integrations/platforms/kubernetes#authentication-universalauth)
