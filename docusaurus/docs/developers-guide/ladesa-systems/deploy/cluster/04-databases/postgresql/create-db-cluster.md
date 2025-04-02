@@ -34,6 +34,8 @@ Documentações dos resources:
 
 - `Cluster`: https://cloudnative-pg.io/documentation/preview/cloudnative-pg.v1/#postgresql-cnpg-io-v1-Cluster.
 - `ClusterSpec`: https://cloudnative-pg.io/documentation/preview/cloudnative-pg.v1/#postgresql-cnpg-io-v1-ClusterSpec
+- `ManagedConfiguration`: https://cloudnative-pg.io/documentation/preview/cloudnative-pg.v1/#postgresql-cnpg-io-v1-ManagedConfiguration
+- `RoleConfiguration`: https://cloudnative-pg.io/documentation/preview/cloudnative-pg.v1/#postgresql-cnpg-io-v1-RoleConfiguration
 
 ## Arquitetura do Cluster
 
