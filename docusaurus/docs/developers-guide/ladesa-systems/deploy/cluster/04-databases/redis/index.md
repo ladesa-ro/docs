@@ -6,11 +6,14 @@ sidebar_position: 2
 
 [Deploying Redis to Kubernetes cluster K3s](https://rpi4cluster.com/k3s-redis/#redis)
 
-```bash
-kubectl create namespace redis-server;
+```yaml title="redis-namespace.yml"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: redis-server
 ```
 
-```yaml
+```yaml title="redis-pvc.yml"
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -26,19 +29,19 @@ spec:
 ```
 
 ```yaml
-REDIS_PASSWORD=$(openssl rand -hex 24)
+echo "REDIS_PASSWORD=$(openssl rand -hex 24)" > redis.env
 ```
 
 ```bash
 kubectl create secret generic redis-secret \
---from-env-file=./setup.env \
+--from-env-file=./redis.env \
 --dry-run=client \
 -o yaml \
 -n redis-server \
 | kubectl apply -f -;
 ```
 
-```yaml
+```yaml title="redis-deployment.yml"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -83,7 +86,7 @@ spec:
             claimName: redis-pvc
 ```
 
-```yaml
+```yaml title="redis-service.yml"
 apiVersion: v1
 kind: Service
 metadata:
@@ -98,5 +101,4 @@ spec:
       protocol: TCP
       port: 6379
       targetPort: 6379
-  # loadBalancerIP: 192.168.0.204
 ```

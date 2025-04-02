@@ -13,12 +13,12 @@ Criação do secret:
 ```yml
 apiVersion: v1
 kind: Secret
+type: kubernetes.io/basic-auth
 metadata:
   name: db-role-infisical-secret
   namespace: default
   labels:
     cnpg.io/reload: "true"
-type: kubernetes.io/basic-auth
 data:
   username: aW5maXNpY2Fs
   password: <senha segura gerada aleatóriamente>
