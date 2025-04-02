@@ -100,11 +100,11 @@ SITE_URL=https://infisical.ladesa.com.br
 
 TELEMETRY_ENABLED=true
 
-REDIS_URL=redis://<redis username>:<redis-password>@redis-server.redis-server.svc.cluster.local:6379/0
+REDIS_URL=redis://:<redis-password>@redis-server.redis-server.svc.cluster.local:6379/0
 DB_CONNECTION_URI=postgres://infisical:<infisical role password>@cluster-postgres-rw.default.svc.cluster.local/infisical
 
-AUTH_SECRET=<auth key>
 ENCRYPTION_KEY=<encryption key>
+AUTH_SECRET=<auth key>
 ```
 
 ```bash
