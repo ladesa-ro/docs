@@ -4,6 +4,71 @@ sidebar_position: 1
 
 # Servidor do Infisical
 
+## Configurar Banco de Dados
+
+### Role `infisical`
+
+Criação do secret:
+
+```yml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-role-infisical-secret
+  namespace: default
+  labels:
+    cnpg.io/reload: "true"
+type: kubernetes.io/basic-auth
+data:
+  username: aW5maXNpY2Fs
+  password: <senha segura gerada aleatóriamente>
+```
+
+Geração da senha segura do usuário `infisical`:
+
+```bash
+openssl rand -hex 16 | tr -d '\n' | base64 | xclip -sel copy
+```
+
+Configurar [Cluster PG](../../04-databases/postgresql/create-db-cluster.md) para gerenciar o usuário `infisical`:
+
+```yml title="cluster.yml"
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cluster-postgres
+  namespace: default
+spec:
+  # [...]
+  // highlight-start
+  managed:
+    roles:
+      - name: infisical
+        ensure: present
+        superuser: false
+        passwordSecret:
+          name: db-role-infisical-secret
+  // highlight-end
+```
+
+### Banco `infisical`
+
+```yml
+apiVersion: postgresql.cnpg.io/v1
+kind: Database
+metatada:
+  name: db-infisical
+  namespace: default
+spec:
+  cluster:
+    name: cluster-postgres
+  name: infisical
+  owner: infisical
+  ensure: present
+```
+
+## Deploy do Infisical
+
 [Kubernetes via Helm Chart - Infisical](https://infisical.com/docs/self-hosting/deployment-options/kubernetes-helm)
 
 ```bash
@@ -11,58 +76,47 @@ helm repo add infisical-helm-charts 'https://dl.cloudsmith.io/public/infisical/h
 helm repo update
 ```
 
-```yaml
-mkdir -p /tmp/ladesa-ro/cluster-setup/infisical;
-cd /tmp/ladesa-ro/cluster-setup/infisical;
-```
-
 ```bash
 kubectl create namespace infisical;
 ```
 
-```bash
-# encryption key
-openssl rand -base64 16 | xclip -copy sel
-```
+### Gerar Chaves Seguras do Infisical
+
+#### Chave de Encriptação
 
 ```bash
-# auth key
-openssl rand -base64 32 | xclip -copy sel
+openssl rand -hex 16 | tr -d '\n' | xclip -sel copy
 ```
 
+#### Chave de Autenticação
+
 ```bash
-cat <<EOF > setup.env
-ENCRYPTION_KEY=<encryption key>
-AUTH_SECRET=<auth key>
-SITE_URL=https://infisical.ladesa.com.br
+openssl rand -base64 32 | tr -d '\n' | xclip -sel copy
+```
+
+```env title="infisical.env"
 PORT=8080
+SITE_URL=https://infisical.ladesa.com.br
+
 TELEMETRY_ENABLED=true
+
 REDIS_URL=redis://<redis username>:<redis-password>@redis-server.redis-server.svc.cluster.local:6379/0
-DB_CONNECTION_URI=postgres://infisical:$(openssl rand -hex 16)@cluster-postgres-rw.default.svc.cluster.local/infisical
-EOF
-```
+DB_CONNECTION_URI=postgres://infisical:<infisical role password>@cluster-postgres-rw.default.svc.cluster.local/infisical
 
-```sql
-create database infisical;
-create user infisical with encrypted password 'CHANGEME';
-grant all privileges on database infisical to infisical;
-ALTER DATABASE infisical OWNER TO infisical;
-
-\c infisical;
-GRANT USAGE, CREATE ON SCHEMA public TO infisical;
+AUTH_SECRET=<auth key>
+ENCRYPTION_KEY=<encryption key>
 ```
 
 ```bash
 kubectl create secret generic infisical-secrets \
- --from-env-file=./setup.env \
- --dry-run=client \
- -o yaml \
- -n infisical \
-| kubectl apply -f -;
+  -n infisical \
+  --from-env-file=./infisical.env \
+  --dry-run=client \
+  -o yaml \
+  | kubectl apply -f -;
 ```
 
-```bash
-cat <<EOF > values.yaml
+```yml title="values.yml"
 nameOverride: "infisical"
 fullnameOverride: "infisical"
 
@@ -106,14 +160,8 @@ postgresql:
 
 redis:
   enabled: false
-EOF
 ```
 
 ```bash
-helm upgrade --install infisical infisical-helm-charts/infisical-standalone --values values.yaml --namespace infisical
-```
-
-```bash
-cd ~;
-rm -rf /tmp/ladesa-ro/cluster-setup/infisical;
+helm upgrade --install --create-namespace infisical infisical-helm-charts/infisical-standalone --namespace infisical --values values.yaml
 ```

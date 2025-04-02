@@ -20,6 +20,14 @@ spec:
   storage:
     # storageClass:
     size: 4Gi
+
+  # managed:
+  #   roles:
+  #     - name: example
+  #       ensure: present
+  #       superuser: false
+  #       passwordSecret:
+  #         name: db-role-example-secret
 ```
 
 Documentações dos resources:
@@ -61,6 +69,10 @@ ssh -N -L 5432:localhost:5432 root@{}
 ```
 
 </details>
+
+## Gerenciar Bancos de Dados
+
+Referência: https://cloudnative-pg.io/documentation/1.25/declarative_database_management/#
 
 ## Veja mais
 
