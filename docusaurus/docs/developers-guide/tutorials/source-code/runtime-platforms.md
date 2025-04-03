@@ -34,7 +34,7 @@ Os sistemas operacionais baseados em Unix suportam uma estratégia chamada [sheb
 ./main.js
 ```
 
-::::details Como fazer
+:::note Como fazer
 
 Para isso funcionar, duas coisas são necessárias:
 
@@ -53,7 +53,7 @@ chmod +x ./main.js
 
 Assim, é possível executar `./nome-do-arquivo` diretamente pela linha de comando.
 
-::::
+:::
 
 ## Plataformas Compiladas
 
