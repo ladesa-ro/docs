@@ -110,7 +110,7 @@ spec:
           resources:
             limits:
               cpu: "0.5"
-              memory: 1Gi
+              memory: 200Mi
           startupProbe:
             failureThreshold: 30
             httpGet:
@@ -157,6 +157,7 @@ spec:
 
 ## Ingress
 
+
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -167,8 +168,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
-    traefik.ingress.kubernetes.io/client-body-timeout: "600"
-    traefik.ingress.kubernetes.io/client-header-timeout: "600"
+    traefik.ingress.kubernetes.io/service.serverstransport: registry-transport@kubernetescrd
   name: registry-ingress
   namespace: ladesa-ro-production
 spec:
@@ -187,6 +187,22 @@ spec:
     - hosts:
         - registry.ladesa.com.br
       secretName: registry-cert-production-tls
+```
+
+
+```yaml
+# kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.5/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
+# kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.5/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml
+apiVersion: traefik.io/v1alpha1
+kind: ServersTransport
+metadata:
+  name: registry-transport
+  namespace: ladesa-ro-production
+spec:
+  forwardingTimeouts:
+    dialTimeout: 30s
+    responseHeaderTimeout: 600s
+    idleConnTimeout: 600s
 ```
 
 ## Secrets for Registry Pulling
