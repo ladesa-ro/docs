@@ -167,6 +167,8 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    traefik.ingress.kubernetes.io/client-body-timeout: "600"
+    traefik.ingress.kubernetes.io/client-header-timeout: "600"
   name: registry-ingress
   namespace: ladesa-ro-production
 spec:
