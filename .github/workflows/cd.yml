@@ -18,15 +18,12 @@ env:
 
 jobs:
   ci:
-    name: "CI: Construção e Publicação da Imagem de Container"
+    name: Build and Push
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
       packages: write
-
-    environment:
-      name: development
 
     steps:
       - name: Checkout do código-fonte
@@ -56,7 +53,7 @@ jobs:
           cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_BASENAME }}/docs:cache-development,mode=max
 
   cd:
-    name: Deploy to Cluster
+    name: Deploy
     needs: [ci]
 
     runs-on: dev-deploy
@@ -65,11 +62,6 @@ jobs:
       name: development
       url: https://docs.ladesa.com.br
 
-    env:
-      K8S_DEPLOYMENT: docs
-      K8S_NAMESPACE: ladesa
-      HELM_RELEASE_NAME: ladesa-docs
-    
     steps:
       - uses: actions/checkout@v4
 
