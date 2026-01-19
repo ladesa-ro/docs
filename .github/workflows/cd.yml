@@ -75,4 +75,4 @@ jobs:
 
       - shell: bash
         working-directory: ./.github/workflows/deploy/development/
-        run: ./deploy.sh
+        run: bash ./deploy.sh
