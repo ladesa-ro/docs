@@ -10,9 +10,6 @@ deployment:
     tag: production
     pullPolicy: Always
 
-  imagePullSecrets:
-    - name: ladesa-registry-pull-secret
-
   strategy:
     rollingUpdate:
       maxSurge: 1
