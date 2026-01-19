@@ -2,7 +2,7 @@
 
 set -xe;
 
-K8S_DEPLOYMENT=docs
+K8S_DEPLOYMENT=ladesa-ro-docs
 K8S_NAMESPACE=ladesa
 HELM_RELEASE_NAME=ladesa-docs
 
