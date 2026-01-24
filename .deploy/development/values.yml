@@ -1,4 +1,4 @@
-applicationName: ladesa-ro-docs
+applicationName: docs
 
 deployment:
   enabled: true

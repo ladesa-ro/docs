@@ -55,7 +55,7 @@ Para mais informações sobre o Vitepress, consulte a [documentação oficial](h
 
 <!-- Badges / Actions  -->
 
-[action-cd-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/docs/cd.yml?style=flat&logo=rocket&logoColor=white&label=Continuos+Deployment&labelColor=18181B
-[action-cd-href]: https://github.com/ladesa-ro/docs/actions/workflows/cd.yml
+[action-cd-src]: https://img.shields.io/github/actions/workflow/status/ladesa-ro/docs/build-deploy.dev.yml?style=flat&logo=rocket&logoColor=white&label=Continuos+Deployment&labelColor=18181B
+[action-cd-href]: https://github.com/ladesa-ro/docs/actions/workflows/build-deploy.dev.yml
 [built-with-docusaurus-src]: https://img.shields.io/badge/built%20with%20docusaurus-%233e63dd?style=flat&logo=docusaurus&logoColor=white
 [built-with-docusaurus-href]: https://docusaurus.io/
