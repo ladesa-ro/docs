@@ -2,8 +2,8 @@
 
 set -xe;
 
-K8S_NAMESPACE=ladesa
-K8S_DEPLOYMENT=docs
+K8S_NAMESPACE=ladesa-ro-development
+K8S_DEPLOYMENT=ladesa-ro-docs
 
 helm upgrade -i ${K8S_DEPLOYMENT} \
   --repo https://stakater.github.io/stakater-charts \
