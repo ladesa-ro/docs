@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e8555"/>
+      <stop offset="100%" stop-color="#1a8870"/>
+    </linearGradient>
+    <linearGradient id="stemGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#25c2a0"/>
+      <stop offset="100%" stop-color="#1a8870"/>
+    </linearGradient>
+  </defs>
+  <!-- Main leaf shape -->
+  <path d="M100 20 C60 20, 25 55, 25 100 C25 145, 55 175, 100 180 C145 175, 175 145, 175 100 C175 55, 140 20, 100 20Z" fill="url(#leafGrad)" opacity="0.9"/>
+  <!-- Center vein -->
+  <path d="M100 35 L100 165" stroke="url(#stemGrad)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Side veins -->
+  <path d="M100 60 L60 45" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 60 L140 45" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 85 L50 70" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 85 L150 70" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 110 L45 100" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 110 L155 100" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 135 L55 130" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 135 L145 130" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 155 L65 155" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 155 L135 155" stroke="#25c2a0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- Inner highlight -->
+  <path d="M100 30 C70 30, 40 60, 40 100 C40 135, 60 160, 100 168" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+</svg>

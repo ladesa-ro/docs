@@ -17,6 +17,7 @@ cd docs
 Certifique-se de ter o `bun` instalado.
 
 ```sh
+cd docusaurus
 bun install
 ```
 
@@ -28,6 +29,7 @@ bun install
 ## Executando o Servidor Local
 
 ```sh
+cd docusaurus
 bun run start
 ```
 
@@ -38,18 +40,20 @@ Acesse o site em [http://localhost:3000](http://localhost:3000).
 Para gerar a versão de produção:
 
 ```sh
-pnpm run build
+cd docusaurus
+bun run build
 ```
 
 Teste a versão de produção:
 
 ```sh
-pnpm run serve
+cd docusaurus
+bun run serve
 ```
 
 ## Recursos Adicionais
 
-Para mais informações sobre o Vitepress, consulte a [documentação oficial](https://vitepress.dev/guide/getting-started).
+Para mais informações sobre o Docusaurus, consulte a [documentação oficial](https://docusaurus.io/docs).
 
 <!-- Badges -->
 

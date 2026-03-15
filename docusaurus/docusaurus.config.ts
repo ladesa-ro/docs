@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {
               sidebarId: "overviewDocsSidebar",
-              to: "/docs/about/team",
+              to: "/docs/projeto/equipe",
               label: "Quem somos nós",
             },
           ],
@@ -112,15 +112,15 @@ const config: Config = {
           items: [
             {
               label: "Vamos Começar",
-              to: "/docs/overview/introduction/getting-started",
+              to: "/docs/projeto",
             },
             {
-              label: "Guia para Usuários",
-              to: "/docs/users-guide/intro",
+              label: "Requisitos",
+              to: "/docs/requirements/visao-geral",
             },
             {
               label: "Guia para Desenvolvedores",
-              to: "/docs/developers-guide/intro",
+              to: "/docs/desenvolvimento",
             },
           ],
         },

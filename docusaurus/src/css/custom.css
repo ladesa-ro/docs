@@ -15,6 +15,14 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ladesa-hero-gradient-start: #1a5c3a;
+  --ladesa-hero-gradient-end: #1a8870;
+  --ladesa-card-bg: rgba(255, 255, 255, 0.08);
+  --ladesa-card-border: rgba(46, 133, 85, 0.2);
+  --ladesa-card-hover-border: rgba(46, 133, 85, 0.5);
+  --ladesa-section-alt-bg: #f8faf9;
+  --ladesa-text-muted: #5a6c63;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,4 +35,12 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ladesa-hero-gradient-start: #0d2b1a;
+  --ladesa-hero-gradient-end: #1a8870;
+  --ladesa-card-bg: rgba(255, 255, 255, 0.05);
+  --ladesa-card-border: rgba(37, 194, 160, 0.15);
+  --ladesa-card-hover-border: rgba(37, 194, 160, 0.4);
+  --ladesa-section-alt-bg: #1a1a2e;
+  --ladesa-text-muted: #8a9a92;
 }
