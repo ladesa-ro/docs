@@ -46,5 +46,5 @@ Ou via Docker Compose junto com os demais serviços de infraestrutura. Veja [Exe
 ## Links úteis
 
 - [Repositório GitHub](https://github.com/ladesa-ro/auth)
-- [ADR-005 — Keycloak](../../requirements/arquitetura/ADR-005-keycloak.md)
-- [RF-SHARED-001 — Autenticação SSO](../../requirements/web/geral/RF-SHARED-001-autenticacao-sso.md)
+- [ADR-005 — Keycloak](../arquitetura/ADR-005-keycloak.md)
+- [RF-SHARED-001 — Autenticação SSO](../specs/RF-SHARED-001-autenticacao-sso.md)

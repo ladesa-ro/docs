@@ -9,10 +9,6 @@ export const useXDocUrl = (docId: string) => {
     [docId],
   );
 
-  // useEffect(() => {
-  //   console.debug("available docs:", version.docs);
-  // }, [version]);
-
   if (!doc) {
     throw new Error(`doc with id not found: ${docId}`);
   }

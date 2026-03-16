@@ -38,4 +38,4 @@ O fluxo de dados principal é:
 4. O **Gerar Horário** (solver) consome a mensagem, processa e retorna o resultado pela fila
 5. **Keycloak** cuida da autenticação e autorização para todos os serviços
 
-Para detalhes sobre a arquitetura, consulte os [ADRs](../../requirements/arquitetura/visao-geral.md) na seção de requisitos.
+Para detalhes sobre a arquitetura, consulte os [ADRs](../arquitetura/visao-geral.md).

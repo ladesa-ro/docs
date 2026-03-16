@@ -32,7 +32,7 @@ O app mobile não possui interface para o perfil DAPE. A geração e edição de
 
 ## Temas
 
-O app suporta **tema claro** e **tema escuro** em todas as telas. Os designs estão no Figma (fileKey: `57O1MLezMDcqe5OVkfj7qE`).
+O app suporta **tema claro** e **tema escuro** em todas as telas. Os designs estão no Figma do projeto.
 
 ## Estrutura do projeto
 
@@ -59,5 +59,5 @@ Requer um emulador Android/iOS ou dispositivo físico conectado.
 ## Links úteis
 
 - [Repositório GitHub](https://github.com/ladesa-ro/mobile)
-- [ADR-008 — Flutter Mobile](../../requirements/arquitetura/ADR-008-flutter-mobile.md)
-- [UI Specs Mobile](../../requirements/mobile/sisgha/index.md)
+- [ADR-008 — Flutter Mobile](../arquitetura/ADR-008-flutter-mobile.md)
+- [UI Specs Mobile](../specs/mobile-sisgha.md)

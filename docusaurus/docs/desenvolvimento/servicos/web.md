@@ -54,5 +54,5 @@ Requer a API (management-service) rodando para funcionar. Veja [Executar Localme
 ## Links úteis
 
 - [Repositório GitHub](https://github.com/ladesa-ro/web)
-- [ADR-001 — Nuxt Unificado](../../requirements/arquitetura/ADR-001-nuxt-unificado.md)
-- [Design System](../../requirements/design-system/componentes.md)
+- [ADR-001 — Nuxt Unificado](../arquitetura/ADR-001-nuxt-unificado.md)
+- [Design System](../arquitetura/design-system-componentes.md)

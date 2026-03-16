@@ -35,7 +35,7 @@ O solver aplica restrições como:
 - Respeitar limites de turnos por dia por professor
 - Validar disponibilidade de ambientes (integração com SISGEA)
 
-Para detalhes completos, veja [Constraints do Solver](../../requirements/web/sisgha/geracao-horario/constraints-solver.md).
+Para detalhes completos, veja [Constraints do Solver](../specs/constraints-solver.md).
 
 ## Estrutura do projeto
 
@@ -64,12 +64,12 @@ docker compose up -d message-broker
 
 ## Contrato de mensagens
 
-O contrato entre a API e o solver é definido em TypeSpec e publicado como pacote NuGet (`Ladesa.Messages.TimetableGenerator.V1`). Veja [Contrato do Solver](../../requirements/web/sisgha/geracao-horario/contrato-solver.md).
+O contrato entre a API e o solver é definido em TypeSpec e publicado como pacote NuGet (`Ladesa.Messages.TimetableGenerator.V1`). Veja [Contrato do Solver](../specs/contrato-solver.md).
 
 ## Links úteis
 
 - [Repositório GitHub](https://github.com/ladesa-ro/gerar-horario-core)
-- [Contrato do Solver](../../requirements/web/sisgha/geracao-horario/contrato-solver.md)
-- [Constraints do Solver](../../requirements/web/sisgha/geracao-horario/constraints-solver.md)
-- [ADR-003 — OR-Tools CP-SAT](../../requirements/arquitetura/ADR-003-or-tools-cpsat.md)
-- [ADR-006 — RabbitMQ](../../requirements/arquitetura/ADR-006-rabbitmq.md)
+- [Contrato do Solver](../specs/contrato-solver.md)
+- [Constraints do Solver](../specs/constraints-solver.md)
+- [ADR-003 — OR-Tools CP-SAT](../arquitetura/ADR-003-or-tools-cpsat.md)
+- [ADR-006 — RabbitMQ](../arquitetura/ADR-006-rabbitmq.md)

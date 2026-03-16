@@ -59,6 +59,6 @@ Isso sobe o RabbitMQ na porta `5672` (AMQP) e `15672` (management UI).
 ## Links úteis
 
 - [Repositório Messages](https://github.com/ladesa-ro/messages)
-- [Contrato do Solver](../../requirements/web/sisgha/geracao-horario/contrato-solver.md)
-- [ADR-004 — TypeSpec](../../requirements/arquitetura/ADR-004-typespec.md)
-- [ADR-006 — RabbitMQ](../../requirements/arquitetura/ADR-006-rabbitmq.md)
+- [Contrato do Solver](../specs/contrato-solver.md)
+- [ADR-004 — TypeSpec](../arquitetura/ADR-004-typespec.md)
+- [ADR-006 — RabbitMQ](../arquitetura/ADR-006-rabbitmq.md)

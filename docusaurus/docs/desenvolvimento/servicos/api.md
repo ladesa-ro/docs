@@ -53,6 +53,6 @@ Requer PostgreSQL, Redis e Keycloak rodando. Veja [Executar Localmente](../ambie
 ## Links úteis
 
 - [Repositório GitHub](https://github.com/ladesa-ro/api)
-- [Endpoints Implementados](../../requirements/arquitetura/endpoints-implementados.md)
-- [ADR-002 — NestJS + Bun](../../requirements/arquitetura/ADR-002-nestjs-bun.md)
+- [Endpoints Implementados](../arquitetura/endpoints-implementados.md)
+- [ADR-002 — NestJS + Bun](../arquitetura/ADR-002-nestjs-bun.md)
 - [Documentação Swagger](https://dev.ladesa.com.br/api/doc-api)

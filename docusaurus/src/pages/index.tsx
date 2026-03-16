@@ -37,8 +37,8 @@ function Hero() {
           Documentação do Laboratório de Desenvolvimento de Softwares Acadêmicos
         </p>
         <p className={styles.heroDescription}>
-          Solução gratuita e open-source para geração de horários acadêmicos e
-          gestão de ambientes do IFRO
+          Solução gratuita e open-source para geração de horários acadêmicos
+          e gestão de ambientes
         </p>
         <div className={styles.heroCtas}>
           <Link to={docsEntrypointUrl} className={styles.ctaPrimary}>
@@ -64,7 +64,7 @@ function Systems() {
     <section className={styles.section}>
       <h2 className={styles.sectionTitle}>Sistemas</h2>
       <p className={styles.sectionSubtitle}>
-        Dois sistemas integrados para a gestão acadêmica do IFRO
+        Dois sistemas integrados para a gestão acadêmica
       </p>
       <div className={`${styles.cardGrid} ${styles.cardGrid2}`}>
         <div className={styles.card}>
@@ -105,7 +105,7 @@ function Audience() {
       icon: <GraduationCap size={28} />,
       title: "Professor",
       description:
-        "Docentes que consultam horários e configuram disponibilidade",
+        "Docentes que consultam horários e disponibilidade",
     },
     {
       icon: <BookOpen size={28} />,
@@ -144,7 +144,7 @@ function WhyExists() {
     <section className={styles.section}>
       <h2 className={styles.sectionTitle}>Por que o Ladesa existe</h2>
       <p className={styles.sectionSubtitle}>
-        Um projeto de pesquisa e soberania tecnológica do IFRO
+        Montar horários acadêmicos não deveria ser tão difícil
       </p>
       <div className={styles.whyContent}>
         <blockquote className={styles.quote}>
@@ -156,26 +156,28 @@ function WhyExists() {
           <li className={styles.gapItem}>
             <Calendar size={20} className={styles.gapIcon} />
             <div className={styles.gapText}>
-              <strong>Sem suporte a três turnos</strong>
-              Soluções existentes exigem hacks com turmas artificiais para
-              simular Manhã, Tarde e Noite. O Ladesa suporta três turnos
-              nativamente.
+              <strong>Processo manual e demorado</strong>
+              A montagem da grade exige múltiplas etapas sem auxílio
+              inteligente. A solução do Ladesa gera horários automaticamente respeitando
+              todas as restrições.
             </div>
           </li>
           <li className={styles.gapItem}>
             <ShieldCheck size={20} className={styles.gapIcon} />
             <div className={styles.gapText}>
-              <strong>Sem pinning de células</strong>
-              Qualquer nova geração embaralha tudo — inclusive o que já estava
-              correto. O Ladesa permite travar células manualmente.
+              <strong>Falta de controle</strong>
+              Ajustes manuais se perdem a cada nova geração. A solução do Ladesa permite
+              travar células editadas e distinguir alterações temporárias de
+              permanentes.
             </div>
           </li>
           <li className={styles.gapItem}>
             <Boxes size={20} className={styles.gapIcon} />
             <div className={styles.gapText}>
-              <strong>Sem integração</strong>
-              Sistemas isolados geram retrabalho via planilhas. O Ladesa integra
-              horário, ambientes e calendário em uma solução única.
+              <strong>Informação fragmentada</strong>
+              Horários, salas e calendários vivem em sistemas separados. As
+              soluções do Ladesa integram tudo em uma plataforma web e mobile
+              acessível a todos.
             </div>
           </li>
         </ul>
@@ -190,10 +192,10 @@ function Explore() {
   const links = [
     {
       icon: <FileText size={28} />,
-      title: "Requisitos",
+      title: "Produto & Requisitos",
       description:
-        "User Stories, regras de negócio, UI Specs e cenários BDD",
-      to: "/docs/requirements/visao-geral",
+        "Visão geral, domínio, processos, epics, user stories e requisitos funcionais",
+      to: "/docs/produto/visao-geral",
     },
     {
       icon: <Wrench size={28} />,
@@ -232,7 +234,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Ladesa Docs"
-      description="Documentação do Laboratório de Desenvolvimento de Softwares Acadêmicos — IFRO"
+      description="Documentação do Laboratório de Desenvolvimento de Softwares Acadêmicos"
     >
       <main>
         <Hero />
