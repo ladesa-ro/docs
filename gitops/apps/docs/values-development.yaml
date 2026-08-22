@@ -28,10 +28,10 @@ application:
     resources:
       limits:
         cpu: '2'
-        memory: 2Gi
+        memory: 512Mi
       requests:
         cpu: 50m
-        memory: 1Gi
+        memory: 128Mi
     startupProbe:
       failureThreshold: 30
       httpGet:
