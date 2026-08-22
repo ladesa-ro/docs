@@ -1,0 +1,59 @@
+application:
+  applicationName: ladesa-ro-docs
+  deployment:
+    containerSecurityContext:
+      readOnlyRootFilesystem: false
+      runAsNonRoot: false
+    enabled: true
+    image:
+      pullPolicy: Always
+      repository: ghcr.io/ladesa-ro/docs/docs
+      tag: development
+    livenessProbe:
+      httpGet:
+        path: /
+        port: 80
+      initialDelaySeconds: 10
+      periodSeconds: 15
+    ports:
+    - containerPort: 80
+      name: web-port
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 80
+      initialDelaySeconds: 5
+      periodSeconds: 10
+    replicas: 1
+    resources:
+      limits:
+        cpu: '2'
+        memory: 2Gi
+      requests:
+        cpu: 50m
+        memory: 1Gi
+    startupProbe:
+      failureThreshold: 30
+      httpGet:
+        path: /
+        port: 80
+      periodSeconds: 10
+    strategy:
+      rollingUpdate:
+        maxSurge: 1
+        maxUnavailable: 0
+  ingress:
+    enabled: true
+    hosts:
+    - host: docs.ladesa.com.br
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        servicePort: web-service
+  service:
+    enabled: true
+    ports:
+    - name: web-service
+      port: 80
+      targetPort: web-port
+    type: NodePort

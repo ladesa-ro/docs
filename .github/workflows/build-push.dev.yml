@@ -1,10 +1,13 @@
-name: "[DEV] Build & Deploy"
+name: "[DEV] Build & Push"
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+    paths-ignore:
+      - gitops/**
+      - README.md
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -51,20 +54,3 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_BASENAME }}/docs:development
           cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_BASENAME }}/docs:cache-development
           cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_BASENAME }}/docs:cache-development,mode=max
-
-  cd:
-    name: Deploy
-    needs: [ci]
-
-    runs-on: dev-deploy
-
-    environment:
-      name: development
-      url: https://docs.ladesa.com.br
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - shell: bash
-        working-directory: ./.deploy/development/
-        run: bash ./deploy.sh
